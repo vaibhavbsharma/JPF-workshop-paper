@@ -1,6 +1,12 @@
 \section{Veritesting with Java bytecode}
 Talk about how veritesting is different when done on Java bytecode
 
+The transition points at the Java bytecode level are return, exceptions (done using athrow), virtual function invocations (invokevirtual, invokeinterface), native calls (also done using invokevirtual), reflection and dynamic class loading (also done using invokevirtual).
+
+Present results from Soot-based static analysis
+
+Talk about how veritesting gets harder to do when considering multi-threaded Java bytecode.
+
 
 \begin{table}[]
 \centering
