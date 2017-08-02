@@ -1,2 +1,13 @@
 \section{Conclusion}
-Talk about veritesting is important, but implementing it at the Java bytecode requires solving different research and engineering challenges.
+%Talk about veritesting is important, but implementing it at the Java bytecode requires solving different research and engineering challenges.
+Veritesting provides a way to address the scalability challenges faced by dynamic symbolic execution.
+%
+But, integrating veritesting with symbolic execution at the Java bytecode level presents unique challenges.
+%
+Our Soot-based analysis of six large open-source Java projects confirms that, while a number of opportunities to apply veritesting arise organically in Java bytecode, the benefit of veritesting can be amplified further by incorporating static symbolic execution of virtual function invocations and reducing the number of exit points introduced by exceptions and early return statements.
+%
+Implementing veritesting with the Symbolic PathFinder motivates robust implementation of expression reuse and introduction of complex expressions.
+%
+Using veritesting to its full extent during symbolic execution of Java bytecode requires us to address such research and engineering challenges.
+%
+But, veritesting has clear potential to provide significant speed-up to symbolic execution tools such as Symbolic PathFinder.

@@ -1,12 +1,49 @@
 \section{Related Work}
-Talk about veritesting in Mayhem, Angr.
-Talk about other symbolic execution performance improvements.
-%mentioned in Christopher Kruegel's ISSTA keynote talk as Static Analysis support
-LESE - loop extended sym. exec. 
-  - intelligent loop unrolling
-Code summarization (Dodo)
-  - automatically (and statically) summarize effect of loops / functions
-VSA - value set analysis
-  - resolve ranges (and conditionals) without solving constraints
+%Talk about veritesting in Mayhem, Angr.
+%
+The original idea for veritesting was presented by Avgerinos et al.~\cite{veritesting}.
+%
+They implemented veritesting on top of MAYHEM~\cite{mayhem}, a system for finding bugs at the X86 binary level which uses symbolic execution.
+%
+Their implementation demonstrated dramatic performance improvements and allowed them to find more bugs, and have better node and path coverage.
+%
+Veritesting has also been integrated with another binary level symbolic execution engine named {\tt angr}~\cite{angr}.
+%
+Veritesting was added to {\tt angr} with similar goals of statically and selectively merging paths to mitigate path explosion.
+%
+However, path merging from veritesting integration with {\tt angr} caused complex expressions to be introduced which overloaded the constraint solver.
+%
+%This observation became even more apparent for longer paths.
+%
+Integrating veritesting with SPF may expose a similar trade-off.
+%
+But we expect this problem to be less severe for when doing static symbolic execution of Java bytecode because Java bytecode instructions have fewer behaviors to be statically analyzed than X86 architecture instructions.
 
-Talk about TamiFlex, and how using the same technique as TamiFlex is one way to solve veritesting challenges in Java bytecode.
+%Talk about other symbolic execution performance improvements.
+%mentioned in Christopher Kruegel's ISSTA keynote talk as Static Analysis support
+Other static analysis techniques also provide support for Dynamic Symbolic Execution~(DSE).
+%
+Loop-extended symbolic execution introduced intelligent loop unrolling by having symbolic variables that represent the number of times each loop executes.
+%
+This technique allowed symbolic variables to incorporate loop dependent effects along with data dependencies from program inputs.
+%
+Value Set Analysis~(VSA)~\cite{vsa} is another static analysis technique that can potentially benefit DSE.
+%
+VSA uses an abstract domain to find an over-approximated set of values that registers or abstract locations may have at program points.
+%
+VSA can help DSE resolve ranges without solving constraints.
+%VSA can resolve ranges without solving constraints, thereby, finding applications in computing all possible write targets during a memory write operation.
+%Code summarization (Dodo)
+%  - automatically (and statically) summarize effect of loops / functions
+%VSA - value set analysis
+%  - resolve ranges (and conditionals) without solving constraints
+
+%Talk about TamiFlex, and how using the same technique as TamiFlex is one way to solve veritesting challenges in Java bytecode.
+%
+Other techniques for static analysis at the Java bytecode level can also benefit DSE.
+%
+Finding which reflective method call is being used, or handling dynamic class loading are known problems for static analysis tools.
+%
+TamiFlex~\cite{tamiflex} provides an answer that is sound with respect to a set of previously seen program runs.
+%
+Integrating veritesting runs into similar problems, and using techniques from TamiFlex would allow static symbolic execution of exit points caused by reflection or dynamic class loading. 

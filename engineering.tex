@@ -64,7 +64,7 @@ Integrating veritesting with SPF to make it scale to industrial-sized code requi
 %Engineering issue \#2: Need to have complex expressions, talk about how Comparators cannot be used anywhere below the top-level operator
 SPF creates conjunctions of expressions and adds them to its path expression.
 %
-The expression being added to its \textit{PathCondition} is allowed to have a \textit{Comparator}~(a comparison operator such as \textit{!=}) as the top-level operator, but comparison operators are not allowed in sub-expressions.
+The expression being added to its \textit{PathCondition} is allowed to have a \textit{Comparator}~(a comparison operator such as !=) as the top-level operator, but comparison operators are not allowed in sub-expressions.
 %
 But, symbolic formulas derived from static symbolic execution of regions does not guarantee that such an invariant would always hold for formulas.
 %

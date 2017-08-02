@@ -23,15 +23,7 @@ Avgerinos et al.~\cite{veritesting} defined exit points as unresolved jumps, fun
 %
 These exit points are nodes in a Control Flow Graph~(CFG) which represent non-local control flow, and therefore, need to be explored using plain dynamic symbolic execution.
 %
-In the context of Java bytecode, we find such non-local control flow in five ways listed as follows:
-%
-\begin{enumerate}
-\item return statements
-\item exceptions
-\item virtual function invocations~(\textit{invokevirtual}, \textit{invokeinterface})
-\item reflection 
-\item native calls
-\end{enumerate}
+In the context of Java bytecode, we find such non-local control flow in five ways listed as follows: (1) return statements, (2) exceptions, (3) virtual function invocations~(\textit{invokevirtual}, \textit{invokeinterface}), (4) reflection, (5) native calls.
 %
 Return statements form the function boundary, and are obvious candidates to be considered as exit points.
 %
@@ -53,7 +45,8 @@ Native calls are used to execute code outside of the Java Runtime Environment.
 %
 Incorporating these into our static analysis would require handling virtual function invocations as well as static analysis of binary code.
 
-These five types of exit points create the kind of non-local control flow which formed the frontier of the visible CFG created as a result of \textit{CFGReduce} step by Avgerinos et al.%
+These five types of exit points create the kind of non-local control flow which formed the frontier of the visible CFG created as a result of \textit{CFGReduce} step by Avgerinos et al.
+%
 However, many of these exit points are used pervasively by Java developers.
 %
 For example, the Visitor design pattern is used extensively by the ASM framework~\cite{asm}, Soot~\cite{soot} and makes use of Java\rq s dynamic dispatch mechanism.
