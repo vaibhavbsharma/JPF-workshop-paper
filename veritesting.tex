@@ -81,7 +81,7 @@ We report our results in Table~\ref{table:results}.
 \begin{table}[]
 \centering
 \caption{Soot-based analysis for number of bytecode instructions between starting and exit points}
-\label{table:results_size}
+\label{t:r_s}
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
         & \#classes & \begin{tabular}[c]{@{}l@{}}if-\\ return\end{tabular} & \begin{tabular}[c]{@{}l@{}}if-\\ invokevirtual\end{tabular} & \begin{tabular}[c]{@{}l@{}}if-\\ throw\end{tabular} & \begin{tabular}[c]{@{}l@{}}region \\ size\end{tabular} \\ \hline
@@ -97,7 +97,7 @@ time    & 209       & 7.79                                                 & 13.
 \begin{table}[]
 \centering
 \caption{Number of occurences in Soot-based static analysis}
-\label{table:results_count}
+\label{t:r_c}
 \begin{tabular}{|l|l|l|l|l|}
 \hline
         & \begin{tabular}[c]{@{}l@{}}if-\\ return\end{tabular} & \begin{tabular}[c]{@{}l@{}}if-\\ invokevirtual\end{tabular} & \begin{tabular}[c]{@{}l@{}}if-\\ throw\end{tabular} & \begin{tabular}[c]{@{}l@{}}region\\ count\end{tabular} \\ \hline
@@ -109,7 +109,26 @@ mockito & 372                                                  & 572            
 time    & 1202                                                 & 984                                                         & 204                                                 & 1421                                                   \\ \hline
 \end{tabular}
 \end{table}
-Table~\ref{table:results_size} shows the average size and Table~\ref{table:results_count} shows the number of times each such count was reported. 
+
+Table~\ref{t:r_s} shows the average size and Table~\ref{t:r_c} shows the number of times each such count was reported. 
+%
+The \textit{if-return}, \textit{if-invokevirtual}, \textit{if-throw} columns in Table~\ref{t:r_s} report the average number of instructions observed between any \textit{if} opcode-containing bytecode instruction and a \textit{return}, \textit{invokevirtual} or \textit{invokeinterface}, \textit{throw} opcode-containing bytecode instruction.
+%
+These same columns in Table~\ref{t:r_c} report the number of times we observed an occurence of one of \textit{return}, \textit{invokevirtual}, \textit{invokeinterface}, \textit{throw} opcode-containing bytecode instructions before reaching the immediate post-dominator of the starting \textit{if} node on any side of the branch.
+%
+We can interpret Table~\ref{t:r_s} better by noting that we covered 35 bytecode instructions in the veritesting region shown in Listing~\ref{lst:v_ex}.
+%
+Tables~\ref{t:r_s} and~\ref{t:r_c} show that while we discover thousands of regions which do not contain any exit points, these regions are small.
+%
+Having veritesting for these regions alone would provide a significant performance boost to SPF.
+%
+However, as shown by Table~\ref{t:r_c}, \textit{invokevirtual} or \textit{invokeinterface} instructions are encountered far more often than \textit{return} or \textit{throw} instructions.
+%
+This can be explained by the pervasive use of runtime polymorphism and exception handling by Java developers.
+%
+Instead of using \textit{invokevirtual} and \textit{invokeinterface} instructions as exit points, if we can continue our static symbolic execution beyond them, we would almost double the number of veritesting regions.
+%
+Tables~\ref{t:r_s} and~\ref{t:r_c} also show that early \textit{return} instructions are another often used construct in Java.
 
 
 
