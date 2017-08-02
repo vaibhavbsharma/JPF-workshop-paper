@@ -44,6 +44,7 @@ public class SimpleMain {
   public static int g_if_iv_distance = 0, g_if_iv_count = 0;
   public static int g_if_throw_distance = 0, g_if_throw_count = 0;
   public static int g_pureVeritestingRegionSize = 0, g_pureVeritestingRegionCount = 0;
+  public static int numMethods = 0;
   public static final boolean debug = false;
   public static void main(String[] args) {
     // this jb pack does not work, perhaps, by design
@@ -72,6 +73,7 @@ public class SimpleMain {
             //     " l.getUB = " + l.getUseBoxes());
             // }
             if(debug) G.v().out.println("Starting analysis for "+body.getMethod().getName());
+	    numMethods++;
             MyAnalysis m = new MyAnalysis(new ExceptionalUnitGraph(body));
             // use G.v().out instead of System.out so that Soot can
             // redirect this output to the Eclipse console
@@ -94,6 +96,7 @@ public class SimpleMain {
 		G.v().out.println("if-ret-distance = " + g_if_ret_distance + " ("+g_if_ret_count + ")");
 		G.v().out.println("if-throw-distance = " + g_if_throw_distance + " ("+g_if_throw_count + ")");
     G.v().out.println("pure-Veritesting-regions-size = " + g_pureVeritestingRegionSize + " (" + g_pureVeritestingRegionCount + ")");
+    G.v().out.println("number-of-methods = "+numMethods);
   }
   
   public static class MyAnalysis /*extends ForwardFlowAnalysis */ {
