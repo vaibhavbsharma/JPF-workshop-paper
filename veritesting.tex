@@ -6,7 +6,7 @@
 %Present results from Soot-based static analysis
 %
 %Talk about how veritesting gets harder to do when considering multi-threaded Java bytecode.
-
+\subsection{Exit points}
 While the performance improvement shown in Figure~\ref{fig:v_ex_plot} with statically unrolling the three-way branches is clear, we need to automate this process.
 %
 Integrating veritesting with SPF requires a static analysis generalized for all possible Java constructs.
@@ -23,7 +23,7 @@ Avgerinos et al.~\cite{veritesting} defined exit points as unresolved jumps, fun
 %
 These exit points are nodes in a Control Flow Graph~(CFG) which represent non-local control flow, and therefore, need to be explored using plain dynamic symbolic execution.
 %
-In the context of Java bytecode, we find such non-local control flow in five ways listed as follows
+In the context of Java bytecode, we find such non-local control flow in five ways listed as follows:
 %
 \begin{enumerate}
 \item return statements
@@ -129,7 +129,19 @@ This can be explained by the pervasive use of runtime polymorphism and exception
 Instead of using \textit{invokevirtual} and \textit{invokeinterface} instructions as exit points, if we can continue our static symbolic execution beyond them, we would almost double the number of veritesting regions.
 %
 Tables~\ref{t:r_s} and~\ref{t:r_c} also show that early \textit{return} instructions are another often used construct in Java.
-
+%
+\subsection{Veritesting with Multi-threading}
+Veritesting requires SPF to be able to perform static symbolic execution on a region of code and incorporate it as a disjunctive predicate into its path expression along with the corresponding updates to its symbolic store.
+%
+But, if the region being statically analyzed can be executed in a multi-threaded context, then it is necessary to consider all possible points of interference in the region.
+%
+This consideration requires changes to the updates made to SPF\rq s path expression and its symbolic store.
+%
+One way to handle this is to turn every point of interference as an exit point.
+%
+But, veritesting would be beneficial if it\rq s static analysis also includes computation of points at which interference is infeasible.
+%
+This makes veritesting challenging to perform since the cost of this computation must be less than the cost of doing plain dynamic symbolic execution. 
 
 
 
