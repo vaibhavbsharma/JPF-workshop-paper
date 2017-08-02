@@ -13,13 +13,13 @@ It has been shown to find more bugs, and achieve more node and path coverage, wh
 This provides motivation for investigating integration of veritesting with symbolic execution at the Java bytecode level.
 
 \lstinputlisting[caption={An example with a symbolic loop bound and nine execution paths through the loop body}, 
-label={lst:v-ex}]{code_samples/VeritestingPerf.java}
+label={lst:v_ex}]{code_samples/VeritestingPerf.java}
 
 Symbolic Pathfinder~(SPF)~\cite{spf} is a tool that performs symbolic execution of Java bytecode.
 %
 SPF is tightly integrated with Java PathFinder~(JPF)~\cite{jpf} and uses JPF extensions to replace concrete execution with symbolic execution. 
 %
-We present an example demonstrating the potential benefit of integrating veritesting with SPF in Listing~\ref{lst:v-ex}.
+We present an example demonstrating the potential benefit of integrating veritesting with SPF in Listing~\ref{lst:v_ex}.
 %
 The number of iterations done by the \textit{while} loop depends on the variable \textit{i}, which has been made symbolic.
 %
@@ -46,7 +46,7 @@ With the symbolic integer range being (-25, 25), plain SPF explores 7855 executi
 This is in contrast to SPF, summarizing the three-way branches with static unrolling, which explores 27 execution paths and takes a fraction of a second on the same machine to achieve complete path coverage.
 
 \begin{figure}[]
-\caption{Comparing number of execution paths from Listing~\ref{lst:v-ex} using vanilla SPF and SPF with static unrolling}
+\caption{Comparing number of execution paths from Listing~\ref{lst:v_ex} using vanilla SPF and SPF with static unrolling}
 \label{fig:v_ex_plot}
 \includegraphics[width=\columnwidth]{figures/veritesting_example}
 \end{figure}
