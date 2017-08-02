@@ -13,12 +13,12 @@ plot(x_vals,log10(veritesting_execution_paths),'b-.','Linewidth',4);
 set(gca,'FontSize',15); 
 h_legend=legend('Vanilla SPF','SPF with Veritesting','Location','northwest');
 xlabel('allowed range of symbolic integers');
-ylabel('log(number of execution paths)');
+ylabel('log (number of execution paths)');
 xlim([3 51]);
 %ylim([0 20]);
 set(gca,'FontSize',15);
 
-toplot_legend_loc('allowed range of symbolic integers','log(number of execution paths)','',h_legend,'northwest');  
+toplot_legend_loc('allowed range of symbolic integers','log (number of execution paths)','',h_legend,'northwest');  
 
 hold off;
 
