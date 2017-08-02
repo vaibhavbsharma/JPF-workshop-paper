@@ -23,31 +23,31 @@ class SimpleStmtSwitch extends AbstractStmtSwitch {
   }
 
   public void caseAssignStmt(AssignStmt stmt) {
-    G.v().out.println("  AssignStmt: "+stmt);
+    if(SimpleMain.debug) G.v().out.println("  AssignStmt: "+stmt);
   }
 
   public void caseBreakpointStmt(BreakpointStmt stmt) {
-    G.v().out.println("  BreakpointStmt: "+stmt);
+    if(SimpleMain.debug) G.v().out.println("  BreakpointStmt: "+stmt);
   }
   public void caseEnterMonitorStmt(EnterMonitorStmt stmt) {
-    G.v().out.println("  EnterMonitorStmt: "+stmt);
+    if(SimpleMain.debug) G.v().out.println("  EnterMonitorStmt: "+stmt);
   }
   public void caseExitMonitorStmt(ExitMonitorStmt stmt) {
-    G.v().out.println("  ExitMonitorStmt: "+stmt);
+    if(SimpleMain.debug) G.v().out.println("  ExitMonitorStmt: "+stmt);
   }
   public void caseGotoStmt(GotoStmt stmt) {
-    G.v().out.println("  GotoStmt: "+stmt);
+    if(SimpleMain.debug) G.v().out.println("  GotoStmt: "+stmt);
   }
   public void caseIdentityStmt(IdentityStmt stmt) {
-    G.v().out.println("  IdentityStmt: "+stmt);
+    if(SimpleMain.debug) G.v().out.println("  IdentityStmt: "+stmt);
   }
 
   public void caseIfStmt(IfStmt stmt) {
-    G.v().out.println("  IfStmt: " + stmt);
+    if(SimpleMain.debug) G.v().out.println("  IfStmt: " + stmt);
   }
 
   public void caseInvokeStmt(InvokeStmt stmt) {
-    G.v().out.println("  InvokeStmt: "+stmt);
+    if(SimpleMain.debug) G.v().out.println("  InvokeStmt: "+stmt);
 		stmt.getInvokeExpr().apply( new ExprSwitch() {
 			public void caseDynamicInvokeExpr(DynamicInvokeExpr e) {
 				isInvokeVirtual = true;
@@ -94,32 +94,32 @@ class SimpleStmtSwitch extends AbstractStmtSwitch {
   }
 
   public void caseLookupSwitchStmt(LookupSwitchStmt stmt) {
-    G.v().out.println("  LookupSwitchStmt: "+stmt);
+    if(SimpleMain.debug) G.v().out.println("  LookupSwitchStmt: "+stmt);
   }
   public void caseNopStmt(NopStmt stmt) {
-    G.v().out.println("  NopStmt: "+stmt);
+    if(SimpleMain.debug) G.v().out.println("  NopStmt: "+stmt);
   }
   public void caseRetStmt(RetStmt stmt) {
-    G.v().out.println("  RetStmt: "+stmt);
+    if(SimpleMain.debug) G.v().out.println("  RetStmt: "+stmt);
 		isReturn = true;
   }
   public void caseReturnStmt(ReturnStmt stmt) {
-    G.v().out.println("  ReturnStmt: "+stmt);
+    if(SimpleMain.debug) G.v().out.println("  ReturnStmt: "+stmt);
 		isReturn = true;
   }
   public void caseReturnVoidStmt(ReturnVoidStmt stmt) {
-    G.v().out.println("  ReturnVoidStmt: "+stmt);
+    if(SimpleMain.debug) G.v().out.println("  ReturnVoidStmt: "+stmt);
 		isReturn = true;
   }
   public void caseTableSwitchStmt(TableSwitchStmt stmt) {
-    G.v().out.println("  TableSwitchStmt: "+stmt);
+    if(SimpleMain.debug) G.v().out.println("  TableSwitchStmt: "+stmt);
   }
   public void caseThrowStmt(ThrowStmt stmt) {
-    G.v().out.println("  ThrowStmt: "+stmt);
+    if(SimpleMain.debug) G.v().out.println("  ThrowStmt: "+stmt);
 		isThrow = true;
   }
   public void defaultCase(Object o) {
-    G.v().out.println("  defaultCase: "+o);
+    if(SimpleMain.debug) G.v().out.println("  defaultCase: "+o);
   }
 
 	public boolean isReturn() { return isReturn; }

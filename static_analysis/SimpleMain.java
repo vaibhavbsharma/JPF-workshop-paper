@@ -35,8 +35,16 @@ import soot.toolkits.graph.ExceptionalUnitGraph;
 import soot.toolkits.graph.MHGPostDominatorsFinder;
 import soot.tagkit.BytecodeOffsetTag;
 
+
+
+
 public class SimpleMain {
 
+  public static int g_if_ret_distance = 0, g_if_ret_count = 0;
+  public static int g_if_iv_distance = 0, g_if_iv_count = 0;
+  public static int g_if_throw_distance = 0, g_if_throw_count = 0;
+  public static int g_pureVeritestingRegionSize = 0, g_pureVeritestingRegionCount = 0;
+  public static final boolean debug = false;
   public static void main(String[] args) {
     // this jb pack does not work, perhaps, by design
     PackManager.v().getPack("jb").add(
@@ -63,6 +71,7 @@ public class SimpleMain {
             //     " l.num = " + l.getNumber() + 
             //     " l.getUB = " + l.getUseBoxes());
             // }
+            if(debug) G.v().out.println("Starting analysis for "+body.getMethod().getName());
             MyAnalysis m = new MyAnalysis(new ExceptionalUnitGraph(body));
             // use G.v().out instead of System.out so that Soot can
             // redirect this output to the Eclipse console
@@ -81,6 +90,10 @@ public class SimpleMain {
         )
     );
     soot.Main.main(args);
+		G.v().out.println("if-iv-distance = " + g_if_iv_distance + " ("+g_if_iv_count + ")");
+		G.v().out.println("if-ret-distance = " + g_if_ret_distance + " ("+g_if_ret_count + ")");
+		G.v().out.println("if-throw-distance = " + g_if_throw_distance + " ("+g_if_throw_count + ")");
+    G.v().out.println("pure-Veritesting-regions-size = " + g_pureVeritestingRegionSize + " (" + g_pureVeritestingRegionCount + ")");
   }
   
   public static class MyAnalysis /*extends ForwardFlowAnalysis */ {
@@ -89,6 +102,9 @@ public class SimpleMain {
     int if_ret_distance = 0, if_ret_count = 0;
     int if_iv_distance = 0, if_iv_count = 0;
     int if_throw_distance = 0, if_throw_count = 0;
+    int pureVeritestingRegionSize = 0, pureVeritestingRegionCount = 0;
+    private final Object lock = new Object();
+
     public MyAnalysis(ExceptionalUnitGraph exceptionalUnitGraph) {
       g = exceptionalUnitGraph;
       doAnalysis();
@@ -106,93 +122,129 @@ public class SimpleMain {
       return u_IPDom;
     }
 
-    public void countDistanceToExitPoints(List<Unit> succs, Unit commonSucc, int ifIndex) {
+    public void countDistanceToExitPoints(List<Unit> succs, Unit commonSucc, int ifIndex, int depth) {
       Unit thenUnit = succs.get(0);
       Unit elseUnit = succs.get(1);
-      int savedIndex = index;
+      final int savedIndex = index;
 
+      int foundExitPoint = 0;
+      if(depth > 5) return;
+
+      if(debug) G.v().out.println("Starting countDistanceToExitPoints for ifIndex = " + ifIndex);
       // Create thenExpr
       while(thenUnit != commonSucc) {
 				BytecodeOffsetTag b = (BytecodeOffsetTag) ((Stmt)thenUnit).getTag("BytecodeOffsetTag");
 				if((b != null) && (b.getBytecodeOffset() != 0)) index++;
+        else { if(debug) G.v().out.printf(" null: ");
+        }
                 
         SimpleStmtSwitch simpleStmtSwitch = new SimpleStmtSwitch();
+        if(debug)
+          G.v().out.printf("%d: ", index);
         thenUnit.apply(simpleStmtSwitch);
         if(simpleStmtSwitch.isInvokeVirtual() || simpleStmtSwitch.isInvokeInterface()) {
           if_iv_distance += (index - savedIndex);
+          // G.v().out.println("adding "+index + " - " + savedIndex + " to if_iv_distance");
           if_iv_count++;
           if(savedIndex > ifIndex) {
             if_iv_distance += (index - ifIndex);
+            // G.v().out.println("adding "+index+ " - " +ifIndex + " to if_iv_distance");
             if_iv_count++;
           }
+          foundExitPoint = 1;
         }
-        if(simpleStmtSwitch.isReturn()) {
+        else if(simpleStmtSwitch.isReturn()) {
           if_ret_distance += (index - savedIndex);
+          if(debug) G.v().out.println("t: adding "+index + " - " + savedIndex + " to if_ret_distance");
           if_ret_count++;
           if(savedIndex > ifIndex) {
             if_ret_distance += (index - ifIndex);
+            if(debug) G.v().out.println("t: adding "+index + " - " + ifIndex + " to if_ret_distance");
             if_ret_count++;
           }
+          foundExitPoint = 1;
         }
-        if(simpleStmtSwitch.isThrow()) {
+        else if(simpleStmtSwitch.isThrow()) {
           if_throw_distance += (index - savedIndex);
           if_throw_count++;
           if(savedIndex > ifIndex) {
             if_throw_distance += (index - ifIndex);
             if_throw_count++;
           }
+          foundExitPoint = 1;
         }
         List<Unit> s = g.getUnexceptionalSuccsOf(thenUnit);
         if(s.size() > 1) {
           Unit ipdom_thenUnit = getIPDom(thenUnit);
-          countDistanceToExitPoints(s, ipdom_thenUnit, ifIndex);
+          countDistanceToExitPoints(s, ipdom_thenUnit, ifIndex, depth+1);
           thenUnit = ipdom_thenUnit; 
         } else if(s.size() == 1) { 
           thenUnit = g.getUnexceptionalSuccsOf(thenUnit).get(0);
 				} else break;
       }
 
-      index = savedIndex;
+      if(elseUnit != commonSucc)
+        index = savedIndex;
 
       // Create elseExpr, similar to thenExpr
       while(elseUnit != commonSucc) {
 				BytecodeOffsetTag b = (BytecodeOffsetTag) ((Stmt)elseUnit).getTag("BytecodeOffsetTag");
 				if( (b != null) && (b.getBytecodeOffset() != 0)) index++;
+        else { if(debug) G.v().out.printf(" null: ");
+        }
 
         SimpleStmtSwitch simpleStmtSwitch= new SimpleStmtSwitch();
+        if(debug) G.v().out.printf("%d: ", index);
         elseUnit.apply(simpleStmtSwitch);
         if(simpleStmtSwitch.isInvokeVirtual() || simpleStmtSwitch.isInvokeInterface()) {
           if_iv_distance += (index - savedIndex);
+          // G.v().out.println("adding "+index + " - " + savedIndex + " to if_iv_distance");
           if_iv_count++;
           if(savedIndex > ifIndex) {
             if_iv_distance += (index - ifIndex);
+          // G.v().out.println("adding "+index + " - " + ifIndex + " to if_iv_distance");
             if_iv_count++;
           }
+          foundExitPoint = 1;
         }
-        if(simpleStmtSwitch.isReturn()) {
+        else if(simpleStmtSwitch.isReturn()) {
+          foundExitPoint = 1;
           if_ret_distance += (index - savedIndex);
+          if(debug) G.v().out.println("e: adding "+index + " - " + savedIndex + " to if_ret_distance");
           if_ret_count++;
           if(savedIndex > ifIndex) {
             if_ret_distance += (index - ifIndex);
+            if(debug) G.v().out.println("e: adding "+index + " - " + ifIndex + " to if_ret_distance");
             if_ret_count++;
           }
         }
-        if(simpleStmtSwitch.isThrow()) {
+        else if(simpleStmtSwitch.isThrow()) {
           if_throw_distance += (index - savedIndex);
           if_throw_count++;
           if(savedIndex > ifIndex) {
             if_throw_distance += (index - ifIndex);
             if_throw_count++;
           }
+          foundExitPoint = 1;
         }
         List<Unit> s = g.getUnexceptionalSuccsOf(elseUnit);
         if(s.size() > 1) {
           Unit ipdom_elseUnit = getIPDom(elseUnit);
-          countDistanceToExitPoints(s, ipdom_elseUnit, ifIndex);
+          countDistanceToExitPoints(s, ipdom_elseUnit, ifIndex, depth+1);
           elseUnit = ipdom_elseUnit; 
-        } else if(s.size() == 1) 
+        } 
+        else if(s.size() == 1) {
           elseUnit = g.getUnexceptionalSuccsOf(elseUnit).get(0);
-					else break;
+        } else {
+          break;
+        }
+      }
+      if(debug) G.v().out.println("foundExitPoint = "+foundExitPoint);
+      //new Exception().printStackTrace();
+      if(foundExitPoint == 0) {
+        if(debug) G.v().out.println("pure veritesting region ("+index+", "+savedIndex+") "+foundExitPoint);
+        pureVeritestingRegionCount++;
+        pureVeritestingRegionSize += (index - savedIndex);
       }
     }
 
@@ -208,6 +260,7 @@ public class SimpleMain {
 					if((b != null) && (b.getBytecodeOffset() != 0)) index++;
           //printTags((Stmt)u);
           SimpleStmtSwitch simpleStmtSwitch = new SimpleStmtSwitch();
+          if(debug) G.v().out.printf("%d: ", index);
           u.apply(simpleStmtSwitch);
           List<Unit> succs = g.getUnexceptionalSuccsOf(u);
           if(succs.size()==1) {
@@ -215,16 +268,28 @@ public class SimpleMain {
             continue;
           } else if (succs.size()==0) break;
           else {
-            G.v().out.printf("  #succs = %d\n", succs.size());
+            // G.v().out.printf("  #succs = %d\n", succs.size());
             Unit commonSucc = getIPDom(u);
-            countDistanceToExitPoints(succs, commonSucc, index);
+            countDistanceToExitPoints(succs, commonSucc, index, 1);
             u = commonSucc;
           }
-          G.v().out.println("");
+          if(debug) G.v().out.println("");
         }
-				G.v().out.println("if-iv-distance = " + if_iv_distance + " ("+if_iv_count + ")");
-				G.v().out.println("if-ret-distance = " + if_ret_distance + " ("+if_ret_count + ")");
-				G.v().out.println("if-throw-distance = " + if_throw_distance + " ("+if_throw_count + ")");
+				if(debug) {
+          G.v().out.println("if-iv-distance = " + if_iv_distance + " ("+if_iv_count + ")");
+				  G.v().out.println("if-ret-distance = " + if_ret_distance + " ("+if_ret_count + ")");
+				  G.v().out.println("if-throw-distance = " + if_throw_distance + " ("+if_throw_count + ")");
+          G.v().out.println("#pure Veritesting regions = " + pureVeritestingRegionCount + ", size = " + pureVeritestingRegionSize);
+          G.v().out.println("\n\n");
+        }
+        g_if_iv_distance += if_iv_distance;
+        g_if_iv_count += if_iv_count;
+        g_if_ret_distance += if_ret_distance;
+        g_if_ret_count += if_ret_count;
+        g_if_throw_distance += if_throw_distance;
+        g_if_throw_count += if_throw_count;
+        g_pureVeritestingRegionCount += pureVeritestingRegionCount;
+        g_pureVeritestingRegionSize += pureVeritestingRegionSize;
       }
     }
 
