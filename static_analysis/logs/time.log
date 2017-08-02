@@ -1,0 +1,3090 @@
+#class_files = 232
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.Weeks
+Exception in thread "main" java.lang.RuntimeException: couldn't find class: org.joda.convert.ToString (is your soot-class-path set properly?)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:205)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:239)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:154)
+	at soot.SootResolver.resolveClass(SootResolver.java:124)
+	at soot.Scene.loadClass(Scene.java:448)
+	at soot.Scene.loadClassAndSupport(Scene.java:434)
+	at soot.Scene.loadNecessaryClass(Scene.java:1053)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1067)
+	at soot.Main.run(Main.java:167)
+	at soot.Main.main(Main.java:141)
+	at SimpleMain.main(SimpleMain.java:94)
+Soot started on Wed Aug 02 00:02:39 CDT 2017
+classfile = org.joda.time.Weeks
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.DateTimeField
+Soot started on Wed Aug 02 00:02:40 CDT 2017
+Transforming org.joda.time.DateTimeField... 
+Writing to sootOutput/org.joda.time.DateTimeField.shimple
+Soot finished on Wed Aug 02 00:02:40 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 1
+classfile = org.joda.time.DateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.LocalDateTime$Property
+Soot started on Wed Aug 02 00:02:40 CDT 2017
+Transforming org.joda.time.LocalDateTime$Property... 
+Writing to sootOutput/org.joda.time.LocalDateTime$Property.shimple
+Soot finished on Wed Aug 02 00:02:41 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 20
+classfile = org.joda.time.LocalDateTime$Property
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.ReadableDuration
+Soot started on Wed Aug 02 00:02:41 CDT 2017
+Transforming org.joda.time.ReadableDuration... 
+Writing to sootOutput/org.joda.time.ReadableDuration.shimple
+Soot finished on Wed Aug 02 00:02:42 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.joda.time.ReadableDuration
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.DateTimeFieldType
+Soot started on Wed Aug 02 00:02:42 CDT 2017
+Transforming org.joda.time.DateTimeFieldType... 
+Writing to sootOutput/org.joda.time.DateTimeFieldType.shimple
+Soot finished on Wed Aug 02 00:02:42 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 51
+classfile = org.joda.time.DateTimeFieldType
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.ReadableInstant
+Soot started on Wed Aug 02 00:02:42 CDT 2017
+Transforming org.joda.time.ReadableInstant... 
+Writing to sootOutput/org.joda.time.ReadableInstant.shimple
+Soot finished on Wed Aug 02 00:02:43 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.joda.time.ReadableInstant
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.LocalDate$Property
+Soot started on Wed Aug 02 00:02:43 CDT 2017
+Transforming org.joda.time.LocalDate$Property... 
+Writing to sootOutput/org.joda.time.LocalDate$Property.shimple
+Soot finished on Wed Aug 02 00:02:44 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 19
+classfile = org.joda.time.LocalDate$Property
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.IllegalInstantException
+Soot started on Wed Aug 02 00:02:44 CDT 2017
+Transforming org.joda.time.IllegalInstantException... 
+Writing to sootOutput/org.joda.time.IllegalInstantException.shimple
+Soot finished on Wed Aug 02 00:02:44 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 21 (7)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (1)
+number-of-methods = 4
+classfile = org.joda.time.IllegalInstantException
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.ReadablePartial
+Soot started on Wed Aug 02 00:02:45 CDT 2017
+Transforming org.joda.time.ReadablePartial... 
+Writing to sootOutput/org.joda.time.ReadablePartial.shimple
+Soot finished on Wed Aug 02 00:02:45 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.joda.time.ReadablePartial
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.MutablePeriod
+Exception in thread "main" java.lang.RuntimeException: couldn't find class: org.joda.convert.FromString (is your soot-class-path set properly?)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:205)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:239)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:154)
+	at soot.SootResolver.resolveClass(SootResolver.java:124)
+	at soot.Scene.loadClass(Scene.java:448)
+	at soot.Scene.loadClassAndSupport(Scene.java:434)
+	at soot.Scene.loadNecessaryClass(Scene.java:1053)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1067)
+	at soot.Main.run(Main.java:167)
+	at soot.Main.main(Main.java:141)
+	at SimpleMain.main(SimpleMain.java:94)
+Soot started on Wed Aug 02 00:02:45 CDT 2017
+classfile = org.joda.time.MutablePeriod
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.TimeOfDay
+Soot started on Wed Aug 02 00:02:46 CDT 2017
+Transforming org.joda.time.TimeOfDay... 
+Writing to sootOutput/org.joda.time.TimeOfDay.shimple
+Soot finished on Wed Aug 02 00:02:47 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 5 (1)
+if-ret-distance = 120 (15)
+if-throw-distance = 6 (2)
+pure-Veritesting-regions-size = 62 (5)
+number-of-methods = 55
+classfile = org.joda.time.TimeOfDay
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.MonthDay
+Exception in thread "main" java.lang.RuntimeException: couldn't find class: org.joda.convert.ToString (is your soot-class-path set properly?)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:205)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:239)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:154)
+	at soot.SootResolver.resolveClass(SootResolver.java:124)
+	at soot.Scene.loadClass(Scene.java:448)
+	at soot.Scene.loadClassAndSupport(Scene.java:434)
+	at soot.Scene.loadNecessaryClass(Scene.java:1053)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1067)
+	at soot.Main.run(Main.java:167)
+	at soot.Main.main(Main.java:141)
+	at SimpleMain.main(SimpleMain.java:94)
+Soot started on Wed Aug 02 00:02:47 CDT 2017
+classfile = org.joda.time.MonthDay
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.DateTimeComparator
+Soot started on Wed Aug 02 00:02:47 CDT 2017
+Transforming org.joda.time.DateTimeComparator... 
+Writing to sootOutput/org.joda.time.DateTimeComparator.shimple
+Soot finished on Wed Aug 02 00:02:48 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 172 (35)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 49 (17)
+number-of-methods = 14
+classfile = org.joda.time.DateTimeComparator
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.Instant
+Exception in thread "main" java.lang.RuntimeException: couldn't find class: org.joda.convert.FromString (is your soot-class-path set properly?)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:205)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:239)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:154)
+	at soot.SootResolver.resolveClass(SootResolver.java:124)
+	at soot.Scene.loadClass(Scene.java:448)
+	at soot.Scene.loadClassAndSupport(Scene.java:434)
+	at soot.Scene.loadNecessaryClass(Scene.java:1053)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1067)
+	at soot.Main.run(Main.java:167)
+	at soot.Main.main(Main.java:141)
+	at SimpleMain.main(SimpleMain.java:94)
+Soot started on Wed Aug 02 00:02:48 CDT 2017
+classfile = org.joda.time.Instant
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.LimitChronology$LimitDateTimeField
+Soot started on Wed Aug 02 00:02:49 CDT 2017
+Transforming org.joda.time.chrono.LimitChronology$LimitDateTimeField... 
+Writing to sootOutput/org.joda.time.chrono.LimitChronology$LimitDateTimeField.shimple
+Soot finished on Wed Aug 02 00:02:49 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 26
+classfile = org.joda.time.chrono.LimitChronology$LimitDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.AssembledChronology$Fields
+Soot started on Wed Aug 02 00:02:49 CDT 2017
+Transforming org.joda.time.chrono.AssembledChronology$Fields... 
+Writing to sootOutput/org.joda.time.chrono.AssembledChronology$Fields.shimple
+Soot finished on Wed Aug 02 00:02:50 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 37 (37)
+number-of-methods = 4
+classfile = org.joda.time.chrono.AssembledChronology$Fields
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.GJChronology$ImpreciseCutoverField
+Soot started on Wed Aug 02 00:02:50 CDT 2017
+Transforming org.joda.time.chrono.GJChronology$ImpreciseCutoverField... 
+Writing to sootOutput/org.joda.time.chrono.GJChronology$ImpreciseCutoverField.shimple
+Soot finished on Wed Aug 02 00:02:51 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 92 (20)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 156 (19)
+number-of-methods = 10
+classfile = org.joda.time.chrono.GJChronology$ImpreciseCutoverField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.BuddhistChronology
+Soot started on Wed Aug 02 00:02:51 CDT 2017
+Transforming org.joda.time.chrono.BuddhistChronology... 
+Writing to sootOutput/org.joda.time.chrono.BuddhistChronology.shimple
+Soot finished on Wed Aug 02 00:02:52 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 13 (1)
+if-ret-distance = 39 (9)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 67 (5)
+number-of-methods = 12
+classfile = org.joda.time.chrono.BuddhistChronology
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.BasicSingleEraDateTimeField
+Soot started on Wed Aug 02 00:02:52 CDT 2017
+Transforming org.joda.time.chrono.BasicSingleEraDateTimeField... 
+Writing to sootOutput/org.joda.time.chrono.BasicSingleEraDateTimeField.shimple
+Soot finished on Wed Aug 02 00:02:53 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 5 (3)
+if-throw-distance = 10 (2)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 16
+classfile = org.joda.time.chrono.BasicSingleEraDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.GregorianChronology
+Soot started on Wed Aug 02 00:02:53 CDT 2017
+Transforming org.joda.time.chrono.GregorianChronology... 
+Writing to sootOutput/org.joda.time.chrono.GregorianChronology.shimple
+Soot finished on Wed Aug 02 00:02:54 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 3 (1)
+if-ret-distance = 136 (14)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 18 (10)
+number-of-methods = 25
+classfile = org.joda.time.chrono.GregorianChronology
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.LimitChronology
+Soot started on Wed Aug 02 00:02:54 CDT 2017
+Transforming org.joda.time.chrono.LimitChronology... 
+Writing to sootOutput/org.joda.time.chrono.LimitChronology.shimple
+Soot finished on Wed Aug 02 00:02:55 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 82 (12)
+if-ret-distance = 261 (40)
+if-throw-distance = 55 (9)
+pure-Veritesting-regions-size = 18 (13)
+number-of-methods = 16
+classfile = org.joda.time.chrono.LimitChronology
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.ZonedChronology$ZonedDateTimeField
+Soot started on Wed Aug 02 00:02:55 CDT 2017
+Transforming org.joda.time.chrono.ZonedChronology$ZonedDateTimeField... 
+Writing to sootOutput/org.joda.time.chrono.ZonedChronology$ZonedDateTimeField.shimple
+Soot finished on Wed Aug 02 00:02:56 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 13 (1)
+if-ret-distance = 112 (20)
+if-throw-distance = 27 (4)
+pure-Veritesting-regions-size = 5 (5)
+number-of-methods = 35
+classfile = org.joda.time.chrono.ZonedChronology$ZonedDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.LimitChronology$LimitDurationField
+Soot started on Wed Aug 02 00:02:56 CDT 2017
+Transforming org.joda.time.chrono.LimitChronology$LimitDurationField... 
+Writing to sootOutput/org.joda.time.chrono.LimitChronology$LimitDurationField.shimple
+Soot finished on Wed Aug 02 00:02:56 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 9
+classfile = org.joda.time.chrono.LimitChronology$LimitDurationField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.BasicDayOfMonthDateTimeField
+Soot started on Wed Aug 02 00:02:56 CDT 2017
+Transforming org.joda.time.chrono.BasicDayOfMonthDateTimeField... 
+Writing to sootOutput/org.joda.time.chrono.BasicDayOfMonthDateTimeField.shimple
+Soot finished on Wed Aug 02 00:02:57 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 121 (18)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 10 (2)
+number-of-methods = 10
+classfile = org.joda.time.chrono.BasicDayOfMonthDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.BasicChronology
+Soot started on Wed Aug 02 00:02:57 CDT 2017
+Transforming org.joda.time.chrono.BasicChronology... 
+Writing to sootOutput/org.joda.time.chrono.BasicChronology.shimple
+Soot finished on Wed Aug 02 00:02:58 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 6 (3)
+if-ret-distance = 155 (34)
+if-throw-distance = 25 (3)
+pure-Veritesting-regions-size = 39 (11)
+number-of-methods = 38
+classfile = org.joda.time.chrono.BasicChronology
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.ISOYearOfEraDateTimeField
+Soot started on Wed Aug 02 00:02:58 CDT 2017
+Transforming org.joda.time.chrono.ISOYearOfEraDateTimeField... 
+Writing to sootOutput/org.joda.time.chrono.ISOYearOfEraDateTimeField.shimple
+Soot finished on Wed Aug 02 00:02:59 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 2 (2)
+number-of-methods = 17
+classfile = org.joda.time.chrono.ISOYearOfEraDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.BasicChronology$HalfdayField
+Soot started on Wed Aug 02 00:02:59 CDT 2017
+Transforming org.joda.time.chrono.BasicChronology$HalfdayField... 
+Writing to sootOutput/org.joda.time.chrono.BasicChronology$HalfdayField.shimple
+Soot finished on Wed Aug 02 00:03:00 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 4
+classfile = org.joda.time.chrono.BasicChronology$HalfdayField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.BasicGJChronology
+Soot started on Wed Aug 02 00:03:00 CDT 2017
+Transforming org.joda.time.chrono.BasicGJChronology... 
+Writing to sootOutput/org.joda.time.chrono.BasicGJChronology.shimple
+Soot finished on Wed Aug 02 00:03:01 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 16 (4)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 385 (40)
+number-of-methods = 9
+classfile = org.joda.time.chrono.BasicGJChronology
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.BasicDayOfYearDateTimeField
+Soot started on Wed Aug 02 00:03:01 CDT 2017
+Transforming org.joda.time.chrono.BasicDayOfYearDateTimeField... 
+Writing to sootOutput/org.joda.time.chrono.BasicDayOfYearDateTimeField.shimple
+Soot finished on Wed Aug 02 00:03:01 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 69 (11)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 3 (2)
+number-of-methods = 10
+classfile = org.joda.time.chrono.BasicDayOfYearDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.BasicWeekyearDateTimeField
+Soot started on Wed Aug 02 00:03:01 CDT 2017
+Transforming org.joda.time.chrono.BasicWeekyearDateTimeField... 
+Writing to sootOutput/org.joda.time.chrono.BasicWeekyearDateTimeField.shimple
+Soot finished on Wed Aug 02 00:03:02 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 56 (6)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 16 (9)
+number-of-methods = 17
+classfile = org.joda.time.chrono.BasicWeekyearDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.BasicMonthOfYearDateTimeField
+Soot started on Wed Aug 02 00:03:02 CDT 2017
+Transforming org.joda.time.chrono.BasicMonthOfYearDateTimeField... 
+Writing to sootOutput/org.joda.time.chrono.BasicMonthOfYearDateTimeField.shimple
+Soot finished on Wed Aug 02 00:03:03 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 328 (24)
+if-throw-distance = 111 (4)
+pure-Veritesting-regions-size = 93 (19)
+number-of-methods = 18
+classfile = org.joda.time.chrono.BasicMonthOfYearDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.GJEraDateTimeField
+Soot started on Wed Aug 02 00:03:03 CDT 2017
+Transforming org.joda.time.chrono.GJEraDateTimeField... 
+Writing to sootOutput/org.joda.time.chrono.GJEraDateTimeField.shimple
+Soot finished on Wed Aug 02 00:03:04 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 17 (8)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 17
+classfile = org.joda.time.chrono.GJEraDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.ISOChronology$Stub
+Soot started on Wed Aug 02 00:03:04 CDT 2017
+Transforming org.joda.time.chrono.ISOChronology$Stub... 
+Writing to sootOutput/org.joda.time.chrono.ISOChronology$Stub.shimple
+Soot finished on Wed Aug 02 00:03:05 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 4
+classfile = org.joda.time.chrono.ISOChronology$Stub
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.AssembledChronology
+Soot started on Wed Aug 02 00:03:05 CDT 2017
+Transforming org.joda.time.chrono.AssembledChronology... 
+Writing to sootOutput/org.joda.time.chrono.AssembledChronology.shimple
+Soot finished on Wed Aug 02 00:03:07 CDT 2017
+Soot has run for 0 min. 2 sec.
+if-iv-distance = 2 (1)
+if-ret-distance = 51 (17)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 60 (44)
+number-of-methods = 44
+classfile = org.joda.time.chrono.AssembledChronology
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.EthiopicChronology
+Soot started on Wed Aug 02 00:03:07 CDT 2017
+Transforming org.joda.time.chrono.EthiopicChronology... 
+Writing to sootOutput/org.joda.time.chrono.EthiopicChronology.shimple
+Soot finished on Wed Aug 02 00:03:08 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 3 (1)
+if-ret-distance = 164 (14)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 27 (6)
+number-of-methods = 21
+classfile = org.joda.time.chrono.EthiopicChronology
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.BasicFixedMonthChronology
+Soot started on Wed Aug 02 00:03:08 CDT 2017
+Transforming org.joda.time.chrono.BasicFixedMonthChronology... 
+Writing to sootOutput/org.joda.time.chrono.BasicFixedMonthChronology.shimple
+Soot finished on Wed Aug 02 00:03:09 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 11 (7)
+number-of-methods = 15
+classfile = org.joda.time.chrono.BasicFixedMonthChronology
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.ZonedChronology$ZonedDurationField
+Soot started on Wed Aug 02 00:03:09 CDT 2017
+Transforming org.joda.time.chrono.ZonedChronology$ZonedDurationField... 
+Writing to sootOutput/org.joda.time.chrono.ZonedChronology$ZonedDurationField.shimple
+Soot finished on Wed Aug 02 00:03:10 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 40 (12)
+if-throw-distance = 23 (5)
+pure-Veritesting-regions-size = 12 (9)
+number-of-methods = 16
+classfile = org.joda.time.chrono.ZonedChronology$ZonedDurationField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.IslamicChronology$LeapYearPatternType
+Soot started on Wed Aug 02 00:03:10 CDT 2017
+Transforming org.joda.time.chrono.IslamicChronology$LeapYearPatternType... 
+Writing to sootOutput/org.joda.time.chrono.IslamicChronology$LeapYearPatternType.shimple
+Soot finished on Wed Aug 02 00:03:10 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 11 (4)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 2 (2)
+number-of-methods = 5
+classfile = org.joda.time.chrono.IslamicChronology$LeapYearPatternType
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.JulianChronology
+Soot started on Wed Aug 02 00:03:11 CDT 2017
+Transforming org.joda.time.chrono.JulianChronology... 
+Writing to sootOutput/org.joda.time.chrono.JulianChronology.shimple
+Soot finished on Wed Aug 02 00:03:11 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 3 (1)
+if-ret-distance = 142 (17)
+if-throw-distance = 11 (2)
+pure-Veritesting-regions-size = 20 (8)
+number-of-methods = 27
+classfile = org.joda.time.chrono.JulianChronology
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.LimitChronology$LimitException
+Soot started on Wed Aug 02 00:03:11 CDT 2017
+Transforming org.joda.time.chrono.LimitChronology$LimitException... 
+Writing to sootOutput/org.joda.time.chrono.LimitChronology$LimitException.shimple
+Soot finished on Wed Aug 02 00:03:12 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 15 (6)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 3
+classfile = org.joda.time.chrono.LimitChronology$LimitException
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.BasicChronology$YearInfo
+Soot started on Wed Aug 02 00:03:12 CDT 2017
+Transforming org.joda.time.chrono.BasicChronology$YearInfo... 
+Writing to sootOutput/org.joda.time.chrono.BasicChronology$YearInfo.shimple
+Soot finished on Wed Aug 02 00:03:13 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 1
+classfile = org.joda.time.chrono.BasicChronology$YearInfo
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.BasicYearDateTimeField
+Soot started on Wed Aug 02 00:03:13 CDT 2017
+Transforming org.joda.time.chrono.BasicYearDateTimeField... 
+Writing to sootOutput/org.joda.time.chrono.BasicYearDateTimeField.shimple
+Soot finished on Wed Aug 02 00:03:13 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 24 (8)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 3 (1)
+number-of-methods = 18
+classfile = org.joda.time.chrono.BasicYearDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.GJChronology
+Soot started on Wed Aug 02 00:03:13 CDT 2017
+Transforming org.joda.time.chrono.GJChronology... 
+Writing to sootOutput/org.joda.time.chrono.GJChronology.shimple
+Soot finished on Wed Aug 02 00:03:15 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 360 (26)
+if-ret-distance = 773 (40)
+if-throw-distance = 56 (8)
+pure-Veritesting-regions-size = 145 (13)
+number-of-methods = 29
+classfile = org.joda.time.chrono.GJChronology
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.GJLocaleSymbols
+Soot started on Wed Aug 02 00:03:15 CDT 2017
+Transforming org.joda.time.chrono.GJLocaleSymbols... 
+Writing to sootOutput/org.joda.time.chrono.GJLocaleSymbols.shimple
+Soot finished on Wed Aug 02 00:03:16 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 218 (23)
+if-ret-distance = 120 (17)
+if-throw-distance = 47 (8)
+pure-Veritesting-regions-size = 507 (38)
+number-of-methods = 24
+classfile = org.joda.time.chrono.GJLocaleSymbols
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.GJMonthOfYearDateTimeField
+Soot started on Wed Aug 02 00:03:16 CDT 2017
+Transforming org.joda.time.chrono.GJMonthOfYearDateTimeField... 
+Writing to sootOutput/org.joda.time.chrono.GJMonthOfYearDateTimeField.shimple
+Soot finished on Wed Aug 02 00:03:17 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 6
+classfile = org.joda.time.chrono.GJMonthOfYearDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.ISOChronology
+Soot started on Wed Aug 02 00:03:17 CDT 2017
+Transforming org.joda.time.chrono.ISOChronology... 
+Writing to sootOutput/org.joda.time.chrono.ISOChronology.shimple
+Soot finished on Wed Aug 02 00:03:18 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 44 (4)
+if-ret-distance = 124 (17)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 43 (5)
+number-of-methods = 12
+classfile = org.joda.time.chrono.ISOChronology
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.ZonedChronology
+Soot started on Wed Aug 02 00:03:18 CDT 2017
+Transforming org.joda.time.chrono.ZonedChronology... 
+Writing to sootOutput/org.joda.time.chrono.ZonedChronology.shimple
+Soot finished on Wed Aug 02 00:03:19 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 40 (4)
+if-ret-distance = 122 (27)
+if-throw-distance = 24 (6)
+pure-Veritesting-regions-size = 5 (5)
+number-of-methods = 16
+classfile = org.joda.time.chrono.ZonedChronology
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.IslamicChronology
+Soot started on Wed Aug 02 00:03:19 CDT 2017
+Transforming org.joda.time.chrono.IslamicChronology... 
+Writing to sootOutput/org.joda.time.chrono.IslamicChronology.shimple
+Soot finished on Wed Aug 02 00:03:20 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 3 (1)
+if-ret-distance = 290 (34)
+if-throw-distance = 31 (3)
+pure-Veritesting-regions-size = 186 (28)
+number-of-methods = 37
+classfile = org.joda.time.chrono.IslamicChronology
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.LenientChronology
+Soot started on Wed Aug 02 00:03:20 CDT 2017
+Transforming org.joda.time.chrono.LenientChronology... 
+Writing to sootOutput/org.joda.time.chrono.LenientChronology.shimple
+Soot finished on Wed Aug 02 00:03:21 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 36 (11)
+if-throw-distance = 3 (1)
+pure-Veritesting-regions-size = 12 (3)
+number-of-methods = 9
+classfile = org.joda.time.chrono.LenientChronology
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.GJChronology$CutoverField
+Soot started on Wed Aug 02 00:03:21 CDT 2017
+Transforming org.joda.time.chrono.GJChronology$CutoverField... 
+Writing to sootOutput/org.joda.time.chrono.GJChronology$CutoverField.shimple
+Soot finished on Wed Aug 02 00:03:22 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 191 (31)
+if-throw-distance = 52 (4)
+pure-Veritesting-regions-size = 278 (30)
+number-of-methods = 35
+classfile = org.joda.time.chrono.GJChronology$CutoverField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.StrictChronology
+Soot started on Wed Aug 02 00:03:22 CDT 2017
+Transforming org.joda.time.chrono.StrictChronology... 
+Writing to sootOutput/org.joda.time.chrono.StrictChronology.shimple
+Soot finished on Wed Aug 02 00:03:23 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 36 (11)
+if-throw-distance = 3 (1)
+pure-Veritesting-regions-size = 12 (3)
+number-of-methods = 9
+classfile = org.joda.time.chrono.StrictChronology
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.GJDayOfWeekDateTimeField
+Soot started on Wed Aug 02 00:03:23 CDT 2017
+Transforming org.joda.time.chrono.GJDayOfWeekDateTimeField... 
+Writing to sootOutput/org.joda.time.chrono.GJDayOfWeekDateTimeField.shimple
+Soot finished on Wed Aug 02 00:03:23 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 11
+classfile = org.joda.time.chrono.GJDayOfWeekDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.BasicWeekOfWeekyearDateTimeField
+Soot started on Wed Aug 02 00:03:23 CDT 2017
+Transforming org.joda.time.chrono.BasicWeekOfWeekyearDateTimeField... 
+Writing to sootOutput/org.joda.time.chrono.BasicWeekOfWeekyearDateTimeField.shimple
+Soot finished on Wed Aug 02 00:03:24 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 57 (11)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 1 (1)
+number-of-methods = 13
+classfile = org.joda.time.chrono.BasicWeekOfWeekyearDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.BaseChronology
+Soot started on Wed Aug 02 00:03:24 CDT 2017
+Transforming org.joda.time.chrono.BaseChronology... 
+Writing to sootOutput/org.joda.time.chrono.BaseChronology.shimple
+Soot finished on Wed Aug 02 00:03:25 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 41 (11)
+if-throw-distance = 107 (10)
+pure-Veritesting-regions-size = 603 (32)
+number-of-methods = 46
+classfile = org.joda.time.chrono.BaseChronology
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.CopticChronology
+Soot started on Wed Aug 02 00:03:25 CDT 2017
+Transforming org.joda.time.chrono.CopticChronology... 
+Writing to sootOutput/org.joda.time.chrono.CopticChronology.shimple
+Soot finished on Wed Aug 02 00:03:26 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 3 (1)
+if-ret-distance = 164 (14)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 27 (7)
+number-of-methods = 21
+classfile = org.joda.time.chrono.CopticChronology
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.GJChronology$LinkedDurationField
+Soot started on Wed Aug 02 00:03:26 CDT 2017
+Transforming org.joda.time.chrono.GJChronology$LinkedDurationField... 
+Writing to sootOutput/org.joda.time.chrono.GJChronology$LinkedDurationField.shimple
+Soot finished on Wed Aug 02 00:03:27 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 5
+classfile = org.joda.time.chrono.GJChronology$LinkedDurationField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.chrono.GJYearOfEraDateTimeField
+Soot started on Wed Aug 02 00:03:27 CDT 2017
+Transforming org.joda.time.chrono.GJYearOfEraDateTimeField... 
+Writing to sootOutput/org.joda.time.chrono.GJYearOfEraDateTimeField.shimple
+Soot finished on Wed Aug 02 00:03:27 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 2 (2)
+number-of-methods = 16
+classfile = org.joda.time.chrono.GJYearOfEraDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.DateMidnight
+Exception in thread "main" java.lang.RuntimeException: couldn't find class: org.joda.convert.FromString (is your soot-class-path set properly?)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:205)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:239)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:154)
+	at soot.SootResolver.resolveClass(SootResolver.java:124)
+	at soot.Scene.loadClass(Scene.java:448)
+	at soot.Scene.loadClassAndSupport(Scene.java:434)
+	at soot.Scene.loadNecessaryClass(Scene.java:1053)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1067)
+	at soot.Main.run(Main.java:167)
+	at soot.Main.main(Main.java:141)
+	at SimpleMain.main(SimpleMain.java:94)
+Soot started on Wed Aug 02 00:03:27 CDT 2017
+classfile = org.joda.time.DateMidnight
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.Period
+Exception in thread "main" java.lang.RuntimeException: couldn't find class: org.joda.convert.FromString (is your soot-class-path set properly?)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:205)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:239)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:154)
+	at soot.SootResolver.resolveClass(SootResolver.java:124)
+	at soot.Scene.loadClass(Scene.java:448)
+	at soot.Scene.loadClassAndSupport(Scene.java:434)
+	at soot.Scene.loadNecessaryClass(Scene.java:1053)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1067)
+	at soot.Main.run(Main.java:167)
+	at soot.Main.main(Main.java:141)
+	at SimpleMain.main(SimpleMain.java:94)
+Soot started on Wed Aug 02 00:03:28 CDT 2017
+classfile = org.joda.time.Period
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.DateTimeUtils$OffsetMillisProvider
+Soot started on Wed Aug 02 00:03:29 CDT 2017
+Transforming org.joda.time.DateTimeUtils$OffsetMillisProvider... 
+Writing to sootOutput/org.joda.time.DateTimeUtils$OffsetMillisProvider.shimple
+Soot finished on Wed Aug 02 00:03:29 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 2
+classfile = org.joda.time.DateTimeUtils$OffsetMillisProvider
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.ReadableDateTime
+Soot started on Wed Aug 02 00:03:29 CDT 2017
+Transforming org.joda.time.ReadableDateTime... 
+Writing to sootOutput/org.joda.time.ReadableDateTime.shimple
+Soot finished on Wed Aug 02 00:03:30 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.joda.time.ReadableDateTime
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.DateTimeUtils$MillisProvider
+Soot started on Wed Aug 02 00:03:30 CDT 2017
+Transforming org.joda.time.DateTimeUtils$MillisProvider... 
+Writing to sootOutput/org.joda.time.DateTimeUtils$MillisProvider.shimple
+Soot finished on Wed Aug 02 00:03:30 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.joda.time.DateTimeUtils$MillisProvider
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.DateTime
+Exception in thread "main" java.lang.RuntimeException: couldn't find class: org.joda.convert.FromString (is your soot-class-path set properly?)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:205)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:239)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:154)
+	at soot.SootResolver.resolveClass(SootResolver.java:124)
+	at soot.Scene.loadClass(Scene.java:448)
+	at soot.Scene.loadClassAndSupport(Scene.java:434)
+	at soot.Scene.loadNecessaryClass(Scene.java:1053)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1067)
+	at soot.Main.run(Main.java:167)
+	at soot.Main.main(Main.java:141)
+	at SimpleMain.main(SimpleMain.java:94)
+Soot started on Wed Aug 02 00:03:31 CDT 2017
+classfile = org.joda.time.DateTime
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.YearMonthDay
+Soot started on Wed Aug 02 00:03:31 CDT 2017
+Transforming org.joda.time.YearMonthDay... 
+Writing to sootOutput/org.joda.time.YearMonthDay.shimple
+Soot finished on Wed Aug 02 00:03:32 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 5 (1)
+if-ret-distance = 117 (15)
+if-throw-distance = 6 (2)
+pure-Veritesting-regions-size = 63 (6)
+number-of-methods = 52
+classfile = org.joda.time.YearMonthDay
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.DurationFieldType$StandardDurationFieldType
+Soot started on Wed Aug 02 00:03:32 CDT 2017
+Transforming org.joda.time.DurationFieldType$StandardDurationFieldType... 
+Writing to sootOutput/org.joda.time.DurationFieldType$StandardDurationFieldType.shimple
+Soot finished on Wed Aug 02 00:03:33 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 27 (9)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 1 (1)
+number-of-methods = 5
+classfile = org.joda.time.DurationFieldType$StandardDurationFieldType
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.Partial$Property
+Soot started on Wed Aug 02 00:03:33 CDT 2017
+Transforming org.joda.time.Partial$Property... 
+Writing to sootOutput/org.joda.time.Partial$Property.shimple
+Soot finished on Wed Aug 02 00:03:34 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 12
+classfile = org.joda.time.Partial$Property
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.YearMonthDay$Property
+Soot started on Wed Aug 02 00:03:34 CDT 2017
+Transforming org.joda.time.YearMonthDay$Property... 
+Writing to sootOutput/org.joda.time.YearMonthDay$Property.shimple
+Soot finished on Wed Aug 02 00:03:34 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 12
+classfile = org.joda.time.YearMonthDay$Property
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.Partial
+Soot started on Wed Aug 02 00:03:35 CDT 2017
+Transforming org.joda.time.Partial... 
+Writing to sootOutput/org.joda.time.Partial.shimple
+Soot finished on Wed Aug 02 00:03:36 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 892 (41)
+if-ret-distance = 551 (61)
+if-throw-distance = 32 (9)
+pure-Veritesting-regions-size = 199 (14)
+number-of-methods = 33
+classfile = org.joda.time.Partial
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.LocalTime$Property
+Soot started on Wed Aug 02 00:03:36 CDT 2017
+Transforming org.joda.time.LocalTime$Property... 
+Writing to sootOutput/org.joda.time.LocalTime$Property.shimple
+Soot finished on Wed Aug 02 00:03:37 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 3 (1)
+if-throw-distance = 3 (1)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 21
+classfile = org.joda.time.LocalTime$Property
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.PeriodType
+Soot started on Wed Aug 02 00:03:37 CDT 2017
+Transforming org.joda.time.PeriodType... 
+Writing to sootOutput/org.joda.time.PeriodType.shimple
+Soot finished on Wed Aug 02 00:03:39 CDT 2017
+Soot has run for 0 min. 2 sec.
+if-iv-distance = 1054 (34)
+if-ret-distance = 220 (22)
+if-throw-distance = 118 (10)
+pure-Veritesting-regions-size = 748 (45)
+number-of-methods = 40
+classfile = org.joda.time.PeriodType
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.Interval
+Soot started on Wed Aug 02 00:03:40 CDT 2017
+Transforming org.joda.time.Interval... 
+Writing to sootOutput/org.joda.time.Interval.shimple
+Soot finished on Wed Aug 02 00:03:40 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 91 (23)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 6 (4)
+number-of-methods = 24
+classfile = org.joda.time.Interval
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.LocalDateTime
+Exception in thread "main" java.lang.RuntimeException: couldn't find class: org.joda.convert.ToString (is your soot-class-path set properly?)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:205)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:239)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:154)
+	at soot.SootResolver.resolveClass(SootResolver.java:124)
+	at soot.Scene.loadClass(Scene.java:448)
+	at soot.Scene.loadClassAndSupport(Scene.java:434)
+	at soot.Scene.loadNecessaryClass(Scene.java:1053)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1067)
+	at soot.Main.run(Main.java:167)
+	at soot.Main.main(Main.java:141)
+	at SimpleMain.main(SimpleMain.java:94)
+Soot started on Wed Aug 02 00:03:40 CDT 2017
+classfile = org.joda.time.LocalDateTime
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.Chronology
+Soot started on Wed Aug 02 00:03:41 CDT 2017
+Transforming org.joda.time.Chronology... 
+Writing to sootOutput/org.joda.time.Chronology.shimple
+Soot finished on Wed Aug 02 00:03:42 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 1
+classfile = org.joda.time.Chronology
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.IllegalFieldValueException
+Soot started on Wed Aug 02 00:03:42 CDT 2017
+Transforming org.joda.time.IllegalFieldValueException... 
+Writing to sootOutput/org.joda.time.IllegalFieldValueException.shimple
+Soot finished on Wed Aug 02 00:03:42 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 33 (13)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 25 (4)
+number-of-methods = 19
+classfile = org.joda.time.IllegalFieldValueException
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.YearMonth
+Exception in thread "main" java.lang.RuntimeException: couldn't find class: org.joda.convert.ToString (is your soot-class-path set properly?)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:205)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:239)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:154)
+	at soot.SootResolver.resolveClass(SootResolver.java:124)
+	at soot.Scene.loadClass(Scene.java:448)
+	at soot.Scene.loadClassAndSupport(Scene.java:434)
+	at soot.Scene.loadNecessaryClass(Scene.java:1053)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1067)
+	at soot.Main.run(Main.java:167)
+	at soot.Main.main(Main.java:141)
+	at SimpleMain.main(SimpleMain.java:94)
+Soot started on Wed Aug 02 00:03:43 CDT 2017
+classfile = org.joda.time.YearMonth
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.MutableDateTime
+Exception in thread "main" java.lang.RuntimeException: couldn't find class: org.joda.convert.ToString (is your soot-class-path set properly?)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:205)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:239)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:154)
+	at soot.SootResolver.resolveClass(SootResolver.java:124)
+	at soot.Scene.loadClass(Scene.java:448)
+	at soot.Scene.loadClassAndSupport(Scene.java:434)
+	at soot.Scene.loadNecessaryClass(Scene.java:1053)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1067)
+	at soot.Main.run(Main.java:167)
+	at soot.Main.main(Main.java:141)
+	at SimpleMain.main(SimpleMain.java:94)
+Soot started on Wed Aug 02 00:03:43 CDT 2017
+classfile = org.joda.time.MutableDateTime
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.MutableDateTime$Property
+Soot started on Wed Aug 02 00:03:44 CDT 2017
+Transforming org.joda.time.MutableDateTime$Property... 
+Writing to sootOutput/org.joda.time.MutableDateTime$Property.shimple
+Soot finished on Wed Aug 02 00:03:44 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 18
+classfile = org.joda.time.MutableDateTime$Property
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.Minutes
+Exception in thread "main" java.lang.RuntimeException: couldn't find class: org.joda.convert.ToString (is your soot-class-path set properly?)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:205)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:239)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:154)
+	at soot.SootResolver.resolveClass(SootResolver.java:124)
+	at soot.Scene.loadClass(Scene.java:448)
+	at soot.Scene.loadClassAndSupport(Scene.java:434)
+	at soot.Scene.loadNecessaryClass(Scene.java:1053)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1067)
+	at soot.Main.run(Main.java:167)
+	at soot.Main.main(Main.java:141)
+	at SimpleMain.main(SimpleMain.java:94)
+Soot started on Wed Aug 02 00:03:45 CDT 2017
+classfile = org.joda.time.Minutes
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.Duration
+Exception in thread "main" java.lang.RuntimeException: couldn't find class: org.joda.convert.FromString (is your soot-class-path set properly?)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:205)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:239)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:154)
+	at soot.SootResolver.resolveClass(SootResolver.java:124)
+	at soot.Scene.loadClass(Scene.java:448)
+	at soot.Scene.loadClassAndSupport(Scene.java:434)
+	at soot.Scene.loadNecessaryClass(Scene.java:1053)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1067)
+	at soot.Main.run(Main.java:167)
+	at soot.Main.main(Main.java:141)
+	at SimpleMain.main(SimpleMain.java:94)
+Soot started on Wed Aug 02 00:03:45 CDT 2017
+classfile = org.joda.time.Duration
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.DateTimeZone$1
+Soot started on Wed Aug 02 00:03:46 CDT 2017
+Transforming org.joda.time.DateTimeZone$1... 
+Writing to sootOutput/org.joda.time.DateTimeZone$1.shimple
+Soot finished on Wed Aug 02 00:03:46 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 5
+classfile = org.joda.time.DateTimeZone$1
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.DateTimeUtils$SystemMillisProvider
+Soot started on Wed Aug 02 00:03:46 CDT 2017
+Transforming org.joda.time.DateTimeUtils$SystemMillisProvider... 
+Writing to sootOutput/org.joda.time.DateTimeUtils$SystemMillisProvider.shimple
+Soot finished on Wed Aug 02 00:03:47 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 2
+classfile = org.joda.time.DateTimeUtils$SystemMillisProvider
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.base.AbstractPeriod
+Exception in thread "main" java.lang.RuntimeException: couldn't find class: org.joda.convert.ToString (is your soot-class-path set properly?)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:205)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:239)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:154)
+	at soot.SootResolver.resolveClass(SootResolver.java:124)
+	at soot.Scene.loadClass(Scene.java:448)
+	at soot.Scene.loadClassAndSupport(Scene.java:434)
+	at soot.Scene.loadNecessaryClass(Scene.java:1053)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1067)
+	at soot.Main.run(Main.java:167)
+	at soot.Main.main(Main.java:141)
+	at SimpleMain.main(SimpleMain.java:94)
+Soot started on Wed Aug 02 00:03:47 CDT 2017
+classfile = org.joda.time.base.AbstractPeriod
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.base.BasePartial
+Soot started on Wed Aug 02 00:03:48 CDT 2017
+Transforming org.joda.time.base.BasePartial... 
+Writing to sootOutput/org.joda.time.base.BasePartial.shimple
+Soot finished on Wed Aug 02 00:03:48 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 11 (4)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 16
+classfile = org.joda.time.base.BasePartial
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.base.BaseInterval
+Soot started on Wed Aug 02 00:03:49 CDT 2017
+Transforming org.joda.time.base.BaseInterval... 
+Writing to sootOutput/org.joda.time.base.BaseInterval.shimple
+Soot finished on Wed Aug 02 00:03:49 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 44 (7)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 19 (4)
+number-of-methods = 11
+classfile = org.joda.time.base.BaseInterval
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.base.AbstractInstant
+Exception in thread "main" java.lang.RuntimeException: couldn't find class: org.joda.convert.ToString (is your soot-class-path set properly?)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:205)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:239)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:154)
+	at soot.SootResolver.resolveClass(SootResolver.java:124)
+	at soot.Scene.loadClass(Scene.java:448)
+	at soot.Scene.loadClassAndSupport(Scene.java:434)
+	at soot.Scene.loadNecessaryClass(Scene.java:1053)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1067)
+	at soot.Main.run(Main.java:167)
+	at soot.Main.main(Main.java:141)
+	at SimpleMain.main(SimpleMain.java:94)
+Soot started on Wed Aug 02 00:03:49 CDT 2017
+classfile = org.joda.time.base.AbstractInstant
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.base.BaseDuration
+Soot started on Wed Aug 02 00:03:50 CDT 2017
+Transforming org.joda.time.base.BaseDuration... 
+Writing to sootOutput/org.joda.time.base.BaseDuration.shimple
+Soot finished on Wed Aug 02 00:03:51 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 5 (1)
+number-of-methods = 15
+classfile = org.joda.time.base.BaseDuration
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.base.BasePeriod
+Soot started on Wed Aug 02 00:03:51 CDT 2017
+Transforming org.joda.time.base.BasePeriod... 
+Writing to sootOutput/org.joda.time.base.BasePeriod.shimple
+Soot finished on Wed Aug 02 00:03:52 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 15 (4)
+if-ret-distance = 87 (18)
+if-throw-distance = 191 (21)
+pure-Veritesting-regions-size = 220 (19)
+number-of-methods = 31
+classfile = org.joda.time.base.BasePeriod
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.base.AbstractPartial
+Soot started on Wed Aug 02 00:03:52 CDT 2017
+Transforming org.joda.time.base.AbstractPartial... 
+Writing to sootOutput/org.joda.time.base.AbstractPartial.shimple
+Soot finished on Wed Aug 02 00:03:53 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 160 (39)
+if-throw-distance = 51 (9)
+pure-Veritesting-regions-size = 431 (26)
+number-of-methods = 21
+classfile = org.joda.time.base.AbstractPartial
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.base.BaseSingleFieldPeriod
+Soot started on Wed Aug 02 00:03:53 CDT 2017
+Transforming org.joda.time.base.BaseSingleFieldPeriod... 
+Writing to sootOutput/org.joda.time.base.BaseSingleFieldPeriod.shimple
+Soot finished on Wed Aug 02 00:03:53 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 134 (26)
+if-throw-distance = 113 (17)
+pure-Veritesting-regions-size = 24 (6)
+number-of-methods = 17
+classfile = org.joda.time.base.BaseSingleFieldPeriod
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.base.AbstractDuration
+Exception in thread "main" java.lang.RuntimeException: couldn't find class: org.joda.convert.ToString (is your soot-class-path set properly?)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:205)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:239)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:154)
+	at soot.SootResolver.resolveClass(SootResolver.java:124)
+	at soot.Scene.loadClass(Scene.java:448)
+	at soot.Scene.loadClassAndSupport(Scene.java:434)
+	at soot.Scene.loadNecessaryClass(Scene.java:1053)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1067)
+	at soot.Main.run(Main.java:167)
+	at soot.Main.main(Main.java:141)
+	at SimpleMain.main(SimpleMain.java:94)
+Soot started on Wed Aug 02 00:03:54 CDT 2017
+classfile = org.joda.time.base.AbstractDuration
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.base.AbstractInterval
+Soot started on Wed Aug 02 00:03:54 CDT 2017
+Transforming org.joda.time.base.AbstractInterval... 
+Writing to sootOutput/org.joda.time.base.AbstractInterval.shimple
+Soot finished on Wed Aug 02 00:03:55 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 68 (20)
+if-throw-distance = 3 (1)
+pure-Veritesting-regions-size = 18 (18)
+number-of-methods = 27
+classfile = org.joda.time.base.AbstractInterval
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.base.BaseDateTime
+Soot started on Wed Aug 02 00:03:55 CDT 2017
+Transforming org.joda.time.base.BaseDateTime... 
+Writing to sootOutput/org.joda.time.base.BaseDateTime.shimple
+Soot finished on Wed Aug 02 00:03:56 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 17
+classfile = org.joda.time.base.BaseDateTime
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.base.BaseLocal
+Soot started on Wed Aug 02 00:03:56 CDT 2017
+Transforming org.joda.time.base.BaseLocal... 
+Writing to sootOutput/org.joda.time.base.BaseLocal.shimple
+Soot finished on Wed Aug 02 00:03:56 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 1
+classfile = org.joda.time.base.BaseLocal
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.base.AbstractDateTime
+Soot started on Wed Aug 02 00:03:57 CDT 2017
+Transforming org.joda.time.base.AbstractDateTime... 
+Writing to sootOutput/org.joda.time.base.AbstractDateTime.shimple
+Soot finished on Wed Aug 02 00:03:57 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 16 (5)
+if-throw-distance = 3 (1)
+pure-Veritesting-regions-size = 1 (1)
+number-of-methods = 24
+classfile = org.joda.time.base.AbstractDateTime
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.base.BasePeriod$1
+Soot started on Wed Aug 02 00:03:57 CDT 2017
+Transforming org.joda.time.base.BasePeriod$1... 
+Writing to sootOutput/org.joda.time.base.BasePeriod$1.shimple
+Soot finished on Wed Aug 02 00:03:58 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 3
+classfile = org.joda.time.base.BasePeriod$1
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.LocalDate
+Exception in thread "main" java.lang.RuntimeException: couldn't find class: org.joda.convert.ToString (is your soot-class-path set properly?)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:205)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:239)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:154)
+	at soot.SootResolver.resolveClass(SootResolver.java:124)
+	at soot.Scene.loadClass(Scene.java:448)
+	at soot.Scene.loadClassAndSupport(Scene.java:434)
+	at soot.Scene.loadNecessaryClass(Scene.java:1053)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1067)
+	at soot.Main.run(Main.java:167)
+	at soot.Main.main(Main.java:141)
+	at SimpleMain.main(SimpleMain.java:94)
+Soot started on Wed Aug 02 00:03:58 CDT 2017
+classfile = org.joda.time.LocalDate
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.ReadWritablePeriod
+Soot started on Wed Aug 02 00:03:59 CDT 2017
+Transforming org.joda.time.ReadWritablePeriod... 
+Writing to sootOutput/org.joda.time.ReadWritablePeriod.shimple
+Soot finished on Wed Aug 02 00:03:59 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.joda.time.ReadWritablePeriod
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.ReadableInterval
+Soot started on Wed Aug 02 00:03:59 CDT 2017
+Transforming org.joda.time.ReadableInterval... 
+Writing to sootOutput/org.joda.time.ReadableInterval.shimple
+Soot finished on Wed Aug 02 00:04:00 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.joda.time.ReadableInterval
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.DateTimeFieldType$StandardDateTimeFieldType
+Soot started on Wed Aug 02 00:04:00 CDT 2017
+Transforming org.joda.time.DateTimeFieldType$StandardDateTimeFieldType... 
+Writing to sootOutput/org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.shimple
+Soot finished on Wed Aug 02 00:04:00 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 27 (9)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 1 (1)
+number-of-methods = 7
+classfile = org.joda.time.DateTimeFieldType$StandardDateTimeFieldType
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.TimeOfDay$Property
+Soot started on Wed Aug 02 00:04:01 CDT 2017
+Transforming org.joda.time.TimeOfDay$Property... 
+Writing to sootOutput/org.joda.time.TimeOfDay$Property.shimple
+Soot finished on Wed Aug 02 00:04:01 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 13
+classfile = org.joda.time.TimeOfDay$Property
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.DateMidnight$Property
+Soot started on Wed Aug 02 00:04:01 CDT 2017
+Transforming org.joda.time.DateMidnight$Property... 
+Writing to sootOutput/org.joda.time.DateMidnight$Property.shimple
+Soot finished on Wed Aug 02 00:04:02 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 20
+classfile = org.joda.time.DateMidnight$Property
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.JodaTimePermission
+Soot started on Wed Aug 02 00:04:02 CDT 2017
+Transforming org.joda.time.JodaTimePermission... 
+Writing to sootOutput/org.joda.time.JodaTimePermission.shimple
+Soot finished on Wed Aug 02 00:04:03 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 1
+classfile = org.joda.time.JodaTimePermission
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.Years
+Exception in thread "main" java.lang.RuntimeException: couldn't find class: org.joda.convert.ToString (is your soot-class-path set properly?)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:205)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:239)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:154)
+	at soot.SootResolver.resolveClass(SootResolver.java:124)
+	at soot.Scene.loadClass(Scene.java:448)
+	at soot.Scene.loadClassAndSupport(Scene.java:434)
+	at soot.Scene.loadNecessaryClass(Scene.java:1053)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1067)
+	at soot.Main.run(Main.java:167)
+	at soot.Main.main(Main.java:141)
+	at SimpleMain.main(SimpleMain.java:94)
+Soot started on Wed Aug 02 00:04:03 CDT 2017
+classfile = org.joda.time.Years
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.DateTimeZone$Stub
+Soot started on Wed Aug 02 00:04:03 CDT 2017
+Transforming org.joda.time.DateTimeZone$Stub... 
+Writing to sootOutput/org.joda.time.DateTimeZone$Stub.shimple
+Soot finished on Wed Aug 02 00:04:04 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 4
+classfile = org.joda.time.DateTimeZone$Stub
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.DurationFieldType
+Soot started on Wed Aug 02 00:04:04 CDT 2017
+Transforming org.joda.time.DurationFieldType... 
+Writing to sootOutput/org.joda.time.DurationFieldType.shimple
+Soot finished on Wed Aug 02 00:04:05 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 17
+classfile = org.joda.time.DurationFieldType
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.ReadablePeriod
+Soot started on Wed Aug 02 00:04:05 CDT 2017
+Transforming org.joda.time.ReadablePeriod... 
+Writing to sootOutput/org.joda.time.ReadablePeriod.shimple
+Soot finished on Wed Aug 02 00:04:05 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.joda.time.ReadablePeriod
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.Seconds
+Exception in thread "main" java.lang.RuntimeException: couldn't find class: org.joda.convert.ToString (is your soot-class-path set properly?)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:205)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:239)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:154)
+	at soot.SootResolver.resolveClass(SootResolver.java:124)
+	at soot.Scene.loadClass(Scene.java:448)
+	at soot.Scene.loadClassAndSupport(Scene.java:434)
+	at soot.Scene.loadNecessaryClass(Scene.java:1053)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1067)
+	at soot.Main.run(Main.java:167)
+	at soot.Main.main(Main.java:141)
+	at SimpleMain.main(SimpleMain.java:94)
+Soot started on Wed Aug 02 00:04:05 CDT 2017
+classfile = org.joda.time.Seconds
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.DateTimeConstants
+Soot started on Wed Aug 02 00:04:06 CDT 2017
+Transforming org.joda.time.DateTimeConstants... 
+Writing to sootOutput/org.joda.time.DateTimeConstants.shimple
+Soot finished on Wed Aug 02 00:04:06 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 1
+classfile = org.joda.time.DateTimeConstants
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.Months
+Exception in thread "main" java.lang.RuntimeException: couldn't find class: org.joda.convert.ToString (is your soot-class-path set properly?)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:205)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:239)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:154)
+	at soot.SootResolver.resolveClass(SootResolver.java:124)
+	at soot.Scene.loadClass(Scene.java:448)
+	at soot.Scene.loadClassAndSupport(Scene.java:434)
+	at soot.Scene.loadNecessaryClass(Scene.java:1053)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1067)
+	at soot.Main.run(Main.java:167)
+	at soot.Main.main(Main.java:141)
+	at SimpleMain.main(SimpleMain.java:94)
+Soot started on Wed Aug 02 00:04:07 CDT 2017
+classfile = org.joda.time.Months
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.DateTimeZone
+Exception in thread "main" java.lang.RuntimeException: couldn't find class: org.joda.convert.ToString (is your soot-class-path set properly?)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:205)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:239)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:154)
+	at soot.SootResolver.resolveClass(SootResolver.java:124)
+	at soot.Scene.loadClass(Scene.java:448)
+	at soot.Scene.loadClassAndSupport(Scene.java:434)
+	at soot.Scene.loadNecessaryClass(Scene.java:1053)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1067)
+	at soot.Main.run(Main.java:167)
+	at soot.Main.main(Main.java:141)
+	at SimpleMain.main(SimpleMain.java:94)
+Soot started on Wed Aug 02 00:04:07 CDT 2017
+classfile = org.joda.time.DateTimeZone
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.Days
+Exception in thread "main" java.lang.RuntimeException: couldn't find class: org.joda.convert.ToString (is your soot-class-path set properly?)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:205)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:239)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:154)
+	at soot.SootResolver.resolveClass(SootResolver.java:124)
+	at soot.Scene.loadClass(Scene.java:448)
+	at soot.Scene.loadClassAndSupport(Scene.java:434)
+	at soot.Scene.loadNecessaryClass(Scene.java:1053)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1067)
+	at soot.Main.run(Main.java:167)
+	at soot.Main.main(Main.java:141)
+	at SimpleMain.main(SimpleMain.java:94)
+Soot started on Wed Aug 02 00:04:08 CDT 2017
+classfile = org.joda.time.Days
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.Hours
+Exception in thread "main" java.lang.RuntimeException: couldn't find class: org.joda.convert.ToString (is your soot-class-path set properly?)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:205)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:239)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:154)
+	at soot.SootResolver.resolveClass(SootResolver.java:124)
+	at soot.Scene.loadClass(Scene.java:448)
+	at soot.Scene.loadClassAndSupport(Scene.java:434)
+	at soot.Scene.loadNecessaryClass(Scene.java:1053)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1067)
+	at soot.Main.run(Main.java:167)
+	at soot.Main.main(Main.java:141)
+	at SimpleMain.main(SimpleMain.java:94)
+Soot started on Wed Aug 02 00:04:08 CDT 2017
+classfile = org.joda.time.Hours
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.DateTimeParser
+Soot started on Wed Aug 02 00:04:09 CDT 2017
+Transforming org.joda.time.format.DateTimeParser... 
+Writing to sootOutput/org.joda.time.format.DateTimeParser.shimple
+Soot finished on Wed Aug 02 00:04:09 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.joda.time.format.DateTimeParser
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.PeriodFormatterBuilder$Separator
+Soot started on Wed Aug 02 00:04:09 CDT 2017
+Transforming org.joda.time.format.PeriodFormatterBuilder$Separator... 
+Writing to sootOutput/org.joda.time.format.PeriodFormatterBuilder$Separator.shimple
+Soot finished on Wed Aug 02 00:04:10 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 196 (30)
+if-ret-distance = 119 (11)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 139 (29)
+number-of-methods = 9
+classfile = org.joda.time.format.PeriodFormatterBuilder$Separator
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.PeriodFormatterBuilder$CompositeAffix
+Soot started on Wed Aug 02 00:04:10 CDT 2017
+Transforming org.joda.time.format.PeriodFormatterBuilder$CompositeAffix... 
+Writing to sootOutput/org.joda.time.format.PeriodFormatterBuilder$CompositeAffix.shimple
+Soot finished on Wed Aug 02 00:04:11 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 5 (2)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 2 (1)
+number-of-methods = 6
+classfile = org.joda.time.format.PeriodFormatterBuilder$CompositeAffix
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.DateTimeFormatterBuilder$FixedNumber
+Soot started on Wed Aug 02 00:04:11 CDT 2017
+Transforming org.joda.time.format.DateTimeFormatterBuilder$FixedNumber... 
+Writing to sootOutput/org.joda.time.format.DateTimeFormatterBuilder$FixedNumber.shimple
+Soot finished on Wed Aug 02 00:04:12 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 47 (9)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 5 (3)
+number-of-methods = 2
+classfile = org.joda.time.format.DateTimeFormatterBuilder$FixedNumber
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.DateTimeFormat
+Soot started on Wed Aug 02 00:04:12 CDT 2017
+Transforming org.joda.time.format.DateTimeFormat... 
+Writing to sootOutput/org.joda.time.format.DateTimeFormat.shimple
+Soot finished on Wed Aug 02 00:04:13 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 110 (26)
+if-ret-distance = 169 (27)
+if-throw-distance = 74 (10)
+pure-Veritesting-regions-size = 67 (17)
+number-of-methods = 26
+classfile = org.joda.time.format.DateTimeFormat
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.ISOPeriodFormat
+Soot started on Wed Aug 02 00:04:13 CDT 2017
+Transforming org.joda.time.format.ISOPeriodFormat... 
+Writing to sootOutput/org.joda.time.format.ISOPeriodFormat.shimple
+Soot finished on Wed Aug 02 00:04:14 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 90 (5)
+number-of-methods = 6
+classfile = org.joda.time.format.ISOPeriodFormat
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.DateTimeFormatterBuilder$UnpaddedNumber
+Soot started on Wed Aug 02 00:04:14 CDT 2017
+Transforming org.joda.time.format.DateTimeFormatterBuilder$UnpaddedNumber... 
+Writing to sootOutput/org.joda.time.format.DateTimeFormatterBuilder$UnpaddedNumber.shimple
+Soot finished on Wed Aug 02 00:04:15 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 2 (2)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 6
+classfile = org.joda.time.format.DateTimeFormatterBuilder$UnpaddedNumber
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.ISODateTimeFormat$Constants
+Soot started on Wed Aug 02 00:04:15 CDT 2017
+Transforming org.joda.time.format.ISODateTimeFormat$Constants... 
+Writing to sootOutput/org.joda.time.format.ISODateTimeFormat$Constants.shimple
+Soot finished on Wed Aug 02 00:04:16 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 706 (118)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 110
+classfile = org.joda.time.format.ISODateTimeFormat$Constants
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.PeriodFormatterBuilder$Literal
+Soot started on Wed Aug 02 00:04:16 CDT 2017
+Transforming org.joda.time.format.PeriodFormatterBuilder$Literal... 
+Writing to sootOutput/org.joda.time.format.PeriodFormatterBuilder$Literal.shimple
+Soot finished on Wed Aug 02 00:04:17 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 6 (2)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 7
+classfile = org.joda.time.format.PeriodFormatterBuilder$Literal
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.FormatUtils
+Soot started on Wed Aug 02 00:04:17 CDT 2017
+Transforming org.joda.time.format.FormatUtils... 
+Writing to sootOutput/org.joda.time.format.FormatUtils.shimple
+Soot finished on Wed Aug 02 00:04:18 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 1424 (170)
+if-ret-distance = 514 (48)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 66 (11)
+number-of-methods = 13
+classfile = org.joda.time.format.FormatUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId
+Soot started on Wed Aug 02 00:04:18 CDT 2017
+Transforming org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId... 
+Writing to sootOutput/org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId.shimple
+Soot finished on Wed Aug 02 00:04:19 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 2 (1)
+if-ret-distance = 7 (2)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 238 (21)
+number-of-methods = 11
+classfile = org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.DateTimePrinter
+Soot started on Wed Aug 02 00:04:19 CDT 2017
+Transforming org.joda.time.format.DateTimePrinter... 
+Writing to sootOutput/org.joda.time.format.DateTimePrinter.shimple
+Soot finished on Wed Aug 02 00:04:19 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.joda.time.format.DateTimePrinter
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.PeriodFormat
+Soot started on Wed Aug 02 00:04:19 CDT 2017
+Transforming org.joda.time.format.PeriodFormat... 
+Writing to sootOutput/org.joda.time.format.PeriodFormat.shimple
+Soot finished on Wed Aug 02 00:04:20 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 69 (1)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 5
+classfile = org.joda.time.format.PeriodFormat
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.DateTimeFormatterBuilder$MatchingParser
+Soot started on Wed Aug 02 00:04:20 CDT 2017
+Transforming org.joda.time.format.DateTimeFormatterBuilder$MatchingParser... 
+Writing to sootOutput/org.joda.time.format.DateTimeFormatterBuilder$MatchingParser.shimple
+Soot finished on Wed Aug 02 00:04:21 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 40 (10)
+if-ret-distance = 83 (18)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 142 (19)
+number-of-methods = 3
+classfile = org.joda.time.format.DateTimeFormatterBuilder$MatchingParser
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.PeriodFormatterBuilder$PeriodFieldAffix
+Soot started on Wed Aug 02 00:04:21 CDT 2017
+Transforming org.joda.time.format.PeriodFormatterBuilder$PeriodFieldAffix... 
+Writing to sootOutput/org.joda.time.format.PeriodFormatterBuilder$PeriodFieldAffix.shimple
+Soot finished on Wed Aug 02 00:04:21 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.joda.time.format.PeriodFormatterBuilder$PeriodFieldAffix
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.PeriodFormatterBuilder$SimpleAffix
+Soot started on Wed Aug 02 00:04:22 CDT 2017
+Transforming org.joda.time.format.PeriodFormatterBuilder$SimpleAffix... 
+Writing to sootOutput/org.joda.time.format.PeriodFormatterBuilder$SimpleAffix.shimple
+Soot finished on Wed Aug 02 00:04:22 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 44 (11)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 6
+classfile = org.joda.time.format.PeriodFormatterBuilder$SimpleAffix
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.DateTimeFormat$StyleFormatter
+Soot started on Wed Aug 02 00:04:22 CDT 2017
+Transforming org.joda.time.format.DateTimeFormat$StyleFormatter... 
+Writing to sootOutput/org.joda.time.format.DateTimeFormat$StyleFormatter.shimple
+Soot finished on Wed Aug 02 00:04:23 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 4 (1)
+if-ret-distance = 13 (3)
+if-throw-distance = 8 (1)
+pure-Veritesting-regions-size = 4 (2)
+number-of-methods = 11
+classfile = org.joda.time.format.DateTimeFormat$StyleFormatter
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.PeriodPrinter
+Soot started on Wed Aug 02 00:04:23 CDT 2017
+Transforming org.joda.time.format.PeriodPrinter... 
+Writing to sootOutput/org.joda.time.format.PeriodPrinter.shimple
+Soot finished on Wed Aug 02 00:04:24 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.joda.time.format.PeriodPrinter
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.DateTimeFormatterBuilder
+Soot started on Wed Aug 02 00:04:24 CDT 2017
+Transforming org.joda.time.format.DateTimeFormatterBuilder... 
+Writing to sootOutput/org.joda.time.format.DateTimeFormatterBuilder.shimple
+Soot finished on Wed Aug 02 00:04:25 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 98 (18)
+if-ret-distance = 205 (44)
+if-throw-distance = 165 (36)
+pure-Veritesting-regions-size = 49 (15)
+number-of-methods = 75
+classfile = org.joda.time.format.DateTimeFormatterBuilder
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.DateTimeFormatterBuilder$Composite
+Soot started on Wed Aug 02 00:04:25 CDT 2017
+Transforming org.joda.time.format.DateTimeFormatterBuilder$Composite... 
+Writing to sootOutput/org.joda.time.format.DateTimeFormatterBuilder$Composite.shimple
+Soot finished on Wed Aug 02 00:04:26 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 532 (56)
+if-ret-distance = 120 (5)
+if-throw-distance = 15 (5)
+pure-Veritesting-regions-size = 419 (26)
+number-of-methods = 12
+classfile = org.joda.time.format.DateTimeFormatterBuilder$Composite
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.DateTimeParserBucket$SavedField
+Soot started on Wed Aug 02 00:04:26 CDT 2017
+Transforming org.joda.time.format.DateTimeParserBucket$SavedField... 
+Writing to sootOutput/org.joda.time.format.DateTimeParserBucket$SavedField.shimple
+Soot finished on Wed Aug 02 00:04:26 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 6 (2)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 6 (2)
+number-of-methods = 5
+classfile = org.joda.time.format.DateTimeParserBucket$SavedField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.DateTimeFormatterBuilder$Fraction
+Soot started on Wed Aug 02 00:04:26 CDT 2017
+Transforming org.joda.time.format.DateTimeFormatterBuilder$Fraction... 
+Writing to sootOutput/org.joda.time.format.DateTimeFormatterBuilder$Fraction.shimple
+Soot finished on Wed Aug 02 00:04:27 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 472 (38)
+if-ret-distance = 203 (12)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 282 (26)
+number-of-methods = 10
+classfile = org.joda.time.format.DateTimeFormatterBuilder$Fraction
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.DateTimeParserBucket$SavedState
+Soot started on Wed Aug 02 00:04:28 CDT 2017
+Transforming org.joda.time.format.DateTimeParserBucket$SavedState... 
+Writing to sootOutput/org.joda.time.format.DateTimeParserBucket$SavedState.shimple
+Soot finished on Wed Aug 02 00:04:28 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 14 (2)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 1 (1)
+number-of-methods = 2
+classfile = org.joda.time.format.DateTimeParserBucket$SavedState
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.PeriodFormatterBuilder$FieldFormatter
+Soot started on Wed Aug 02 00:04:28 CDT 2017
+Transforming org.joda.time.format.PeriodFormatterBuilder$FieldFormatter... 
+Writing to sootOutput/org.joda.time.format.PeriodFormatterBuilder$FieldFormatter.shimple
+Soot finished on Wed Aug 02 00:04:30 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 216 (20)
+if-ret-distance = 452 (60)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 230 (42)
+number-of-methods = 13
+classfile = org.joda.time.format.PeriodFormatterBuilder$FieldFormatter
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.DateTimeFormatterBuilder$StringLiteral
+Soot started on Wed Aug 02 00:04:30 CDT 2017
+Transforming org.joda.time.format.DateTimeFormatterBuilder$StringLiteral... 
+Writing to sootOutput/org.joda.time.format.DateTimeFormatterBuilder$StringLiteral.shimple
+Soot finished on Wed Aug 02 00:04:31 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 6 (2)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 8
+classfile = org.joda.time.format.DateTimeFormatterBuilder$StringLiteral
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.PeriodFormatterBuilder$Composite
+Soot started on Wed Aug 02 00:04:31 CDT 2017
+Transforming org.joda.time.format.PeriodFormatterBuilder$Composite... 
+Writing to sootOutput/org.joda.time.format.PeriodFormatterBuilder$Composite.shimple
+Soot finished on Wed Aug 02 00:04:32 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 359 (38)
+if-ret-distance = 16 (1)
+if-throw-distance = 3 (1)
+pure-Veritesting-regions-size = 433 (30)
+number-of-methods = 8
+classfile = org.joda.time.format.PeriodFormatterBuilder$Composite
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.DateTimeFormatter
+Soot started on Wed Aug 02 00:04:32 CDT 2017
+Transforming org.joda.time.format.DateTimeFormatter... 
+Writing to sootOutput/org.joda.time.format.DateTimeFormatter.shimple
+Soot finished on Wed Aug 02 00:04:33 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 96 (8)
+if-ret-distance = 268 (33)
+if-throw-distance = 75 (17)
+pure-Veritesting-regions-size = 69 (23)
+number-of-methods = 45
+classfile = org.joda.time.format.DateTimeFormatter
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.PeriodFormatter
+Soot started on Wed Aug 02 00:04:33 CDT 2017
+Transforming org.joda.time.format.PeriodFormatter... 
+Writing to sootOutput/org.joda.time.format.PeriodFormatter.shimple
+Soot finished on Wed Aug 02 00:04:34 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 50 (14)
+if-throw-distance = 24 (6)
+pure-Veritesting-regions-size = 2 (2)
+number-of-methods = 19
+classfile = org.joda.time.format.PeriodFormatter
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.PeriodParser
+Soot started on Wed Aug 02 00:04:34 CDT 2017
+Transforming org.joda.time.format.PeriodParser... 
+Writing to sootOutput/org.joda.time.format.PeriodParser.shimple
+Soot finished on Wed Aug 02 00:04:35 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.joda.time.format.PeriodParser
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.PeriodFormatterBuilder$PluralAffix
+Soot started on Wed Aug 02 00:04:35 CDT 2017
+Transforming org.joda.time.format.PeriodFormatterBuilder$PluralAffix... 
+Writing to sootOutput/org.joda.time.format.PeriodFormatterBuilder$PluralAffix.shimple
+Soot finished on Wed Aug 02 00:04:35 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 53 (14)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 9 (5)
+number-of-methods = 6
+classfile = org.joda.time.format.PeriodFormatterBuilder$PluralAffix
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.DateTimeFormatterBuilder$CharacterLiteral
+Soot started on Wed Aug 02 00:04:35 CDT 2017
+Transforming org.joda.time.format.DateTimeFormatterBuilder$CharacterLiteral... 
+Writing to sootOutput/org.joda.time.format.DateTimeFormatterBuilder$CharacterLiteral.shimple
+Soot finished on Wed Aug 02 00:04:36 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 45 (9)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 8
+classfile = org.joda.time.format.DateTimeFormatterBuilder$CharacterLiteral
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber
+Soot started on Wed Aug 02 00:04:36 CDT 2017
+Transforming org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber... 
+Writing to sootOutput/org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber.shimple
+Soot finished on Wed Aug 02 00:04:37 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 4 (2)
+number-of-methods = 6
+classfile = org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.DateTimeFormat$1
+Soot started on Wed Aug 02 00:04:37 CDT 2017
+Transforming org.joda.time.format.DateTimeFormat$1... 
+Writing to sootOutput/org.joda.time.format.DateTimeFormat$1.shimple
+Soot finished on Wed Aug 02 00:04:37 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 1 (1)
+number-of-methods = 2
+classfile = org.joda.time.format.DateTimeFormat$1
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.DateTimeFormatterBuilder$TimeZoneName
+Soot started on Wed Aug 02 00:04:38 CDT 2017
+Transforming org.joda.time.format.DateTimeFormatterBuilder$TimeZoneName... 
+Writing to sootOutput/org.joda.time.format.DateTimeFormatterBuilder$TimeZoneName.shimple
+Soot finished on Wed Aug 02 00:04:38 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 3 (1)
+if-ret-distance = 21 (7)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 136 (17)
+number-of-methods = 9
+classfile = org.joda.time.format.DateTimeFormatterBuilder$TimeZoneName
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.DateTimeParserBucket
+Soot started on Wed Aug 02 00:04:38 CDT 2017
+Transforming org.joda.time.format.DateTimeParserBucket... 
+Writing to sootOutput/org.joda.time.format.DateTimeParserBucket.shimple
+Soot finished on Wed Aug 02 00:04:40 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 19 (2)
+if-ret-distance = 196 (35)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 366 (42)
+number-of-methods = 33
+classfile = org.joda.time.format.DateTimeParserBucket
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.PeriodFormatterBuilder
+Soot started on Wed Aug 02 00:04:40 CDT 2017
+Transforming org.joda.time.format.PeriodFormatterBuilder... 
+Writing to sootOutput/org.joda.time.format.PeriodFormatterBuilder.shimple
+Soot finished on Wed Aug 02 00:04:41 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 260 (17)
+if-ret-distance = 448 (51)
+if-throw-distance = 115 (28)
+pure-Veritesting-regions-size = 82 (15)
+number-of-methods = 45
+classfile = org.joda.time.format.PeriodFormatterBuilder
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.DateTimeFormatterBuilder$TextField
+Soot started on Wed Aug 02 00:04:41 CDT 2017
+Transforming org.joda.time.format.DateTimeFormatterBuilder$TextField... 
+Writing to sootOutput/org.joda.time.format.DateTimeFormatterBuilder$TextField.shimple
+Soot finished on Wed Aug 02 00:04:42 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 1533 (65)
+if-ret-distance = 231 (23)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 29 (3)
+number-of-methods = 11
+classfile = org.joda.time.format.DateTimeFormatterBuilder$TextField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.DateTimeFormatterBuilder$TwoDigitYear
+Soot started on Wed Aug 02 00:04:42 CDT 2017
+Transforming org.joda.time.format.DateTimeFormatterBuilder$TwoDigitYear... 
+Writing to sootOutput/org.joda.time.format.DateTimeFormatterBuilder$TwoDigitYear.shimple
+Soot finished on Wed Aug 02 00:04:44 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 143 (16)
+if-ret-distance = 235 (27)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 85 (13)
+number-of-methods = 10
+classfile = org.joda.time.format.DateTimeFormatterBuilder$TwoDigitYear
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.DateTimeFormatterBuilder$NumberFormatter
+Soot started on Wed Aug 02 00:04:44 CDT 2017
+Transforming org.joda.time.format.DateTimeFormatterBuilder$NumberFormatter... 
+Writing to sootOutput/org.joda.time.format.DateTimeFormatterBuilder$NumberFormatter.shimple
+Soot finished on Wed Aug 02 00:04:44 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 143 (6)
+if-ret-distance = 151 (7)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 114 (19)
+number-of-methods = 3
+classfile = org.joda.time.format.DateTimeFormatterBuilder$NumberFormatter
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset
+Soot started on Wed Aug 02 00:04:45 CDT 2017
+Transforming org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset... 
+Writing to sootOutput/org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset.shimple
+Soot finished on Wed Aug 02 00:04:46 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 117 (30)
+if-ret-distance = 269 (44)
+if-throw-distance = 10 (3)
+pure-Veritesting-regions-size = 140 (20)
+number-of-methods = 9
+classfile = org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.format.ISODateTimeFormat
+Soot started on Wed Aug 02 00:04:46 CDT 2017
+Transforming org.joda.time.format.ISODateTimeFormat... 
+Writing to sootOutput/org.joda.time.format.ISODateTimeFormat.shimple
+Soot finished on Wed Aug 02 00:04:48 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 413 (78)
+if-ret-distance = 43 (5)
+if-throw-distance = 123 (12)
+pure-Veritesting-regions-size = 96 (30)
+number-of-methods = 59
+classfile = org.joda.time.format.ISODateTimeFormat
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.DateTimeUtils$FixedMillisProvider
+Soot started on Wed Aug 02 00:04:48 CDT 2017
+Transforming org.joda.time.DateTimeUtils$FixedMillisProvider... 
+Writing to sootOutput/org.joda.time.DateTimeUtils$FixedMillisProvider.shimple
+Soot finished on Wed Aug 02 00:04:49 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 2
+classfile = org.joda.time.DateTimeUtils$FixedMillisProvider
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.DateTime$Property
+Soot started on Wed Aug 02 00:04:49 CDT 2017
+Transforming org.joda.time.DateTime$Property... 
+Writing to sootOutput/org.joda.time.DateTime$Property.shimple
+Soot finished on Wed Aug 02 00:04:49 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 20
+classfile = org.joda.time.DateTime$Property
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.ReadWritableDateTime
+Soot started on Wed Aug 02 00:04:50 CDT 2017
+Transforming org.joda.time.ReadWritableDateTime... 
+Writing to sootOutput/org.joda.time.ReadWritableDateTime.shimple
+Soot finished on Wed Aug 02 00:04:50 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.joda.time.ReadWritableDateTime
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.YearMonth$Property
+Soot started on Wed Aug 02 00:04:50 CDT 2017
+Transforming org.joda.time.YearMonth$Property... 
+Writing to sootOutput/org.joda.time.YearMonth$Property.shimple
+Soot finished on Wed Aug 02 00:04:51 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 10
+classfile = org.joda.time.YearMonth$Property
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.ReadWritableInterval
+Soot started on Wed Aug 02 00:04:51 CDT 2017
+Transforming org.joda.time.ReadWritableInterval... 
+Writing to sootOutput/org.joda.time.ReadWritableInterval.shimple
+Soot finished on Wed Aug 02 00:04:51 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.joda.time.ReadWritableInterval
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.field.ScaledDurationField
+Soot started on Wed Aug 02 00:04:51 CDT 2017
+Transforming org.joda.time.field.ScaledDurationField... 
+Writing to sootOutput/org.joda.time.field.ScaledDurationField.shimple
+Soot finished on Wed Aug 02 00:04:52 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 26 (7)
+if-throw-distance = 10 (3)
+pure-Veritesting-regions-size = 3 (3)
+number-of-methods = 17
+classfile = org.joda.time.field.ScaledDurationField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.field.FieldUtils
+Soot started on Wed Aug 02 00:04:52 CDT 2017
+Transforming org.joda.time.field.FieldUtils... 
+Writing to sootOutput/org.joda.time.field.FieldUtils.shimple
+Soot finished on Wed Aug 02 00:04:53 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 122 (46)
+if-throw-distance = 266 (29)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 17
+classfile = org.joda.time.field.FieldUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.field.RemainderDateTimeField
+Soot started on Wed Aug 02 00:04:53 CDT 2017
+Transforming org.joda.time.field.RemainderDateTimeField... 
+Writing to sootOutput/org.joda.time.field.RemainderDateTimeField.shimple
+Soot finished on Wed Aug 02 00:04:54 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 33 (6)
+if-throw-distance = 6 (2)
+pure-Veritesting-regions-size = 4 (1)
+number-of-methods = 20
+classfile = org.joda.time.field.RemainderDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.field.PreciseDateTimeField
+Soot started on Wed Aug 02 00:04:54 CDT 2017
+Transforming org.joda.time.field.PreciseDateTimeField... 
+Writing to sootOutput/org.joda.time.field.PreciseDateTimeField.shimple
+Soot finished on Wed Aug 02 00:04:54 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 29 (4)
+if-throw-distance = 16 (3)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 7
+classfile = org.joda.time.field.PreciseDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.field.ImpreciseDateTimeField$LinkedDurationField
+Soot started on Wed Aug 02 00:04:55 CDT 2017
+Transforming org.joda.time.field.ImpreciseDateTimeField$LinkedDurationField... 
+Writing to sootOutput/org.joda.time.field.ImpreciseDateTimeField$LinkedDurationField.shimple
+Soot finished on Wed Aug 02 00:04:55 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 11
+classfile = org.joda.time.field.ImpreciseDateTimeField$LinkedDurationField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.field.SkipDateTimeField
+Soot started on Wed Aug 02 00:04:55 CDT 2017
+Transforming org.joda.time.field.SkipDateTimeField... 
+Writing to sootOutput/org.joda.time.field.SkipDateTimeField.shimple
+Soot finished on Wed Aug 02 00:04:56 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 10 (3)
+if-throw-distance = 12 (2)
+pure-Veritesting-regions-size = 4 (3)
+number-of-methods = 6
+classfile = org.joda.time.field.SkipDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.field.BaseDateTimeField
+Soot started on Wed Aug 02 00:04:56 CDT 2017
+Transforming org.joda.time.field.BaseDateTimeField... 
+Writing to sootOutput/org.joda.time.field.BaseDateTimeField.shimple
+Soot finished on Wed Aug 02 00:04:57 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 215 (39)
+if-throw-distance = 20 (3)
+pure-Veritesting-regions-size = 305 (25)
+number-of-methods = 44
+classfile = org.joda.time.field.BaseDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.field.PreciseDurationDateTimeField
+Soot started on Wed Aug 02 00:04:57 CDT 2017
+Transforming org.joda.time.field.PreciseDurationDateTimeField... 
+Writing to sootOutput/org.joda.time.field.PreciseDurationDateTimeField.shimple
+Soot finished on Wed Aug 02 00:04:58 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 41 (8)
+if-throw-distance = 14 (3)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 10
+classfile = org.joda.time.field.PreciseDurationDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.field.DelegatedDateTimeField
+Soot started on Wed Aug 02 00:04:58 CDT 2017
+Transforming org.joda.time.field.DelegatedDateTimeField... 
+Writing to sootOutput/org.joda.time.field.DelegatedDateTimeField.shimple
+Soot finished on Wed Aug 02 00:04:59 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 11 (3)
+if-throw-distance = 3 (1)
+pure-Veritesting-regions-size = 1 (1)
+number-of-methods = 54
+classfile = org.joda.time.field.DelegatedDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.field.BaseDurationField
+Soot started on Wed Aug 02 00:04:59 CDT 2017
+Transforming org.joda.time.field.BaseDurationField... 
+Writing to sootOutput/org.joda.time.field.BaseDurationField.shimple
+Soot finished on Wed Aug 02 00:05:00 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 11 (6)
+if-throw-distance = 3 (1)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 13
+classfile = org.joda.time.field.BaseDurationField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.field.LenientDateTimeField
+Soot started on Wed Aug 02 00:05:00 CDT 2017
+Transforming org.joda.time.field.LenientDateTimeField... 
+Writing to sootOutput/org.joda.time.field.LenientDateTimeField.shimple
+Soot finished on Wed Aug 02 00:05:00 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 21 (5)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 2 (1)
+number-of-methods = 4
+classfile = org.joda.time.field.LenientDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.field.ZeroIsMaxDateTimeField
+Soot started on Wed Aug 02 00:05:00 CDT 2017
+Transforming org.joda.time.field.ZeroIsMaxDateTimeField... 
+Writing to sootOutput/org.joda.time.field.ZeroIsMaxDateTimeField.shimple
+Soot finished on Wed Aug 02 00:05:01 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 1 (1)
+if-throw-distance = 3 (1)
+pure-Veritesting-regions-size = 2 (2)
+number-of-methods = 26
+classfile = org.joda.time.field.ZeroIsMaxDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.field.OffsetDateTimeField
+Soot started on Wed Aug 02 00:05:01 CDT 2017
+Transforming org.joda.time.field.OffsetDateTimeField... 
+Writing to sootOutput/org.joda.time.field.OffsetDateTimeField.shimple
+Soot finished on Wed Aug 02 00:05:02 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 10 (1)
+if-throw-distance = 3 (1)
+pure-Veritesting-regions-size = 3 (3)
+number-of-methods = 20
+classfile = org.joda.time.field.OffsetDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.field.DecoratedDateTimeField
+Soot started on Wed Aug 02 00:05:02 CDT 2017
+Transforming org.joda.time.field.DecoratedDateTimeField... 
+Writing to sootOutput/org.joda.time.field.DecoratedDateTimeField.shimple
+Soot finished on Wed Aug 02 00:05:02 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 6 (2)
+if-throw-distance = 11 (3)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 10
+classfile = org.joda.time.field.DecoratedDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.field.UnsupportedDurationField
+Soot started on Wed Aug 02 00:05:03 CDT 2017
+Transforming org.joda.time.field.UnsupportedDurationField... 
+Writing to sootOutput/org.joda.time.field.UnsupportedDurationField.shimple
+Soot finished on Wed Aug 02 00:05:03 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 5 (1)
+if-ret-distance = 33 (9)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 4 (2)
+number-of-methods = 26
+classfile = org.joda.time.field.UnsupportedDurationField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.field.DividedDateTimeField
+Soot started on Wed Aug 02 00:05:03 CDT 2017
+Transforming org.joda.time.field.DividedDateTimeField... 
+Writing to sootOutput/org.joda.time.field.DividedDateTimeField.shimple
+Soot finished on Wed Aug 02 00:05:04 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 45 (7)
+if-throw-distance = 3 (1)
+pure-Veritesting-regions-size = 16 (5)
+number-of-methods = 19
+classfile = org.joda.time.field.DividedDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.field.PreciseDurationField
+Soot started on Wed Aug 02 00:05:04 CDT 2017
+Transforming org.joda.time.field.PreciseDurationField... 
+Writing to sootOutput/org.joda.time.field.PreciseDurationField.shimple
+Soot finished on Wed Aug 02 00:05:05 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 19 (5)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 2 (2)
+number-of-methods = 11
+classfile = org.joda.time.field.PreciseDurationField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.field.MillisDurationField
+Soot started on Wed Aug 02 00:05:05 CDT 2017
+Transforming org.joda.time.field.MillisDurationField... 
+Writing to sootOutput/org.joda.time.field.MillisDurationField.shimple
+Soot finished on Wed Aug 02 00:05:05 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 17 (7)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 1 (1)
+number-of-methods = 25
+classfile = org.joda.time.field.MillisDurationField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.field.UnsupportedDateTimeField
+Soot started on Wed Aug 02 00:05:05 CDT 2017
+Transforming org.joda.time.field.UnsupportedDateTimeField... 
+Writing to sootOutput/org.joda.time.field.UnsupportedDateTimeField.shimple
+Soot finished on Wed Aug 02 00:05:06 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 5 (1)
+if-ret-distance = 7 (2)
+if-throw-distance = 10 (3)
+pure-Veritesting-regions-size = 11 (3)
+number-of-methods = 54
+classfile = org.joda.time.field.UnsupportedDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.field.DelegatedDurationField
+Soot started on Wed Aug 02 00:05:06 CDT 2017
+Transforming org.joda.time.field.DelegatedDurationField... 
+Writing to sootOutput/org.joda.time.field.DelegatedDurationField.shimple
+Soot finished on Wed Aug 02 00:05:07 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 11 (3)
+if-throw-distance = 3 (1)
+pure-Veritesting-regions-size = 8 (2)
+number-of-methods = 25
+classfile = org.joda.time.field.DelegatedDurationField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.field.SkipUndoDateTimeField
+Soot started on Wed Aug 02 00:05:07 CDT 2017
+Transforming org.joda.time.field.SkipUndoDateTimeField... 
+Writing to sootOutput/org.joda.time.field.SkipUndoDateTimeField.shimple
+Soot finished on Wed Aug 02 00:05:08 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 6 (4)
+number-of-methods = 6
+classfile = org.joda.time.field.SkipUndoDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.field.ImpreciseDateTimeField
+Soot started on Wed Aug 02 00:05:08 CDT 2017
+Transforming org.joda.time.field.ImpreciseDateTimeField... 
+Writing to sootOutput/org.joda.time.field.ImpreciseDateTimeField.shimple
+Soot finished on Wed Aug 02 00:05:08 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 25 (2)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 63 (7)
+number-of-methods = 5
+classfile = org.joda.time.field.ImpreciseDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.field.DecoratedDurationField
+Soot started on Wed Aug 02 00:05:09 CDT 2017
+Transforming org.joda.time.field.DecoratedDurationField... 
+Writing to sootOutput/org.joda.time.field.DecoratedDurationField.shimple
+Soot finished on Wed Aug 02 00:05:09 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 6 (2)
+if-throw-distance = 11 (3)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 10
+classfile = org.joda.time.field.DecoratedDurationField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.field.AbstractReadableInstantFieldProperty
+Soot started on Wed Aug 02 00:05:09 CDT 2017
+Transforming org.joda.time.field.AbstractReadableInstantFieldProperty... 
+Writing to sootOutput/org.joda.time.field.AbstractReadableInstantFieldProperty.shimple
+Soot finished on Wed Aug 02 00:05:10 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 79 (21)
+if-throw-distance = 6 (2)
+pure-Veritesting-regions-size = 3 (3)
+number-of-methods = 30
+classfile = org.joda.time.field.AbstractReadableInstantFieldProperty
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.field.StrictDateTimeField
+Soot started on Wed Aug 02 00:05:10 CDT 2017
+Transforming org.joda.time.field.StrictDateTimeField... 
+Writing to sootOutput/org.joda.time.field.StrictDateTimeField.shimple
+Soot finished on Wed Aug 02 00:05:11 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 21 (5)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 2 (1)
+number-of-methods = 4
+classfile = org.joda.time.field.StrictDateTimeField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.field.AbstractPartialFieldProperty
+Soot started on Wed Aug 02 00:05:11 CDT 2017
+Transforming org.joda.time.field.AbstractPartialFieldProperty... 
+Writing to sootOutput/org.joda.time.field.AbstractPartialFieldProperty.shimple
+Soot finished on Wed Aug 02 00:05:11 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 59 (17)
+if-throw-distance = 6 (2)
+pure-Veritesting-regions-size = 3 (3)
+number-of-methods = 21
+classfile = org.joda.time.field.AbstractPartialFieldProperty
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.convert.ReadablePeriodConverter
+Soot started on Wed Aug 02 00:05:12 CDT 2017
+Transforming org.joda.time.convert.ReadablePeriodConverter... 
+Writing to sootOutput/org.joda.time.convert.ReadablePeriodConverter.shimple
+Soot finished on Wed Aug 02 00:05:12 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 5
+classfile = org.joda.time.convert.ReadablePeriodConverter
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.convert.NullConverter
+Soot started on Wed Aug 02 00:05:12 CDT 2017
+Transforming org.joda.time.convert.NullConverter... 
+Writing to sootOutput/org.joda.time.convert.NullConverter.shimple
+Soot finished on Wed Aug 02 00:05:13 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 6
+classfile = org.joda.time.convert.NullConverter
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.convert.ReadableIntervalConverter
+Soot started on Wed Aug 02 00:05:13 CDT 2017
+Transforming org.joda.time.convert.ReadableIntervalConverter... 
+Writing to sootOutput/org.joda.time.convert.ReadableIntervalConverter.shimple
+Soot finished on Wed Aug 02 00:05:13 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 81 (11)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 1 (1)
+number-of-methods = 7
+classfile = org.joda.time.convert.ReadableIntervalConverter
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.convert.PartialConverter
+Soot started on Wed Aug 02 00:05:14 CDT 2017
+Transforming org.joda.time.convert.PartialConverter... 
+Writing to sootOutput/org.joda.time.convert.PartialConverter.shimple
+Soot finished on Wed Aug 02 00:05:14 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.joda.time.convert.PartialConverter
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.convert.ConverterSet$Entry
+Soot started on Wed Aug 02 00:05:14 CDT 2017
+Transforming org.joda.time.convert.ConverterSet$Entry... 
+Writing to sootOutput/org.joda.time.convert.ConverterSet$Entry.shimple
+Soot finished on Wed Aug 02 00:05:15 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 1
+classfile = org.joda.time.convert.ConverterSet$Entry
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.convert.CalendarConverter
+Soot started on Wed Aug 02 00:05:15 CDT 2017
+Transforming org.joda.time.convert.CalendarConverter... 
+Writing to sootOutput/org.joda.time.convert.CalendarConverter.shimple
+Soot finished on Wed Aug 02 00:05:16 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 53 (11)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 6
+classfile = org.joda.time.convert.CalendarConverter
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.convert.LongConverter
+Soot started on Wed Aug 02 00:05:16 CDT 2017
+Transforming org.joda.time.convert.LongConverter... 
+Writing to sootOutput/org.joda.time.convert.LongConverter.shimple
+Soot finished on Wed Aug 02 00:05:16 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 5
+classfile = org.joda.time.convert.LongConverter
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.convert.ConverterManager
+Soot started on Wed Aug 02 00:05:16 CDT 2017
+Transforming org.joda.time.convert.ConverterManager... 
+Writing to sootOutput/org.joda.time.convert.ConverterManager.shimple
+Soot finished on Wed Aug 02 00:05:17 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 15 (5)
+if-ret-distance = 75 (25)
+if-throw-distance = 55 (5)
+pure-Veritesting-regions-size = 18 (11)
+number-of-methods = 28
+classfile = org.joda.time.convert.ConverterManager
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.convert.AbstractConverter
+Soot started on Wed Aug 02 00:05:17 CDT 2017
+Transforming org.joda.time.convert.AbstractConverter... 
+Writing to sootOutput/org.joda.time.convert.AbstractConverter.shimple
+Soot finished on Wed Aug 02 00:05:18 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 2 (1)
+number-of-methods = 9
+classfile = org.joda.time.convert.AbstractConverter
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.convert.ConverterSet
+Soot started on Wed Aug 02 00:05:18 CDT 2017
+Transforming org.joda.time.convert.ConverterSet... 
+Writing to sootOutput/org.joda.time.convert.ConverterSet.shimple
+Soot finished on Wed Aug 02 00:05:19 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 79 (6)
+if-ret-distance = 574 (51)
+if-throw-distance = 44 (3)
+pure-Veritesting-regions-size = 367 (42)
+number-of-methods = 8
+classfile = org.joda.time.convert.ConverterSet
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.convert.ReadableDurationConverter
+Soot started on Wed Aug 02 00:05:19 CDT 2017
+Transforming org.joda.time.convert.ReadableDurationConverter... 
+Writing to sootOutput/org.joda.time.convert.ReadableDurationConverter.shimple
+Soot finished on Wed Aug 02 00:05:20 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 78 (9)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 5
+classfile = org.joda.time.convert.ReadableDurationConverter
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.convert.IntervalConverter
+Soot started on Wed Aug 02 00:05:20 CDT 2017
+Transforming org.joda.time.convert.IntervalConverter... 
+Writing to sootOutput/org.joda.time.convert.IntervalConverter.shimple
+Soot finished on Wed Aug 02 00:05:20 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.joda.time.convert.IntervalConverter
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.convert.DateConverter
+Soot started on Wed Aug 02 00:05:20 CDT 2017
+Transforming org.joda.time.convert.DateConverter... 
+Writing to sootOutput/org.joda.time.convert.DateConverter.shimple
+Soot finished on Wed Aug 02 00:05:21 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 4
+classfile = org.joda.time.convert.DateConverter
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.convert.Converter
+Soot started on Wed Aug 02 00:05:21 CDT 2017
+Transforming org.joda.time.convert.Converter... 
+Writing to sootOutput/org.joda.time.convert.Converter.shimple
+Soot finished on Wed Aug 02 00:05:22 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.joda.time.convert.Converter
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.convert.ReadablePartialConverter
+Soot started on Wed Aug 02 00:05:22 CDT 2017
+Transforming org.joda.time.convert.ReadablePartialConverter... 
+Writing to sootOutput/org.joda.time.convert.ReadablePartialConverter.shimple
+Soot finished on Wed Aug 02 00:05:22 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 93 (6)
+number-of-methods = 6
+classfile = org.joda.time.convert.ReadablePartialConverter
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.convert.ReadableInstantConverter
+Soot started on Wed Aug 02 00:05:22 CDT 2017
+Transforming org.joda.time.convert.ReadableInstantConverter... 
+Writing to sootOutput/org.joda.time.convert.ReadableInstantConverter.shimple
+Soot finished on Wed Aug 02 00:05:23 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 20 (7)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 3 (1)
+number-of-methods = 6
+classfile = org.joda.time.convert.ReadableInstantConverter
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.convert.DurationConverter
+Soot started on Wed Aug 02 00:05:23 CDT 2017
+Transforming org.joda.time.convert.DurationConverter... 
+Writing to sootOutput/org.joda.time.convert.DurationConverter.shimple
+Soot finished on Wed Aug 02 00:05:24 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.joda.time.convert.DurationConverter
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.convert.StringConverter
+Soot started on Wed Aug 02 00:05:24 CDT 2017
+Transforming org.joda.time.convert.StringConverter... 
+Writing to sootOutput/org.joda.time.convert.StringConverter.shimple
+Soot finished on Wed Aug 02 00:05:25 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 167 (10)
+if-ret-distance = 87 (5)
+if-throw-distance = 211 (17)
+pure-Veritesting-regions-size = 97 (11)
+number-of-methods = 8
+classfile = org.joda.time.convert.StringConverter
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.convert.InstantConverter
+Soot started on Wed Aug 02 00:05:25 CDT 2017
+Transforming org.joda.time.convert.InstantConverter... 
+Writing to sootOutput/org.joda.time.convert.InstantConverter.shimple
+Soot finished on Wed Aug 02 00:05:25 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.joda.time.convert.InstantConverter
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.convert.PeriodConverter
+Soot started on Wed Aug 02 00:05:25 CDT 2017
+Transforming org.joda.time.convert.PeriodConverter... 
+Writing to sootOutput/org.joda.time.convert.PeriodConverter.shimple
+Soot finished on Wed Aug 02 00:05:26 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.joda.time.convert.PeriodConverter
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.MutableInterval
+Soot started on Wed Aug 02 00:05:26 CDT 2017
+Transforming org.joda.time.MutableInterval... 
+Writing to sootOutput/org.joda.time.MutableInterval.shimple
+Soot finished on Wed Aug 02 00:05:27 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 17 (6)
+if-ret-distance = 5 (1)
+if-throw-distance = 3 (1)
+pure-Veritesting-regions-size = 4 (1)
+number-of-methods = 27
+classfile = org.joda.time.MutableInterval
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.MonthDay$Property
+Soot started on Wed Aug 02 00:05:27 CDT 2017
+Transforming org.joda.time.MonthDay$Property... 
+Writing to sootOutput/org.joda.time.MonthDay$Property.shimple
+Soot finished on Wed Aug 02 00:05:27 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 10
+classfile = org.joda.time.MonthDay$Property
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.ReadWritableInstant
+Soot started on Wed Aug 02 00:05:28 CDT 2017
+Transforming org.joda.time.ReadWritableInstant... 
+Writing to sootOutput/org.joda.time.ReadWritableInstant.shimple
+Soot finished on Wed Aug 02 00:05:28 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.joda.time.ReadWritableInstant
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.tz.UTCProvider
+Soot started on Wed Aug 02 00:05:28 CDT 2017
+Transforming org.joda.time.tz.UTCProvider... 
+Writing to sootOutput/org.joda.time.tz.UTCProvider.shimple
+Soot finished on Wed Aug 02 00:05:29 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 3 (2)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 3
+classfile = org.joda.time.tz.UTCProvider
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.tz.ZoneInfoCompiler$Rule
+Soot started on Wed Aug 02 00:05:29 CDT 2017
+Transforming org.joda.time.tz.ZoneInfoCompiler$Rule... 
+Writing to sootOutput/org.joda.time.tz.ZoneInfoCompiler$Rule.shimple
+Soot finished on Wed Aug 02 00:05:29 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 65 (9)
+if-throw-distance = 3 (1)
+pure-Veritesting-regions-size = 23 (2)
+number-of-methods = 4
+classfile = org.joda.time.tz.ZoneInfoCompiler$Rule
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone
+Soot started on Wed Aug 02 00:05:30 CDT 2017
+Transforming org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone... 
+Writing to sootOutput/org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone.shimple
+Soot finished on Wed Aug 02 00:05:32 CDT 2017
+Soot has run for 0 min. 2 sec.
+if-iv-distance = 999 (28)
+if-ret-distance = 1310 (84)
+if-throw-distance = 56 (6)
+pure-Veritesting-regions-size = 876 (62)
+number-of-methods = 12
+classfile = org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.tz.ZoneInfoCompiler$1
+Soot started on Wed Aug 02 00:05:32 CDT 2017
+Transforming org.joda.time.tz.ZoneInfoCompiler$1... 
+Writing to sootOutput/org.joda.time.tz.ZoneInfoCompiler$1.shimple
+Soot finished on Wed Aug 02 00:05:33 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 3
+classfile = org.joda.time.tz.ZoneInfoCompiler$1
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.tz.NameProvider
+Soot started on Wed Aug 02 00:05:33 CDT 2017
+Transforming org.joda.time.tz.NameProvider... 
+Writing to sootOutput/org.joda.time.tz.NameProvider.shimple
+Soot finished on Wed Aug 02 00:05:33 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.joda.time.tz.NameProvider
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.tz.Provider
+Soot started on Wed Aug 02 00:05:33 CDT 2017
+Transforming org.joda.time.tz.Provider... 
+Writing to sootOutput/org.joda.time.tz.Provider.shimple
+Soot finished on Wed Aug 02 00:05:34 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.joda.time.tz.Provider
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.tz.DateTimeZoneBuilder$Transition
+Soot started on Wed Aug 02 00:05:34 CDT 2017
+Transforming org.joda.time.tz.DateTimeZoneBuilder$Transition... 
+Writing to sootOutput/org.joda.time.tz.DateTimeZoneBuilder$Transition.shimple
+Soot finished on Wed Aug 02 00:05:34 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 7 (2)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 4 (3)
+number-of-methods = 9
+classfile = org.joda.time.tz.DateTimeZoneBuilder$Transition
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.tz.DateTimeZoneBuilder$Rule
+Soot started on Wed Aug 02 00:05:34 CDT 2017
+Transforming org.joda.time.tz.DateTimeZoneBuilder$Rule... 
+Writing to sootOutput/org.joda.time.tz.DateTimeZoneBuilder$Rule.shimple
+Soot finished on Wed Aug 02 00:05:35 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 18 (4)
+number-of-methods = 7
+classfile = org.joda.time.tz.DateTimeZoneBuilder$Rule
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.tz.ZoneInfoCompiler$DateTimeOfYear
+Soot started on Wed Aug 02 00:05:35 CDT 2017
+Transforming org.joda.time.tz.ZoneInfoCompiler$DateTimeOfYear... 
+Writing to sootOutput/org.joda.time.tz.ZoneInfoCompiler$DateTimeOfYear.shimple
+Soot finished on Wed Aug 02 00:05:36 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 125 (7)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 18 (4)
+number-of-methods = 5
+classfile = org.joda.time.tz.ZoneInfoCompiler$DateTimeOfYear
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.tz.ZoneInfoProvider
+Soot started on Wed Aug 02 00:05:36 CDT 2017
+Transforming org.joda.time.tz.ZoneInfoProvider... 
+Writing to sootOutput/org.joda.time.tz.ZoneInfoProvider.shimple
+Soot finished on Wed Aug 02 00:05:37 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 136 (10)
+if-ret-distance = 207 (26)
+if-throw-distance = 74 (8)
+pure-Veritesting-regions-size = 101 (10)
+number-of-methods = 11
+classfile = org.joda.time.tz.ZoneInfoProvider
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.tz.DateTimeZoneBuilder$OfYear
+Soot started on Wed Aug 02 00:05:37 CDT 2017
+Transforming org.joda.time.tz.DateTimeZoneBuilder$OfYear... 
+Writing to sootOutput/org.joda.time.tz.DateTimeZoneBuilder$OfYear.shimple
+Soot finished on Wed Aug 02 00:05:38 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 57 (10)
+if-throw-distance = 18 (2)
+pure-Veritesting-regions-size = 76 (21)
+number-of-methods = 11
+classfile = org.joda.time.tz.DateTimeZoneBuilder$OfYear
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.tz.ZoneInfoCompiler$RuleSet
+Soot started on Wed Aug 02 00:05:38 CDT 2017
+Transforming org.joda.time.tz.ZoneInfoCompiler$RuleSet... 
+Writing to sootOutput/org.joda.time.tz.ZoneInfoCompiler$RuleSet.shimple
+Soot finished on Wed Aug 02 00:05:38 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 128 (10)
+if-ret-distance = 3 (1)
+if-throw-distance = 3 (1)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 3
+classfile = org.joda.time.tz.ZoneInfoCompiler$RuleSet
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.tz.DateTimeZoneBuilder$Recurrence
+Soot started on Wed Aug 02 00:05:39 CDT 2017
+Transforming org.joda.time.tz.DateTimeZoneBuilder$Recurrence... 
+Writing to sootOutput/org.joda.time.tz.DateTimeZoneBuilder$Recurrence.shimple
+Soot finished on Wed Aug 02 00:05:39 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 19 (5)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 3 (3)
+number-of-methods = 11
+classfile = org.joda.time.tz.DateTimeZoneBuilder$Recurrence
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.tz.DateTimeZoneBuilder$RuleSet
+Soot started on Wed Aug 02 00:05:39 CDT 2017
+Transforming org.joda.time.tz.DateTimeZoneBuilder$RuleSet... 
+Writing to sootOutput/org.joda.time.tz.DateTimeZoneBuilder$RuleSet.shimple
+Soot finished on Wed Aug 02 00:05:40 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 112 (9)
+if-ret-distance = 142 (20)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 221 (14)
+number-of-methods = 12
+classfile = org.joda.time.tz.DateTimeZoneBuilder$RuleSet
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.tz.CachedDateTimeZone$Info
+Soot started on Wed Aug 02 00:05:40 CDT 2017
+Transforming org.joda.time.tz.CachedDateTimeZone$Info... 
+Writing to sootOutput/org.joda.time.tz.CachedDateTimeZone$Info.shimple
+Soot finished on Wed Aug 02 00:05:41 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 114 (15)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 24 (6)
+number-of-methods = 4
+classfile = org.joda.time.tz.CachedDateTimeZone$Info
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.tz.DefaultNameProvider
+Soot started on Wed Aug 02 00:05:41 CDT 2017
+Transforming org.joda.time.tz.DefaultNameProvider... 
+Writing to sootOutput/org.joda.time.tz.DefaultNameProvider.shimple
+Soot finished on Wed Aug 02 00:05:42 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 33 (4)
+if-ret-distance = 88 (7)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 7 (5)
+number-of-methods = 5
+classfile = org.joda.time.tz.DefaultNameProvider
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.tz.DateTimeZoneBuilder$DSTZone
+Soot started on Wed Aug 02 00:05:42 CDT 2017
+Transforming org.joda.time.tz.DateTimeZoneBuilder$DSTZone... 
+Writing to sootOutput/org.joda.time.tz.DateTimeZoneBuilder$DSTZone.shimple
+Soot finished on Wed Aug 02 00:05:43 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 21 (5)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 42 (22)
+number-of-methods = 11
+classfile = org.joda.time.tz.DateTimeZoneBuilder$DSTZone
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.tz.CachedDateTimeZone
+Soot started on Wed Aug 02 00:05:43 CDT 2017
+Transforming org.joda.time.tz.CachedDateTimeZone... 
+Writing to sootOutput/org.joda.time.tz.CachedDateTimeZone.shimple
+Soot finished on Wed Aug 02 00:05:43 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 22 (7)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 88 (7)
+number-of-methods = 14
+classfile = org.joda.time.tz.CachedDateTimeZone
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.tz.ZoneInfoCompiler
+Soot started on Wed Aug 02 00:05:43 CDT 2017
+Transforming org.joda.time.tz.ZoneInfoCompiler... 
+Writing to sootOutput/org.joda.time.tz.ZoneInfoCompiler.shimple
+Soot finished on Wed Aug 02 00:05:46 CDT 2017
+Soot has run for 0 min. 2 sec.
+if-iv-distance = 3514 (148)
+if-ret-distance = 1177 (57)
+if-throw-distance = 135 (13)
+pure-Veritesting-regions-size = 708 (46)
+number-of-methods = 17
+classfile = org.joda.time.tz.ZoneInfoCompiler
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.tz.ZoneInfoCompiler$Zone
+Soot started on Wed Aug 02 00:05:46 CDT 2017
+Transforming org.joda.time.tz.ZoneInfoCompiler$Zone... 
+Writing to sootOutput/org.joda.time.tz.ZoneInfoCompiler$Zone.shimple
+Soot finished on Wed Aug 02 00:05:47 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 200 (22)
+if-ret-distance = 75 (11)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 10 (2)
+number-of-methods = 6
+classfile = org.joda.time.tz.ZoneInfoCompiler$Zone
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.tz.FixedDateTimeZone
+Soot started on Wed Aug 02 00:05:47 CDT 2017
+Transforming org.joda.time.tz.FixedDateTimeZone... 
+Writing to sootOutput/org.joda.time.tz.FixedDateTimeZone.shimple
+Soot finished on Wed Aug 02 00:05:47 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 78 (12)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 3 (3)
+number-of-methods = 11
+classfile = org.joda.time.tz.FixedDateTimeZone
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.tz.DateTimeZoneBuilder
+Soot started on Wed Aug 02 00:05:47 CDT 2017
+Transforming org.joda.time.tz.DateTimeZoneBuilder... 
+Writing to sootOutput/org.joda.time.tz.DateTimeZoneBuilder.shimple
+Soot finished on Wed Aug 02 00:05:49 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 591 (63)
+if-ret-distance = 1103 (62)
+if-throw-distance = 3 (1)
+pure-Veritesting-regions-size = 257 (21)
+number-of-methods = 15
+classfile = org.joda.time.tz.DateTimeZoneBuilder
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.LocalTime
+Exception in thread "main" java.lang.RuntimeException: couldn't find class: org.joda.convert.ToString (is your soot-class-path set properly?)
+	at soot.SootResolver.bringToHierarchy(SootResolver.java:205)
+	at soot.SootResolver.bringToSignatures(SootResolver.java:239)
+	at soot.SootResolver.processResolveWorklist(SootResolver.java:154)
+	at soot.SootResolver.resolveClass(SootResolver.java:124)
+	at soot.Scene.loadClass(Scene.java:448)
+	at soot.Scene.loadClassAndSupport(Scene.java:434)
+	at soot.Scene.loadNecessaryClass(Scene.java:1053)
+	at soot.Scene.loadNecessaryClasses(Scene.java:1067)
+	at soot.Main.run(Main.java:167)
+	at soot.Main.main(Main.java:141)
+	at SimpleMain.main(SimpleMain.java:94)
+Soot started on Wed Aug 02 00:05:49 CDT 2017
+classfile = org.joda.time.LocalTime
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.DateTimeUtils
+Soot started on Wed Aug 02 00:05:49 CDT 2017
+Transforming org.joda.time.DateTimeUtils... 
+Writing to sootOutput/org.joda.time.DateTimeUtils.shimple
+Soot finished on Wed Aug 02 00:05:50 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 3 (1)
+if-ret-distance = 86 (29)
+if-throw-distance = 6 (2)
+pure-Veritesting-regions-size = 24 (7)
+number-of-methods = 25
+classfile = org.joda.time.DateTimeUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/time_bugs/time_1_buggy/target/classes -src-prec c -f S org.joda.time.DurationField
+Soot started on Wed Aug 02 00:05:50 CDT 2017
+Transforming org.joda.time.DurationField... 
+Writing to sootOutput/org.joda.time.DurationField.shimple
+Soot finished on Wed Aug 02 00:05:51 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 9 (3)
+if-throw-distance = 3 (1)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 3
+classfile = org.joda.time.DurationField
+
+global #if-ret-dist = 16746 (2149), avg = 7.792462
+global #if-iv-dist = 15270 (1165), avg = 13.107296
+global #if-throw-dist = 2743 (387), avg = 7.087855
+

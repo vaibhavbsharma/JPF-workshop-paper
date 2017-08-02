@@ -1,0 +1,2215 @@
+#class_files = 170
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.tuple.ImmutableTriple
+Soot started on Tue Aug 01 23:34:20 CDT 2017
+Transforming org.apache.commons.lang3.tuple.ImmutableTriple... 
+Writing to sootOutput/org.apache.commons.lang3.tuple.ImmutableTriple.shimple
+Soot finished on Tue Aug 01 23:34:21 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 5
+classfile = org.apache.commons.lang3.tuple.ImmutableTriple
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.tuple.Triple
+Soot started on Tue Aug 01 23:34:21 CDT 2017
+Transforming org.apache.commons.lang3.tuple.Triple... 
+Writing to sootOutput/org.apache.commons.lang3.tuple.Triple.shimple
+Soot finished on Tue Aug 01 23:34:21 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 21 (5)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 9 (6)
+number-of-methods = 8
+classfile = org.apache.commons.lang3.tuple.Triple
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.tuple.MutablePair
+Soot started on Tue Aug 01 23:34:21 CDT 2017
+Transforming org.apache.commons.lang3.tuple.MutablePair... 
+Writing to sootOutput/org.apache.commons.lang3.tuple.MutablePair.shimple
+Soot finished on Tue Aug 01 23:34:22 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 8
+classfile = org.apache.commons.lang3.tuple.MutablePair
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.tuple.Pair
+Soot started on Tue Aug 01 23:34:22 CDT 2017
+Transforming org.apache.commons.lang3.tuple.Pair... 
+Writing to sootOutput/org.apache.commons.lang3.tuple.Pair.shimple
+Soot finished on Tue Aug 01 23:34:23 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 21 (5)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 6 (4)
+number-of-methods = 10
+classfile = org.apache.commons.lang3.tuple.Pair
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.tuple.ImmutablePair
+Soot started on Tue Aug 01 23:34:23 CDT 2017
+Transforming org.apache.commons.lang3.tuple.ImmutablePair... 
+Writing to sootOutput/org.apache.commons.lang3.tuple.ImmutablePair.shimple
+Soot finished on Tue Aug 01 23:34:24 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 5
+classfile = org.apache.commons.lang3.tuple.ImmutablePair
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.tuple.MutableTriple
+Soot started on Tue Aug 01 23:34:24 CDT 2017
+Transforming org.apache.commons.lang3.tuple.MutableTriple... 
+Writing to sootOutput/org.apache.commons.lang3.tuple.MutableTriple.shimple
+Soot finished on Tue Aug 01 23:34:24 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 9
+classfile = org.apache.commons.lang3.tuple.MutableTriple
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.ClassUtils
+Soot started on Tue Aug 01 23:34:25 CDT 2017
+Transforming org.apache.commons.lang3.ClassUtils... 
+Writing to sootOutput/org.apache.commons.lang3.ClassUtils.shimple
+Soot finished on Tue Aug 01 23:34:27 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 729 (60)
+if-ret-distance = 740 (79)
+if-throw-distance = 121 (7)
+pure-Veritesting-regions-size = 1015 (77)
+number-of-methods = 41
+classfile = org.apache.commons.lang3.ClassUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.StrMatcher$CharSetMatcher
+Soot started on Tue Aug 01 23:34:27 CDT 2017
+Transforming org.apache.commons.lang3.text.StrMatcher$CharSetMatcher... 
+Writing to sootOutput/org.apache.commons.lang3.text.StrMatcher$CharSetMatcher.shimple
+Soot finished on Tue Aug 01 23:34:27 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 1 (1)
+number-of-methods = 2
+classfile = org.apache.commons.lang3.text.StrMatcher$CharSetMatcher
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.StrLookup
+Soot started on Tue Aug 01 23:34:27 CDT 2017
+Transforming org.apache.commons.lang3.text.StrLookup... 
+Writing to sootOutput/org.apache.commons.lang3.text.StrLookup.shimple
+Soot finished on Tue Aug 01 23:34:28 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 5
+classfile = org.apache.commons.lang3.text.StrLookup
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.CompositeFormat
+Soot started on Tue Aug 01 23:34:28 CDT 2017
+Transforming org.apache.commons.lang3.text.CompositeFormat... 
+Writing to sootOutput/org.apache.commons.lang3.text.CompositeFormat.shimple
+Soot finished on Tue Aug 01 23:34:29 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 6
+classfile = org.apache.commons.lang3.text.CompositeFormat
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.StrSubstitutor
+Soot started on Tue Aug 01 23:34:29 CDT 2017
+Transforming org.apache.commons.lang3.text.StrSubstitutor... 
+Writing to sootOutput/org.apache.commons.lang3.text.StrSubstitutor.shimple
+Soot finished on Tue Aug 01 23:34:31 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 221 (28)
+if-ret-distance = 220 (57)
+if-throw-distance = 25 (5)
+pure-Veritesting-regions-size = 167 (19)
+number-of-methods = 47
+classfile = org.apache.commons.lang3.text.StrSubstitutor
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.ExtendedMessageFormat
+Soot started on Tue Aug 01 23:34:31 CDT 2017
+Transforming org.apache.commons.lang3.text.ExtendedMessageFormat... 
+Writing to sootOutput/org.apache.commons.lang3.text.ExtendedMessageFormat.shimple
+Soot finished on Tue Aug 01 23:34:34 CDT 2017
+Soot has run for 0 min. 2 sec.
+if-iv-distance = 691 (38)
+if-ret-distance = 463 (42)
+if-throw-distance = 468 (31)
+pure-Veritesting-regions-size = 368 (35)
+number-of-methods = 21
+classfile = org.apache.commons.lang3.text.ExtendedMessageFormat
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.StrBuilder$StrBuilderWriter
+Soot started on Tue Aug 01 23:34:34 CDT 2017
+Transforming org.apache.commons.lang3.text.StrBuilder$StrBuilderWriter... 
+Writing to sootOutput/org.apache.commons.lang3.text.StrBuilder$StrBuilderWriter.shimple
+Soot finished on Tue Aug 01 23:34:35 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 8
+classfile = org.apache.commons.lang3.text.StrBuilder$StrBuilderWriter
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.FormatFactory
+Soot started on Tue Aug 01 23:34:35 CDT 2017
+Transforming org.apache.commons.lang3.text.FormatFactory... 
+Writing to sootOutput/org.apache.commons.lang3.text.FormatFactory.shimple
+Soot finished on Tue Aug 01 23:34:35 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.apache.commons.lang3.text.FormatFactory
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.StrLookup$MapStrLookup
+Soot started on Tue Aug 01 23:34:35 CDT 2017
+Transforming org.apache.commons.lang3.text.StrLookup$MapStrLookup... 
+Writing to sootOutput/org.apache.commons.lang3.text.StrLookup$MapStrLookup.shimple
+Soot finished on Tue Aug 01 23:34:36 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 13 (5)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 2
+classfile = org.apache.commons.lang3.text.StrLookup$MapStrLookup
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.StrMatcher$StringMatcher
+Soot started on Tue Aug 01 23:34:36 CDT 2017
+Transforming org.apache.commons.lang3.text.StrMatcher$StringMatcher... 
+Writing to sootOutput/org.apache.commons.lang3.text.StrMatcher$StringMatcher.shimple
+Soot finished on Tue Aug 01 23:34:37 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 53 (9)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 2
+classfile = org.apache.commons.lang3.text.StrMatcher$StringMatcher
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.StrBuilder$StrBuilderReader
+Soot started on Tue Aug 01 23:34:37 CDT 2017
+Transforming org.apache.commons.lang3.text.StrBuilder$StrBuilderReader... 
+Writing to sootOutput/org.apache.commons.lang3.text.StrBuilder$StrBuilderReader.shimple
+Soot finished on Tue Aug 01 23:34:38 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 14 (4)
+if-throw-distance = 45 (9)
+pure-Veritesting-regions-size = 6 (2)
+number-of-methods = 9
+classfile = org.apache.commons.lang3.text.StrBuilder$StrBuilderReader
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.StrBuilder$StrBuilderTokenizer
+Soot started on Tue Aug 01 23:34:38 CDT 2017
+Transforming org.apache.commons.lang3.text.StrBuilder$StrBuilderTokenizer... 
+Writing to sootOutput/org.apache.commons.lang3.text.StrBuilder$StrBuilderTokenizer.shimple
+Soot finished on Tue Aug 01 23:34:39 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 12 (4)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 3
+classfile = org.apache.commons.lang3.text.StrBuilder$StrBuilderTokenizer
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.FormattableUtils
+Soot started on Tue Aug 01 23:34:39 CDT 2017
+Transforming org.apache.commons.lang3.text.FormattableUtils... 
+Writing to sootOutput/org.apache.commons.lang3.text.FormattableUtils.shimple
+Soot finished on Tue Aug 01 23:34:39 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 101 (11)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 19 (9)
+number-of-methods = 6
+classfile = org.apache.commons.lang3.text.FormattableUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.WordUtils
+Soot started on Tue Aug 01 23:34:40 CDT 2017
+Transforming org.apache.commons.lang3.text.WordUtils... 
+Writing to sootOutput/org.apache.commons.lang3.text.WordUtils.shimple
+Soot finished on Tue Aug 01 23:34:40 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 209 (13)
+if-ret-distance = 423 (35)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 383 (43)
+number-of-methods = 13
+classfile = org.apache.commons.lang3.text.WordUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.StrBuilder
+Soot started on Tue Aug 01 23:34:40 CDT 2017
+Transforming org.apache.commons.lang3.text.StrBuilder... 
+Writing to sootOutput/org.apache.commons.lang3.text.StrBuilder.shimple
+Soot finished on Tue Aug 01 23:34:43 CDT 2017
+Soot has run for 0 min. 2 sec.
+if-iv-distance = 888 (118)
+if-ret-distance = 913 (192)
+if-throw-distance = 425 (76)
+pure-Veritesting-regions-size = 1405 (126)
+number-of-methods = 149
+classfile = org.apache.commons.lang3.text.StrBuilder
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.StrMatcher$TrimMatcher
+Soot started on Tue Aug 01 23:34:43 CDT 2017
+Transforming org.apache.commons.lang3.text.StrMatcher$TrimMatcher... 
+Writing to sootOutput/org.apache.commons.lang3.text.StrMatcher$TrimMatcher.shimple
+Soot finished on Tue Aug 01 23:34:44 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 1 (1)
+number-of-methods = 2
+classfile = org.apache.commons.lang3.text.StrMatcher$TrimMatcher
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.translate.NumericEntityEscaper
+Soot started on Tue Aug 01 23:34:44 CDT 2017
+Transforming org.apache.commons.lang3.text.translate.NumericEntityEscaper... 
+Writing to sootOutput/org.apache.commons.lang3.text.translate.NumericEntityEscaper.shimple
+Soot finished on Tue Aug 01 23:34:44 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 78 (18)
+if-ret-distance = 56 (12)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 7 (1)
+number-of-methods = 7
+classfile = org.apache.commons.lang3.text.translate.NumericEntityEscaper
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.translate.OctalUnescaper
+Soot started on Tue Aug 01 23:34:45 CDT 2017
+Transforming org.apache.commons.lang3.text.translate.OctalUnescaper... 
+Writing to sootOutput/org.apache.commons.lang3.text.translate.OctalUnescaper.shimple
+Soot finished on Tue Aug 01 23:34:45 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 41 (2)
+if-ret-distance = 62 (7)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 15 (2)
+number-of-methods = 3
+classfile = org.apache.commons.lang3.text.translate.OctalUnescaper
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.translate.UnicodeEscaper
+Soot started on Tue Aug 01 23:34:45 CDT 2017
+Transforming org.apache.commons.lang3.text.translate.UnicodeEscaper... 
+Writing to sootOutput/org.apache.commons.lang3.text.translate.UnicodeEscaper.shimple
+Soot finished on Tue Aug 01 23:34:46 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 102 (14)
+if-ret-distance = 52 (12)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 7 (1)
+number-of-methods = 8
+classfile = org.apache.commons.lang3.text.translate.UnicodeEscaper
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.translate.NumericEntityUnescaper
+Soot started on Tue Aug 01 23:34:46 CDT 2017
+Transforming org.apache.commons.lang3.text.translate.NumericEntityUnescaper... 
+Writing to sootOutput/org.apache.commons.lang3.text.translate.NumericEntityUnescaper.shimple
+Soot finished on Tue Aug 01 23:34:47 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 26 (7)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 21 (4)
+number-of-methods = 3
+classfile = org.apache.commons.lang3.text.translate.NumericEntityUnescaper
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.translate.NumericEntityUnescaper$OPTION
+Soot started on Tue Aug 01 23:34:47 CDT 2017
+Transforming org.apache.commons.lang3.text.translate.NumericEntityUnescaper$OPTION... 
+Writing to sootOutput/org.apache.commons.lang3.text.translate.NumericEntityUnescaper$OPTION.shimple
+Soot finished on Tue Aug 01 23:34:48 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 4
+classfile = org.apache.commons.lang3.text.translate.NumericEntityUnescaper$OPTION
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.translate.CharSequenceTranslator
+Soot started on Tue Aug 01 23:34:48 CDT 2017
+Transforming org.apache.commons.lang3.text.translate.CharSequenceTranslator... 
+Writing to sootOutput/org.apache.commons.lang3.text.translate.CharSequenceTranslator.shimple
+Soot finished on Tue Aug 01 23:34:48 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 42 (5)
+if-ret-distance = 63 (6)
+if-throw-distance = 3 (1)
+pure-Veritesting-regions-size = 39 (4)
+number-of-methods = 5
+classfile = org.apache.commons.lang3.text.translate.CharSequenceTranslator
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.translate.UnicodeUnescaper
+Soot started on Tue Aug 01 23:34:49 CDT 2017
+Transforming org.apache.commons.lang3.text.translate.UnicodeUnescaper... 
+Writing to sootOutput/org.apache.commons.lang3.text.translate.UnicodeUnescaper.shimple
+Soot finished on Tue Aug 01 23:34:49 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 45 (2)
+if-ret-distance = 65 (7)
+if-throw-distance = 51 (2)
+pure-Veritesting-regions-size = 18 (4)
+number-of-methods = 2
+classfile = org.apache.commons.lang3.text.translate.UnicodeUnescaper
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.translate.AggregateTranslator
+Soot started on Tue Aug 01 23:34:49 CDT 2017
+Transforming org.apache.commons.lang3.text.translate.AggregateTranslator... 
+Writing to sootOutput/org.apache.commons.lang3.text.translate.AggregateTranslator.shimple
+Soot finished on Tue Aug 01 23:34:50 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 39 (9)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 2
+classfile = org.apache.commons.lang3.text.translate.AggregateTranslator
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.translate.EntityArrays
+Soot started on Tue Aug 01 23:34:50 CDT 2017
+Transforming org.apache.commons.lang3.text.translate.EntityArrays... 
+Writing to sootOutput/org.apache.commons.lang3.text.translate.EntityArrays.shimple
+Soot finished on Tue Aug 01 23:34:52 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 180 (5)
+number-of-methods = 13
+classfile = org.apache.commons.lang3.text.translate.EntityArrays
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.translate.LookupTranslator
+Soot started on Tue Aug 01 23:34:52 CDT 2017
+Transforming org.apache.commons.lang3.text.translate.LookupTranslator... 
+Writing to sootOutput/org.apache.commons.lang3.text.translate.LookupTranslator.shimple
+Soot finished on Tue Aug 01 23:34:53 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 187 (12)
+if-ret-distance = 75 (9)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 70 (8)
+number-of-methods = 2
+classfile = org.apache.commons.lang3.text.translate.LookupTranslator
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.translate.CodePointTranslator
+Soot started on Tue Aug 01 23:34:53 CDT 2017
+Transforming org.apache.commons.lang3.text.translate.CodePointTranslator... 
+Writing to sootOutput/org.apache.commons.lang3.text.translate.CodePointTranslator.shimple
+Soot finished on Tue Aug 01 23:34:53 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 2 (2)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 2
+classfile = org.apache.commons.lang3.text.translate.CodePointTranslator
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.translate.JavaUnicodeEscaper
+Soot started on Tue Aug 01 23:34:54 CDT 2017
+Transforming org.apache.commons.lang3.text.translate.JavaUnicodeEscaper... 
+Writing to sootOutput/org.apache.commons.lang3.text.translate.JavaUnicodeEscaper.shimple
+Soot finished on Tue Aug 01 23:34:54 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 6
+classfile = org.apache.commons.lang3.text.translate.JavaUnicodeEscaper
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.StrMatcher$CharMatcher
+Soot started on Tue Aug 01 23:34:54 CDT 2017
+Transforming org.apache.commons.lang3.text.StrMatcher$CharMatcher... 
+Writing to sootOutput/org.apache.commons.lang3.text.StrMatcher$CharMatcher.shimple
+Soot finished on Tue Aug 01 23:34:55 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 1 (1)
+number-of-methods = 2
+classfile = org.apache.commons.lang3.text.StrMatcher$CharMatcher
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.StrMatcher$NoMatcher
+Soot started on Tue Aug 01 23:34:55 CDT 2017
+Transforming org.apache.commons.lang3.text.StrMatcher$NoMatcher... 
+Writing to sootOutput/org.apache.commons.lang3.text.StrMatcher$NoMatcher.shimple
+Soot finished on Tue Aug 01 23:34:56 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 2
+classfile = org.apache.commons.lang3.text.StrMatcher$NoMatcher
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.StrTokenizer
+Soot started on Tue Aug 01 23:34:56 CDT 2017
+Transforming org.apache.commons.lang3.text.StrTokenizer... 
+Writing to sootOutput/org.apache.commons.lang3.text.StrTokenizer.shimple
+Soot finished on Tue Aug 01 23:34:57 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 119 (18)
+if-ret-distance = 267 (47)
+if-throw-distance = 6 (2)
+pure-Veritesting-regions-size = 147 (28)
+number-of-methods = 69
+classfile = org.apache.commons.lang3.text.StrTokenizer
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.text.StrMatcher
+Soot started on Tue Aug 01 23:34:57 CDT 2017
+Transforming org.apache.commons.lang3.text.StrMatcher... 
+Writing to sootOutput/org.apache.commons.lang3.text.StrMatcher.shimple
+Soot finished on Tue Aug 01 23:34:58 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 57 (14)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 16
+classfile = org.apache.commons.lang3.text.StrMatcher
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.CharSet
+Soot started on Tue Aug 01 23:34:58 CDT 2017
+Transforming org.apache.commons.lang3.CharSet... 
+Writing to sootOutput/org.apache.commons.lang3.CharSet.shimple
+Soot finished on Tue Aug 01 23:34:59 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 128 (15)
+if-ret-distance = 124 (23)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 75 (12)
+number-of-methods = 9
+classfile = org.apache.commons.lang3.CharSet
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.builder.HashCodeBuilder
+Soot started on Tue Aug 01 23:34:59 CDT 2017
+Transforming org.apache.commons.lang3.builder.HashCodeBuilder... 
+Writing to sootOutput/org.apache.commons.lang3.builder.HashCodeBuilder.shimple
+Soot finished on Tue Aug 01 23:35:00 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 633 (84)
+if-ret-distance = 155 (19)
+if-throw-distance = 34 (8)
+pure-Veritesting-regions-size = 286 (22)
+number-of-methods = 37
+classfile = org.apache.commons.lang3.builder.HashCodeBuilder
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.builder.IDKey
+Soot started on Tue Aug 01 23:35:01 CDT 2017
+Transforming org.apache.commons.lang3.builder.IDKey... 
+Writing to sootOutput/org.apache.commons.lang3.builder.IDKey.shimple
+Soot finished on Tue Aug 01 23:35:01 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 21 (5)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 1 (1)
+number-of-methods = 3
+classfile = org.apache.commons.lang3.builder.IDKey
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.builder.EqualsBuilder
+Soot started on Tue Aug 01 23:35:01 CDT 2017
+Transforming org.apache.commons.lang3.builder.EqualsBuilder... 
+Writing to sootOutput/org.apache.commons.lang3.builder.EqualsBuilder.shimple
+Soot finished on Tue Aug 01 23:35:03 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 194 (64)
+if-ret-distance = 598 (151)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 29 (14)
+number-of-methods = 36
+classfile = org.apache.commons.lang3.builder.EqualsBuilder
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.builder.ToStringStyle$SimpleToStringStyle
+Soot started on Tue Aug 01 23:35:03 CDT 2017
+Transforming org.apache.commons.lang3.builder.ToStringStyle$SimpleToStringStyle... 
+Writing to sootOutput/org.apache.commons.lang3.builder.ToStringStyle$SimpleToStringStyle.shimple
+Soot finished on Tue Aug 01 23:35:04 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 2
+classfile = org.apache.commons.lang3.builder.ToStringStyle$SimpleToStringStyle
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.builder.ToStringBuilder
+Soot started on Tue Aug 01 23:35:04 CDT 2017
+Transforming org.apache.commons.lang3.builder.ToStringBuilder... 
+Writing to sootOutput/org.apache.commons.lang3.builder.ToStringBuilder.shimple
+Soot finished on Tue Aug 01 23:35:05 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 14 (4)
+if-ret-distance = 2 (1)
+if-throw-distance = 3 (1)
+pure-Veritesting-regions-size = 4 (2)
+number-of-methods = 65
+classfile = org.apache.commons.lang3.builder.ToStringBuilder
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.builder.CompareToBuilder
+Soot started on Tue Aug 01 23:35:05 CDT 2017
+Transforming org.apache.commons.lang3.builder.CompareToBuilder... 
+Writing to sootOutput/org.apache.commons.lang3.builder.CompareToBuilder.shimple
+Soot finished on Tue Aug 01 23:35:07 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 577 (141)
+if-throw-distance = 26 (6)
+pure-Veritesting-regions-size = 32 (16)
+number-of-methods = 31
+classfile = org.apache.commons.lang3.builder.CompareToBuilder
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.builder.ToStringStyle$ShortPrefixToStringStyle
+Soot started on Tue Aug 01 23:35:07 CDT 2017
+Transforming org.apache.commons.lang3.builder.ToStringStyle$ShortPrefixToStringStyle... 
+Writing to sootOutput/org.apache.commons.lang3.builder.ToStringStyle$ShortPrefixToStringStyle.shimple
+Soot finished on Tue Aug 01 23:35:07 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 2
+classfile = org.apache.commons.lang3.builder.ToStringStyle$ShortPrefixToStringStyle
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.builder.Builder
+Soot started on Tue Aug 01 23:35:07 CDT 2017
+Transforming org.apache.commons.lang3.builder.Builder... 
+Writing to sootOutput/org.apache.commons.lang3.builder.Builder.shimple
+Soot finished on Tue Aug 01 23:35:08 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.apache.commons.lang3.builder.Builder
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.builder.StandardToStringStyle
+Soot started on Tue Aug 01 23:35:08 CDT 2017
+Transforming org.apache.commons.lang3.builder.StandardToStringStyle... 
+Writing to sootOutput/org.apache.commons.lang3.builder.StandardToStringStyle.shimple
+Soot finished on Tue Aug 01 23:35:09 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 41
+classfile = org.apache.commons.lang3.builder.StandardToStringStyle
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.builder.ToStringStyle$MultiLineToStringStyle
+Soot started on Tue Aug 01 23:35:09 CDT 2017
+Transforming org.apache.commons.lang3.builder.ToStringStyle$MultiLineToStringStyle... 
+Writing to sootOutput/org.apache.commons.lang3.builder.ToStringStyle$MultiLineToStringStyle.shimple
+Soot finished on Tue Aug 01 23:35:10 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 2
+classfile = org.apache.commons.lang3.builder.ToStringStyle$MultiLineToStringStyle
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.builder.ToStringStyle$NoFieldNameToStringStyle
+Soot started on Tue Aug 01 23:35:10 CDT 2017
+Transforming org.apache.commons.lang3.builder.ToStringStyle$NoFieldNameToStringStyle... 
+Writing to sootOutput/org.apache.commons.lang3.builder.ToStringStyle$NoFieldNameToStringStyle.shimple
+Soot finished on Tue Aug 01 23:35:10 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 2
+classfile = org.apache.commons.lang3.builder.ToStringStyle$NoFieldNameToStringStyle
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.builder.ToStringStyle
+Soot started on Tue Aug 01 23:35:11 CDT 2017
+Transforming org.apache.commons.lang3.builder.ToStringStyle... 
+Writing to sootOutput/org.apache.commons.lang3.builder.ToStringStyle.shimple
+Soot finished on Tue Aug 01 23:35:13 CDT 2017
+Soot has run for 0 min. 2 sec.
+if-iv-distance = 2597 (290)
+if-ret-distance = 252 (28)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 485 (50)
+number-of-methods = 113
+classfile = org.apache.commons.lang3.builder.ToStringStyle
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.builder.ReflectionToStringBuilder
+Soot started on Tue Aug 01 23:35:13 CDT 2017
+Transforming org.apache.commons.lang3.builder.ReflectionToStringBuilder... 
+Writing to sootOutput/org.apache.commons.lang3.builder.ReflectionToStringBuilder.shimple
+Soot finished on Tue Aug 01 23:35:15 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 159 (20)
+if-ret-distance = 181 (33)
+if-throw-distance = 10 (2)
+pure-Veritesting-regions-size = 132 (11)
+number-of-methods = 26
+classfile = org.apache.commons.lang3.builder.ReflectionToStringBuilder
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.builder.ToStringStyle$DefaultToStringStyle
+Soot started on Tue Aug 01 23:35:15 CDT 2017
+Transforming org.apache.commons.lang3.builder.ToStringStyle$DefaultToStringStyle... 
+Writing to sootOutput/org.apache.commons.lang3.builder.ToStringStyle$DefaultToStringStyle.shimple
+Soot finished on Tue Aug 01 23:35:15 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 2
+classfile = org.apache.commons.lang3.builder.ToStringStyle$DefaultToStringStyle
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.EnumUtils
+Soot started on Tue Aug 01 23:35:15 CDT 2017
+Transforming org.apache.commons.lang3.EnumUtils... 
+Writing to sootOutput/org.apache.commons.lang3.EnumUtils.shimple
+Soot finished on Tue Aug 01 23:35:16 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 344 (24)
+if-ret-distance = 7 (4)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 860 (33)
+number-of-methods = 13
+classfile = org.apache.commons.lang3.EnumUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.reflect.FieldUtils
+Soot started on Tue Aug 01 23:35:17 CDT 2017
+Transforming org.apache.commons.lang3.reflect.FieldUtils... 
+Writing to sootOutput/org.apache.commons.lang3.reflect.FieldUtils.shimple
+Soot finished on Tue Aug 01 23:35:18 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 221 (21)
+if-ret-distance = 190 (31)
+if-throw-distance = 267 (33)
+pure-Veritesting-regions-size = 138 (7)
+number-of-methods = 31
+classfile = org.apache.commons.lang3.reflect.FieldUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.reflect.TypeUtils
+Soot started on Tue Aug 01 23:35:18 CDT 2017
+Transforming org.apache.commons.lang3.reflect.TypeUtils... 
+Writing to sootOutput/org.apache.commons.lang3.reflect.TypeUtils.shimple
+Soot finished on Tue Aug 01 23:35:20 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 360 (20)
+if-ret-distance = 810 (126)
+if-throw-distance = 104 (9)
+pure-Veritesting-regions-size = 508 (66)
+number-of-methods = 28
+classfile = org.apache.commons.lang3.reflect.TypeUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.reflect.MemberUtils
+Soot started on Tue Aug 01 23:35:20 CDT 2017
+Transforming org.apache.commons.lang3.reflect.MemberUtils... 
+Writing to sootOutput/org.apache.commons.lang3.reflect.MemberUtils.shimple
+Soot finished on Tue Aug 01 23:35:21 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 12 (2)
+if-ret-distance = 46 (7)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 282 (27)
+number-of-methods = 9
+classfile = org.apache.commons.lang3.reflect.MemberUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.reflect.ConstructorUtils
+Soot started on Tue Aug 01 23:35:21 CDT 2017
+Transforming org.apache.commons.lang3.reflect.ConstructorUtils... 
+Writing to sootOutput/org.apache.commons.lang3.reflect.ConstructorUtils.shimple
+Soot finished on Tue Aug 01 23:35:22 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 4 (2)
+if-throw-distance = 18 (2)
+pure-Veritesting-regions-size = 8 (8)
+number-of-methods = 8
+classfile = org.apache.commons.lang3.reflect.ConstructorUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.reflect.MethodUtils
+Soot started on Tue Aug 01 23:35:22 CDT 2017
+Transforming org.apache.commons.lang3.reflect.MethodUtils... 
+Writing to sootOutput/org.apache.commons.lang3.reflect.MethodUtils.shimple
+Soot finished on Tue Aug 01 23:35:23 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 74 (18)
+if-throw-distance = 46 (4)
+pure-Veritesting-regions-size = 285 (31)
+number-of-methods = 14
+classfile = org.apache.commons.lang3.reflect.MethodUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.BooleanUtils
+Soot started on Tue Aug 01 23:35:23 CDT 2017
+Transforming org.apache.commons.lang3.BooleanUtils... 
+Writing to sootOutput/org.apache.commons.lang3.BooleanUtils.shimple
+Soot finished on Tue Aug 01 23:35:24 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 357 (100)
+if-throw-distance = 161 (38)
+pure-Veritesting-regions-size = 59 (26)
+number-of-methods = 40
+classfile = org.apache.commons.lang3.BooleanUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.LocaleUtils
+Soot started on Tue Aug 01 23:35:24 CDT 2017
+Transforming org.apache.commons.lang3.LocaleUtils... 
+Writing to sootOutput/org.apache.commons.lang3.LocaleUtils.shimple
+Soot finished on Tue Aug 01 23:35:25 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 264 (13)
+if-ret-distance = 111 (5)
+if-throw-distance = 86 (8)
+pure-Veritesting-regions-size = 160 (12)
+number-of-methods = 10
+classfile = org.apache.commons.lang3.LocaleUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.concurrent.ConcurrentInitializer
+Soot started on Tue Aug 01 23:35:25 CDT 2017
+Transforming org.apache.commons.lang3.concurrent.ConcurrentInitializer... 
+Writing to sootOutput/org.apache.commons.lang3.concurrent.ConcurrentInitializer.shimple
+Soot finished on Tue Aug 01 23:35:26 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.apache.commons.lang3.concurrent.ConcurrentInitializer
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.concurrent.MultiBackgroundInitializer$MultiBackgroundInitializerResults
+Soot started on Tue Aug 01 23:35:26 CDT 2017
+Transforming org.apache.commons.lang3.concurrent.MultiBackgroundInitializer$MultiBackgroundInitializerResults... 
+Writing to sootOutput/org.apache.commons.lang3.concurrent.MultiBackgroundInitializer$MultiBackgroundInitializerResults.shimple
+Soot finished on Tue Aug 01 23:35:27 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 1 (1)
+if-throw-distance = 8 (1)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 9
+classfile = org.apache.commons.lang3.concurrent.MultiBackgroundInitializer$MultiBackgroundInitializerResults
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.concurrent.LazyInitializer
+Soot started on Tue Aug 01 23:35:27 CDT 2017
+Transforming org.apache.commons.lang3.concurrent.LazyInitializer... 
+Writing to sootOutput/org.apache.commons.lang3.concurrent.LazyInitializer.shimple
+Soot finished on Tue Aug 01 23:35:28 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 27 (5)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 2
+classfile = org.apache.commons.lang3.concurrent.LazyInitializer
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.concurrent.BasicThreadFactory$Builder
+Soot started on Tue Aug 01 23:35:28 CDT 2017
+Transforming org.apache.commons.lang3.concurrent.BasicThreadFactory$Builder... 
+Writing to sootOutput/org.apache.commons.lang3.concurrent.BasicThreadFactory$Builder.shimple
+Soot finished on Tue Aug 01 23:35:28 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 6 (3)
+if-throw-distance = 9 (3)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 14
+classfile = org.apache.commons.lang3.concurrent.BasicThreadFactory$Builder
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.concurrent.CallableBackgroundInitializer
+Soot started on Tue Aug 01 23:35:29 CDT 2017
+Transforming org.apache.commons.lang3.concurrent.CallableBackgroundInitializer... 
+Writing to sootOutput/org.apache.commons.lang3.concurrent.CallableBackgroundInitializer.shimple
+Soot finished on Tue Aug 01 23:35:29 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 1 (1)
+if-throw-distance = 3 (1)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 4
+classfile = org.apache.commons.lang3.concurrent.CallableBackgroundInitializer
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.concurrent.TimedSemaphore
+Soot started on Tue Aug 01 23:35:29 CDT 2017
+Transforming org.apache.commons.lang3.concurrent.TimedSemaphore... 
+Writing to sootOutput/org.apache.commons.lang3.concurrent.TimedSemaphore.shimple
+Soot finished on Tue Aug 01 23:35:30 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 163 (17)
+if-ret-distance = 63 (2)
+if-throw-distance = 6 (2)
+pure-Veritesting-regions-size = 107 (14)
+number-of-methods = 16
+classfile = org.apache.commons.lang3.concurrent.TimedSemaphore
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.concurrent.TimedSemaphore$1
+Soot started on Tue Aug 01 23:35:30 CDT 2017
+Transforming org.apache.commons.lang3.concurrent.TimedSemaphore$1... 
+Writing to sootOutput/org.apache.commons.lang3.concurrent.TimedSemaphore$1.shimple
+Soot finished on Tue Aug 01 23:35:31 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 2
+classfile = org.apache.commons.lang3.concurrent.TimedSemaphore$1
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.concurrent.ConcurrentRuntimeException
+Soot started on Tue Aug 01 23:35:31 CDT 2017
+Transforming org.apache.commons.lang3.concurrent.ConcurrentRuntimeException... 
+Writing to sootOutput/org.apache.commons.lang3.concurrent.ConcurrentRuntimeException.shimple
+Soot finished on Tue Aug 01 23:35:32 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 3
+classfile = org.apache.commons.lang3.concurrent.ConcurrentRuntimeException
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.concurrent.ConcurrentException
+Soot started on Tue Aug 01 23:35:32 CDT 2017
+Transforming org.apache.commons.lang3.concurrent.ConcurrentException... 
+Writing to sootOutput/org.apache.commons.lang3.concurrent.ConcurrentException.shimple
+Soot finished on Tue Aug 01 23:35:32 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 3
+classfile = org.apache.commons.lang3.concurrent.ConcurrentException
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.concurrent.BackgroundInitializer
+Soot started on Tue Aug 01 23:35:32 CDT 2017
+Transforming org.apache.commons.lang3.concurrent.BackgroundInitializer... 
+Writing to sootOutput/org.apache.commons.lang3.concurrent.BackgroundInitializer.shimple
+Soot finished on Tue Aug 01 23:35:33 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 15 (4)
+if-throw-distance = 6 (2)
+pure-Veritesting-regions-size = 2 (2)
+number-of-methods = 12
+classfile = org.apache.commons.lang3.concurrent.BackgroundInitializer
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.concurrent.BackgroundInitializer$InitializationTask
+Soot started on Tue Aug 01 23:35:33 CDT 2017
+Transforming org.apache.commons.lang3.concurrent.BackgroundInitializer$InitializationTask... 
+Writing to sootOutput/org.apache.commons.lang3.concurrent.BackgroundInitializer$InitializationTask.shimple
+Soot finished on Tue Aug 01 23:35:34 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 2 (1)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 2
+classfile = org.apache.commons.lang3.concurrent.BackgroundInitializer$InitializationTask
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.concurrent.ConcurrentUtils$ConstantFuture
+Soot started on Tue Aug 01 23:35:34 CDT 2017
+Transforming org.apache.commons.lang3.concurrent.ConcurrentUtils$ConstantFuture... 
+Writing to sootOutput/org.apache.commons.lang3.concurrent.ConcurrentUtils$ConstantFuture.shimple
+Soot finished on Tue Aug 01 23:35:34 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 6
+classfile = org.apache.commons.lang3.concurrent.ConcurrentUtils$ConstantFuture
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.concurrent.ConstantInitializer
+Soot started on Tue Aug 01 23:35:35 CDT 2017
+Transforming org.apache.commons.lang3.concurrent.ConstantInitializer... 
+Writing to sootOutput/org.apache.commons.lang3.concurrent.ConstantInitializer.shimple
+Soot finished on Tue Aug 01 23:35:35 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 17 (5)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 1 (1)
+number-of-methods = 6
+classfile = org.apache.commons.lang3.concurrent.ConstantInitializer
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.concurrent.BasicThreadFactory
+Soot started on Tue Aug 01 23:35:35 CDT 2017
+Transforming org.apache.commons.lang3.concurrent.BasicThreadFactory... 
+Writing to sootOutput/org.apache.commons.lang3.concurrent.BasicThreadFactory.shimple
+Soot finished on Tue Aug 01 23:35:36 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 16 (4)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 2 (1)
+number-of-methods = 10
+classfile = org.apache.commons.lang3.concurrent.BasicThreadFactory
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.concurrent.ConcurrentUtils
+Soot started on Tue Aug 01 23:35:36 CDT 2017
+Transforming org.apache.commons.lang3.concurrent.ConcurrentUtils... 
+Writing to sootOutput/org.apache.commons.lang3.concurrent.ConcurrentUtils.shimple
+Soot finished on Tue Aug 01 23:35:37 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 74 (25)
+if-throw-distance = 60 (10)
+pure-Veritesting-regions-size = 2 (2)
+number-of-methods = 13
+classfile = org.apache.commons.lang3.concurrent.ConcurrentUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.concurrent.MultiBackgroundInitializer$1
+Soot started on Tue Aug 01 23:35:37 CDT 2017
+Transforming org.apache.commons.lang3.concurrent.MultiBackgroundInitializer$1... 
+Writing to sootOutput/org.apache.commons.lang3.concurrent.MultiBackgroundInitializer$1.shimple
+Soot finished on Tue Aug 01 23:35:37 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.apache.commons.lang3.concurrent.MultiBackgroundInitializer$1
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.concurrent.MultiBackgroundInitializer
+Soot started on Tue Aug 01 23:35:38 CDT 2017
+Transforming org.apache.commons.lang3.concurrent.MultiBackgroundInitializer... 
+Writing to sootOutput/org.apache.commons.lang3.concurrent.MultiBackgroundInitializer.shimple
+Soot finished on Tue Aug 01 23:35:38 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 402 (28)
+if-ret-distance = 15 (2)
+if-throw-distance = 21 (5)
+pure-Veritesting-regions-size = 105 (5)
+number-of-methods = 6
+classfile = org.apache.commons.lang3.concurrent.MultiBackgroundInitializer
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.concurrent.AtomicInitializer
+Soot started on Tue Aug 01 23:35:38 CDT 2017
+Transforming org.apache.commons.lang3.concurrent.AtomicInitializer... 
+Writing to sootOutput/org.apache.commons.lang3.concurrent.AtomicInitializer.shimple
+Soot finished on Tue Aug 01 23:35:39 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 8 (2)
+number-of-methods = 2
+classfile = org.apache.commons.lang3.concurrent.AtomicInitializer
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.concurrent.AtomicSafeInitializer
+Soot started on Tue Aug 01 23:35:39 CDT 2017
+Transforming org.apache.commons.lang3.concurrent.AtomicSafeInitializer... 
+Writing to sootOutput/org.apache.commons.lang3.concurrent.AtomicSafeInitializer.shimple
+Soot finished on Tue Aug 01 23:35:40 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 102 (8)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 145 (5)
+number-of-methods = 2
+classfile = org.apache.commons.lang3.concurrent.AtomicSafeInitializer
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.concurrent.BasicThreadFactory$1
+Soot started on Tue Aug 01 23:35:40 CDT 2017
+Transforming org.apache.commons.lang3.concurrent.BasicThreadFactory$1... 
+Writing to sootOutput/org.apache.commons.lang3.concurrent.BasicThreadFactory$1.shimple
+Soot finished on Tue Aug 01 23:35:40 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.apache.commons.lang3.concurrent.BasicThreadFactory$1
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.CharRange$CharacterIterator
+Soot started on Tue Aug 01 23:35:40 CDT 2017
+Transforming org.apache.commons.lang3.CharRange$CharacterIterator... 
+Writing to sootOutput/org.apache.commons.lang3.CharRange$CharacterIterator.shimple
+Soot finished on Tue Aug 01 23:35:41 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 4 (1)
+if-throw-distance = 3 (1)
+pure-Veritesting-regions-size = 38 (8)
+number-of-methods = 7
+classfile = org.apache.commons.lang3.CharRange$CharacterIterator
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.ArrayUtils
+Soot started on Tue Aug 01 23:35:41 CDT 2017
+Transforming org.apache.commons.lang3.ArrayUtils... 
+Writing to sootOutput/org.apache.commons.lang3.ArrayUtils.shimple
+Soot finished on Tue Aug 01 23:35:47 CDT 2017
+Soot has run for 0 min. 5 sec.
+if-iv-distance = 1449 (96)
+if-ret-distance = 6505 (867)
+if-throw-distance = 252 (24)
+pure-Veritesting-regions-size = 3795 (385)
+number-of-methods = 224
+classfile = org.apache.commons.lang3.ArrayUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.RandomStringUtils
+Soot started on Tue Aug 01 23:35:47 CDT 2017
+Transforming org.apache.commons.lang3.RandomStringUtils... 
+Writing to sootOutput/org.apache.commons.lang3.RandomStringUtils.shimple
+Soot finished on Tue Aug 01 23:35:48 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 56 (9)
+if-throw-distance = 55 (6)
+pure-Veritesting-regions-size = 20 (3)
+number-of-methods = 13
+classfile = org.apache.commons.lang3.RandomStringUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.SystemUtils
+Soot started on Tue Aug 01 23:35:48 CDT 2017
+Transforming org.apache.commons.lang3.SystemUtils... 
+Writing to sootOutput/org.apache.commons.lang3.SystemUtils.shimple
+Soot finished on Tue Aug 01 23:35:49 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 19 (9)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 17 (11)
+number-of-methods = 15
+classfile = org.apache.commons.lang3.SystemUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.LocaleUtils$SyncAvoid
+Soot started on Tue Aug 01 23:35:49 CDT 2017
+Transforming org.apache.commons.lang3.LocaleUtils$SyncAvoid... 
+Writing to sootOutput/org.apache.commons.lang3.LocaleUtils$SyncAvoid.shimple
+Soot finished on Tue Aug 01 23:35:50 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 4
+classfile = org.apache.commons.lang3.LocaleUtils$SyncAvoid
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.StringEscapeUtils$CsvEscaper
+Soot started on Tue Aug 01 23:35:50 CDT 2017
+Transforming org.apache.commons.lang3.StringEscapeUtils$CsvEscaper... 
+Writing to sootOutput/org.apache.commons.lang3.StringEscapeUtils$CsvEscaper.shimple
+Soot finished on Tue Aug 01 23:35:51 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 72 (8)
+if-ret-distance = 19 (1)
+if-throw-distance = 3 (1)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 3
+classfile = org.apache.commons.lang3.StringEscapeUtils$CsvEscaper
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.CharRange$1
+Soot started on Tue Aug 01 23:35:51 CDT 2017
+Transforming org.apache.commons.lang3.CharRange$1... 
+Writing to sootOutput/org.apache.commons.lang3.CharRange$1.shimple
+Soot finished on Tue Aug 01 23:35:51 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.apache.commons.lang3.CharRange$1
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.CharUtils
+Soot started on Tue Aug 01 23:35:51 CDT 2017
+Transforming org.apache.commons.lang3.CharUtils... 
+Writing to sootOutput/org.apache.commons.lang3.CharUtils.shimple
+Soot finished on Tue Aug 01 23:35:52 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 96 (27)
+if-throw-distance = 18 (4)
+pure-Veritesting-regions-size = 175 (35)
+number-of-methods = 24
+classfile = org.apache.commons.lang3.CharUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.CharEncoding
+Soot started on Tue Aug 01 23:35:52 CDT 2017
+Transforming org.apache.commons.lang3.CharEncoding... 
+Writing to sootOutput/org.apache.commons.lang3.CharEncoding.shimple
+Soot finished on Tue Aug 01 23:35:53 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 3 (2)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 2
+classfile = org.apache.commons.lang3.CharEncoding
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.ObjectUtils$Null
+Soot started on Tue Aug 01 23:35:53 CDT 2017
+Transforming org.apache.commons.lang3.ObjectUtils$Null... 
+Writing to sootOutput/org.apache.commons.lang3.ObjectUtils$Null.shimple
+Soot finished on Tue Aug 01 23:35:54 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 2
+classfile = org.apache.commons.lang3.ObjectUtils$Null
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.Conversion
+Soot started on Tue Aug 01 23:35:54 CDT 2017
+Transforming org.apache.commons.lang3.Conversion... 
+Writing to sootOutput/org.apache.commons.lang3.Conversion.shimple
+Soot finished on Tue Aug 01 23:35:57 CDT 2017
+Soot has run for 0 min. 3 sec.
+if-iv-distance = 470 (32)
+if-ret-distance = 2913 (178)
+if-throw-distance = 481 (88)
+pure-Veritesting-regions-size = 2302 (142)
+number-of-methods = 44
+classfile = org.apache.commons.lang3.Conversion
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream
+Soot started on Tue Aug 01 23:35:57 CDT 2017
+Transforming org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream... 
+Writing to sootOutput/org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream.shimple
+Soot finished on Tue Aug 01 23:35:58 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 3
+classfile = org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.StringUtils
+Soot started on Tue Aug 01 23:35:58 CDT 2017
+Transforming org.apache.commons.lang3.StringUtils... 
+Writing to sootOutput/org.apache.commons.lang3.StringUtils.shimple
+Soot finished on Tue Aug 01 23:36:03 CDT 2017
+Soot has run for 0 min. 5 sec.
+if-iv-distance = 1384 (128)
+if-ret-distance = 4448 (801)
+if-throw-distance = 57 (12)
+pure-Veritesting-regions-size = 1065 (174)
+number-of-methods = 187
+classfile = org.apache.commons.lang3.StringUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.StringEscapeUtils$CsvUnescaper
+Soot started on Tue Aug 01 23:36:03 CDT 2017
+Transforming org.apache.commons.lang3.StringEscapeUtils$CsvUnescaper... 
+Writing to sootOutput/org.apache.commons.lang3.StringEscapeUtils$CsvUnescaper.shimple
+Soot finished on Tue Aug 01 23:36:04 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 66 (8)
+if-ret-distance = 52 (6)
+if-throw-distance = 3 (1)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 3
+classfile = org.apache.commons.lang3.StringEscapeUtils$CsvUnescaper
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.StringEscapeUtils
+Soot started on Tue Aug 01 23:36:04 CDT 2017
+Transforming org.apache.commons.lang3.StringEscapeUtils... 
+Writing to sootOutput/org.apache.commons.lang3.StringEscapeUtils.shimple
+Soot finished on Tue Aug 01 23:36:05 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 16
+classfile = org.apache.commons.lang3.StringEscapeUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.ObjectUtils
+Soot started on Tue Aug 01 23:36:05 CDT 2017
+Transforming org.apache.commons.lang3.ObjectUtils... 
+Writing to sootOutput/org.apache.commons.lang3.ObjectUtils.shimple
+Soot finished on Tue Aug 01 23:36:06 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 172 (16)
+if-ret-distance = 285 (40)
+if-throw-distance = 68 (10)
+pure-Veritesting-regions-size = 534 (45)
+number-of-methods = 35
+classfile = org.apache.commons.lang3.ObjectUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.BitField
+Soot started on Tue Aug 01 23:36:07 CDT 2017
+Transforming org.apache.commons.lang3.BitField... 
+Writing to sootOutput/org.apache.commons.lang3.BitField.shimple
+Soot finished on Tue Aug 01 23:36:07 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 77 (10)
+number-of-methods = 18
+classfile = org.apache.commons.lang3.BitField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.CharRange
+Soot started on Tue Aug 01 23:36:07 CDT 2017
+Transforming org.apache.commons.lang3.CharRange... 
+Writing to sootOutput/org.apache.commons.lang3.CharRange.shimple
+Soot finished on Tue Aug 01 23:36:08 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 45 (7)
+if-ret-distance = 75 (13)
+if-throw-distance = 3 (1)
+pure-Veritesting-regions-size = 26 (17)
+number-of-methods = 17
+classfile = org.apache.commons.lang3.CharRange
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.event.EventUtils
+Soot started on Tue Aug 01 23:36:08 CDT 2017
+Transforming org.apache.commons.lang3.event.EventUtils... 
+Writing to sootOutput/org.apache.commons.lang3.event.EventUtils.shimple
+Soot finished on Tue Aug 01 23:36:09 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 3
+classfile = org.apache.commons.lang3.event.EventUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.event.EventListenerSupport
+Soot started on Tue Aug 01 23:36:09 CDT 2017
+Transforming org.apache.commons.lang3.event.EventListenerSupport... 
+Writing to sootOutput/org.apache.commons.lang3.event.EventListenerSupport.shimple
+Soot finished on Tue Aug 01 23:36:10 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 185 (18)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 15
+classfile = org.apache.commons.lang3.event.EventListenerSupport
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.event.EventListenerSupport$ProxyInvocationHandler
+Soot started on Tue Aug 01 23:36:10 CDT 2017
+Transforming org.apache.commons.lang3.event.EventListenerSupport$ProxyInvocationHandler... 
+Writing to sootOutput/org.apache.commons.lang3.event.EventListenerSupport$ProxyInvocationHandler.shimple
+Soot finished on Tue Aug 01 23:36:11 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 68 (9)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 2
+classfile = org.apache.commons.lang3.event.EventListenerSupport$ProxyInvocationHandler
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.event.EventUtils$EventBindingInvocationHandler
+Soot started on Tue Aug 01 23:36:11 CDT 2017
+Transforming org.apache.commons.lang3.event.EventUtils$EventBindingInvocationHandler... 
+Writing to sootOutput/org.apache.commons.lang3.event.EventUtils$EventBindingInvocationHandler.shimple
+Soot finished on Tue Aug 01 23:36:12 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 58 (10)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 8 (2)
+number-of-methods = 3
+classfile = org.apache.commons.lang3.event.EventUtils$EventBindingInvocationHandler
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.JavaVersion
+Soot started on Tue Aug 01 23:36:12 CDT 2017
+Transforming org.apache.commons.lang3.JavaVersion... 
+Writing to sootOutput/org.apache.commons.lang3.JavaVersion.shimple
+Soot finished on Tue Aug 01 23:36:13 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 38 (9)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 1 (1)
+number-of-methods = 8
+classfile = org.apache.commons.lang3.JavaVersion
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.Range$ComparableComparator
+Soot started on Tue Aug 01 23:36:13 CDT 2017
+Transforming org.apache.commons.lang3.Range$ComparableComparator... 
+Writing to sootOutput/org.apache.commons.lang3.Range$ComparableComparator.shimple
+Soot finished on Tue Aug 01 23:36:13 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 5
+classfile = org.apache.commons.lang3.Range$ComparableComparator
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.DateFormatUtils
+Soot started on Tue Aug 01 23:36:13 CDT 2017
+Transforming org.apache.commons.lang3.time.DateFormatUtils... 
+Writing to sootOutput/org.apache.commons.lang3.time.DateFormatUtils.shimple
+Soot finished on Tue Aug 01 23:36:14 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 18
+classfile = org.apache.commons.lang3.time.DateFormatUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDatePrinter
+Soot started on Tue Aug 01 23:36:14 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDatePrinter... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDatePrinter.shimple
+Soot finished on Tue Aug 01 23:36:16 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 148 (31)
+if-ret-distance = 98 (16)
+if-throw-distance = 50 (4)
+pure-Veritesting-regions-size = 184 (26)
+number-of-methods = 25
+classfile = org.apache.commons.lang3.time.FastDatePrinter
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDatePrinter$TwoDigitNumberField
+Soot started on Tue Aug 01 23:36:16 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDatePrinter$TwoDigitNumberField... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDatePrinter$TwoDigitNumberField.shimple
+Soot finished on Tue Aug 01 23:36:17 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 14 (3)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 4
+classfile = org.apache.commons.lang3.time.FastDatePrinter$TwoDigitNumberField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.DurationFormatUtils$Token
+Soot started on Tue Aug 01 23:36:17 CDT 2017
+Transforming org.apache.commons.lang3.time.DurationFormatUtils$Token... 
+Writing to sootOutput/org.apache.commons.lang3.time.DurationFormatUtils$Token.shimple
+Soot finished on Tue Aug 01 23:36:18 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 129 (20)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 9
+classfile = org.apache.commons.lang3.time.DurationFormatUtils$Token
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDatePrinter$Rule
+Soot started on Tue Aug 01 23:36:18 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDatePrinter$Rule... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDatePrinter$Rule.shimple
+Soot finished on Tue Aug 01 23:36:18 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.apache.commons.lang3.time.FastDatePrinter$Rule
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDatePrinter$StringLiteral
+Soot started on Tue Aug 01 23:36:19 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDatePrinter$StringLiteral... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDatePrinter$StringLiteral.shimple
+Soot finished on Tue Aug 01 23:36:19 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 3
+classfile = org.apache.commons.lang3.time.FastDatePrinter$StringLiteral
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDatePrinter$TextField
+Soot started on Tue Aug 01 23:36:20 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDatePrinter$TextField... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDatePrinter$TextField.shimple
+Soot finished on Tue Aug 01 23:36:21 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 119 (9)
+number-of-methods = 3
+classfile = org.apache.commons.lang3.time.FastDatePrinter$TextField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDateFormat$1
+Soot started on Tue Aug 01 23:36:21 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDateFormat$1... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDateFormat$1.shimple
+Soot finished on Tue Aug 01 23:36:22 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 3
+classfile = org.apache.commons.lang3.time.FastDateFormat$1
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDatePrinter$TwelveHourField
+Soot started on Tue Aug 01 23:36:22 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDatePrinter$TwelveHourField... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDatePrinter$TwelveHourField.shimple
+Soot finished on Tue Aug 01 23:36:23 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 2 (1)
+number-of-methods = 4
+classfile = org.apache.commons.lang3.time.FastDatePrinter$TwelveHourField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDateParser
+Soot started on Tue Aug 01 23:36:23 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDateParser... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDateParser.shimple
+Soot finished on Tue Aug 01 23:36:25 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 797 (54)
+if-ret-distance = 297 (29)
+if-throw-distance = 169 (7)
+pure-Veritesting-regions-size = 11 (7)
+number-of-methods = 25
+classfile = org.apache.commons.lang3.time.FastDateParser
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDatePrinter$TwentyFourHourField
+Soot started on Tue Aug 01 23:36:25 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDatePrinter$TwentyFourHourField... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDatePrinter$TwentyFourHourField.shimple
+Soot finished on Tue Aug 01 23:36:26 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 2 (1)
+number-of-methods = 4
+classfile = org.apache.commons.lang3.time.FastDatePrinter$TwentyFourHourField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDatePrinter$PaddedNumberField
+Soot started on Tue Aug 01 23:36:26 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDatePrinter$PaddedNumberField... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDatePrinter$PaddedNumberField.shimple
+Soot finished on Tue Aug 01 23:36:26 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 194 (19)
+if-ret-distance = 3 (1)
+if-throw-distance = 3 (1)
+pure-Veritesting-regions-size = 7 (2)
+number-of-methods = 4
+classfile = org.apache.commons.lang3.time.FastDatePrinter$PaddedNumberField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.DatePrinter
+Soot started on Tue Aug 01 23:36:26 CDT 2017
+Transforming org.apache.commons.lang3.time.DatePrinter... 
+Writing to sootOutput/org.apache.commons.lang3.time.DatePrinter.shimple
+Soot finished on Tue Aug 01 23:36:27 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.apache.commons.lang3.time.DatePrinter
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDatePrinter$TwoDigitYearField
+Soot started on Tue Aug 01 23:36:27 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDatePrinter$TwoDigitYearField... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDatePrinter$TwoDigitYearField.shimple
+Soot finished on Tue Aug 01 23:36:28 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 5
+classfile = org.apache.commons.lang3.time.FastDatePrinter$TwoDigitYearField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDateParser$Strategy
+Soot started on Tue Aug 01 23:36:28 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDateParser$Strategy... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDateParser$Strategy.shimple
+Soot finished on Tue Aug 01 23:36:29 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 4
+classfile = org.apache.commons.lang3.time.FastDateParser$Strategy
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNameRule
+Soot started on Tue Aug 01 23:36:29 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNameRule... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNameRule.shimple
+Soot finished on Tue Aug 01 23:36:30 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 24 (5)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 3
+classfile = org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNameRule
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDateParser$TimeZoneStrategy
+Soot started on Tue Aug 01 23:36:30 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDateParser$TimeZoneStrategy... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDateParser$TimeZoneStrategy.shimple
+Soot finished on Tue Aug 01 23:36:31 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 768 (44)
+if-ret-distance = 53 (7)
+if-throw-distance = 24 (2)
+pure-Veritesting-regions-size = 216 (5)
+number-of-methods = 3
+classfile = org.apache.commons.lang3.time.FastDateParser$TimeZoneStrategy
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.DateUtils$DateIterator
+Soot started on Tue Aug 01 23:36:31 CDT 2017
+Transforming org.apache.commons.lang3.time.DateUtils$DateIterator... 
+Writing to sootOutput/org.apache.commons.lang3.time.DateUtils$DateIterator.shimple
+Soot finished on Tue Aug 01 23:36:32 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 2 (1)
+if-ret-distance = 6 (1)
+if-throw-distance = 3 (1)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 5
+classfile = org.apache.commons.lang3.time.DateUtils$DateIterator
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDateParser$NumberStrategy
+Soot started on Tue Aug 01 23:36:32 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDateParser$NumberStrategy... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDateParser$NumberStrategy.shimple
+Soot finished on Tue Aug 01 23:36:32 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 5 (2)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 5
+classfile = org.apache.commons.lang3.time.FastDateParser$NumberStrategy
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDateParser$3
+Soot started on Tue Aug 01 23:36:33 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDateParser$3... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDateParser$3.shimple
+Soot finished on Tue Aug 01 23:36:33 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 2
+classfile = org.apache.commons.lang3.time.FastDateParser$3
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDatePrinter$UnpaddedMonthField
+Soot started on Tue Aug 01 23:36:33 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDatePrinter$UnpaddedMonthField... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDatePrinter$UnpaddedMonthField.shimple
+Soot finished on Tue Aug 01 23:36:34 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 15 (3)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 5
+classfile = org.apache.commons.lang3.time.FastDatePrinter$UnpaddedMonthField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDatePrinter$UnpaddedNumberField
+Soot started on Tue Aug 01 23:36:34 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDatePrinter$UnpaddedNumberField... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDatePrinter$UnpaddedNumberField.shimple
+Soot finished on Tue Aug 01 23:36:35 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 34 (7)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 4
+classfile = org.apache.commons.lang3.time.FastDatePrinter$UnpaddedNumberField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDatePrinter$CharacterLiteral
+Soot started on Tue Aug 01 23:36:35 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDatePrinter$CharacterLiteral... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDatePrinter$CharacterLiteral.shimple
+Soot finished on Tue Aug 01 23:36:35 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 3
+classfile = org.apache.commons.lang3.time.FastDatePrinter$CharacterLiteral
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDateParser$4
+Soot started on Tue Aug 01 23:36:36 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDateParser$4... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDateParser$4.shimple
+Soot finished on Tue Aug 01 23:36:36 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 2
+classfile = org.apache.commons.lang3.time.FastDateParser$4
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDatePrinter$NumberRule
+Soot started on Tue Aug 01 23:36:36 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDatePrinter$NumberRule... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDatePrinter$NumberRule.shimple
+Soot finished on Tue Aug 01 23:36:37 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.apache.commons.lang3.time.FastDatePrinter$NumberRule
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDatePrinter$TwoDigitMonthField
+Soot started on Tue Aug 01 23:36:37 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDatePrinter$TwoDigitMonthField... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDatePrinter$TwoDigitMonthField.shimple
+Soot finished on Tue Aug 01 23:36:38 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 5
+classfile = org.apache.commons.lang3.time.FastDatePrinter$TwoDigitMonthField
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.DateUtils
+Soot started on Tue Aug 01 23:36:38 CDT 2017
+Transforming org.apache.commons.lang3.time.DateUtils... 
+Writing to sootOutput/org.apache.commons.lang3.time.DateUtils.shimple
+Soot finished on Tue Aug 01 23:36:41 CDT 2017
+Soot has run for 0 min. 2 sec.
+if-iv-distance = 780 (58)
+if-ret-distance = 524 (49)
+if-throw-distance = 440 (54)
+pure-Veritesting-regions-size = 121 (38)
+number-of-methods = 60
+classfile = org.apache.commons.lang3.time.DateUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDateFormat
+Soot started on Tue Aug 01 23:36:41 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDateFormat... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDateFormat.shimple
+Soot finished on Tue Aug 01 23:36:42 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 6 (2)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 37
+classfile = org.apache.commons.lang3.time.FastDateFormat
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDateParser$2
+Soot started on Tue Aug 01 23:36:42 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDateParser$2... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDateParser$2.shimple
+Soot finished on Tue Aug 01 23:36:43 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 2
+classfile = org.apache.commons.lang3.time.FastDateParser$2
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNumberRule
+Soot started on Tue Aug 01 23:36:43 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNumberRule... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNumberRule.shimple
+Soot finished on Tue Aug 01 23:36:44 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 3 (3)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 4
+classfile = org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNumberRule
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.DateParser
+Soot started on Tue Aug 01 23:36:44 CDT 2017
+Transforming org.apache.commons.lang3.time.DateParser... 
+Writing to sootOutput/org.apache.commons.lang3.time.DateParser.shimple
+Soot finished on Tue Aug 01 23:36:44 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.apache.commons.lang3.time.DateParser
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.StopWatch
+Soot started on Tue Aug 01 23:36:44 CDT 2017
+Transforming org.apache.commons.lang3.time.StopWatch... 
+Writing to sootOutput/org.apache.commons.lang3.time.StopWatch.shimple
+Soot finished on Tue Aug 01 23:36:45 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 92 (18)
+if-throw-distance = 49 (13)
+pure-Veritesting-regions-size = 4 (2)
+number-of-methods = 15
+classfile = org.apache.commons.lang3.time.StopWatch
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDateParser$CopyQuotedStrategy
+Soot started on Tue Aug 01 23:36:45 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDateParser$CopyQuotedStrategy... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDateParser$CopyQuotedStrategy.shimple
+Soot finished on Tue Aug 01 23:36:46 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 2 (1)
+number-of-methods = 3
+classfile = org.apache.commons.lang3.time.FastDateParser$CopyQuotedStrategy
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDateParser$TextStrategy
+Soot started on Tue Aug 01 23:36:46 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDateParser$TextStrategy... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDateParser$TextStrategy.shimple
+Soot finished on Tue Aug 01 23:36:47 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 263 (20)
+if-ret-distance = 4 (1)
+if-throw-distance = 44 (1)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 3
+classfile = org.apache.commons.lang3.time.FastDateParser$TextStrategy
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDatePrinter$TimeZoneDisplayKey
+Soot started on Tue Aug 01 23:36:47 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDatePrinter$TimeZoneDisplayKey... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDatePrinter$TimeZoneDisplayKey.shimple
+Soot finished on Tue Aug 01 23:36:48 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 21 (5)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 4 (4)
+number-of-methods = 3
+classfile = org.apache.commons.lang3.time.FastDatePrinter$TimeZoneDisplayKey
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.DurationFormatUtils
+Soot started on Tue Aug 01 23:36:48 CDT 2017
+Transforming org.apache.commons.lang3.time.DurationFormatUtils... 
+Writing to sootOutput/org.apache.commons.lang3.time.DurationFormatUtils.shimple
+Soot finished on Tue Aug 01 23:36:51 CDT 2017
+Soot has run for 0 min. 2 sec.
+if-iv-distance = 1379 (72)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 970 (79)
+number-of-methods = 12
+classfile = org.apache.commons.lang3.time.DurationFormatUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FormatCache$MultipartKey
+Soot started on Tue Aug 01 23:36:51 CDT 2017
+Transforming org.apache.commons.lang3.time.FormatCache$MultipartKey... 
+Writing to sootOutput/org.apache.commons.lang3.time.FormatCache$MultipartKey.shimple
+Soot finished on Tue Aug 01 23:36:51 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 112 (8)
+number-of-methods = 3
+classfile = org.apache.commons.lang3.time.FormatCache$MultipartKey
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FormatCache
+Soot started on Tue Aug 01 23:36:52 CDT 2017
+Transforming org.apache.commons.lang3.time.FormatCache... 
+Writing to sootOutput/org.apache.commons.lang3.time.FormatCache.shimple
+Soot finished on Tue Aug 01 23:36:53 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 117 (14)
+if-throw-distance = 3 (1)
+pure-Veritesting-regions-size = 33 (7)
+number-of-methods = 9
+classfile = org.apache.commons.lang3.time.FormatCache
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.time.FastDateParser$1
+Soot started on Tue Aug 01 23:36:53 CDT 2017
+Transforming org.apache.commons.lang3.time.FastDateParser$1... 
+Writing to sootOutput/org.apache.commons.lang3.time.FastDateParser$1.shimple
+Soot finished on Tue Aug 01 23:36:53 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 1 (1)
+number-of-methods = 2
+classfile = org.apache.commons.lang3.time.FastDateParser$1
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.math.NumberUtils
+Soot started on Tue Aug 01 23:36:54 CDT 2017
+Transforming org.apache.commons.lang3.math.NumberUtils... 
+Writing to sootOutput/org.apache.commons.lang3.math.NumberUtils.shimple
+Soot finished on Tue Aug 01 23:36:57 CDT 2017
+Soot has run for 0 min. 2 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 534 (93)
+if-throw-distance = 48 (9)
+pure-Veritesting-regions-size = 1010 (125)
+number-of-methods = 49
+classfile = org.apache.commons.lang3.math.NumberUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.math.IEEE754rUtils
+Soot started on Tue Aug 01 23:36:57 CDT 2017
+Transforming org.apache.commons.lang3.math.IEEE754rUtils... 
+Writing to sootOutput/org.apache.commons.lang3.math.IEEE754rUtils.shimple
+Soot finished on Tue Aug 01 23:36:58 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 236 (28)
+if-throw-distance = 44 (12)
+pure-Veritesting-regions-size = 144 (12)
+number-of-methods = 13
+classfile = org.apache.commons.lang3.math.IEEE754rUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.math.Fraction
+Soot started on Tue Aug 01 23:36:58 CDT 2017
+Transforming org.apache.commons.lang3.math.Fraction... 
+Writing to sootOutput/org.apache.commons.lang3.math.Fraction.shimple
+Soot finished on Tue Aug 01 23:37:00 CDT 2017
+Soot has run for 0 min. 2 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 749 (98)
+if-throw-distance = 355 (58)
+pure-Veritesting-regions-size = 172 (30)
+number-of-methods = 36
+classfile = org.apache.commons.lang3.math.Fraction
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.AnnotationUtils
+Soot started on Tue Aug 01 23:37:01 CDT 2017
+Transforming org.apache.commons.lang3.AnnotationUtils... 
+Writing to sootOutput/org.apache.commons.lang3.AnnotationUtils.shimple
+Soot finished on Tue Aug 01 23:37:02 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 56 (6)
+if-ret-distance = 475 (72)
+if-throw-distance = 43 (4)
+pure-Veritesting-regions-size = 9 (5)
+number-of-methods = 11
+classfile = org.apache.commons.lang3.AnnotationUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.SerializationException
+Soot started on Tue Aug 01 23:37:02 CDT 2017
+Transforming org.apache.commons.lang3.SerializationException... 
+Writing to sootOutput/org.apache.commons.lang3.SerializationException.shimple
+Soot finished on Tue Aug 01 23:37:03 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 4
+classfile = org.apache.commons.lang3.SerializationException
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.exception.ExceptionUtils
+Soot started on Tue Aug 01 23:37:03 CDT 2017
+Transforming org.apache.commons.lang3.exception.ExceptionUtils... 
+Writing to sootOutput/org.apache.commons.lang3.exception.ExceptionUtils.shimple
+Soot finished on Tue Aug 01 23:37:05 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 1074 (57)
+if-ret-distance = 381 (37)
+if-throw-distance = 24 (7)
+pure-Veritesting-regions-size = 357 (29)
+number-of-methods = 26
+classfile = org.apache.commons.lang3.exception.ExceptionUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.exception.ExceptionContext
+Soot started on Tue Aug 01 23:37:05 CDT 2017
+Transforming org.apache.commons.lang3.exception.ExceptionContext... 
+Writing to sootOutput/org.apache.commons.lang3.exception.ExceptionContext.shimple
+Soot finished on Tue Aug 01 23:37:06 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.apache.commons.lang3.exception.ExceptionContext
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.exception.CloneFailedException
+Soot started on Tue Aug 01 23:37:06 CDT 2017
+Transforming org.apache.commons.lang3.exception.CloneFailedException... 
+Writing to sootOutput/org.apache.commons.lang3.exception.CloneFailedException.shimple
+Soot finished on Tue Aug 01 23:37:06 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 3
+classfile = org.apache.commons.lang3.exception.CloneFailedException
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.exception.ContextedRuntimeException
+Soot started on Tue Aug 01 23:37:07 CDT 2017
+Transforming org.apache.commons.lang3.exception.ContextedRuntimeException... 
+Writing to sootOutput/org.apache.commons.lang3.exception.ContextedRuntimeException.shimple
+Soot finished on Tue Aug 01 23:37:07 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 3 (1)
+number-of-methods = 16
+classfile = org.apache.commons.lang3.exception.ContextedRuntimeException
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.exception.ContextedException
+Soot started on Tue Aug 01 23:37:08 CDT 2017
+Transforming org.apache.commons.lang3.exception.ContextedException... 
+Writing to sootOutput/org.apache.commons.lang3.exception.ContextedException.shimple
+Soot finished on Tue Aug 01 23:37:08 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 3 (1)
+number-of-methods = 16
+classfile = org.apache.commons.lang3.exception.ContextedException
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.exception.DefaultExceptionContext
+Soot started on Tue Aug 01 23:37:08 CDT 2017
+Transforming org.apache.commons.lang3.exception.DefaultExceptionContext... 
+Writing to sootOutput/org.apache.commons.lang3.exception.DefaultExceptionContext.shimple
+Soot finished on Tue Aug 01 23:37:10 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 1946 (90)
+if-ret-distance = 61 (9)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 300 (10)
+number-of-methods = 10
+classfile = org.apache.commons.lang3.exception.DefaultExceptionContext
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.Range
+Soot started on Tue Aug 01 23:37:10 CDT 2017
+Transforming org.apache.commons.lang3.Range... 
+Writing to sootOutput/org.apache.commons.lang3.Range.shimple
+Soot finished on Tue Aug 01 23:37:11 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 36 (5)
+if-ret-distance = 157 (37)
+if-throw-distance = 40 (5)
+pure-Veritesting-regions-size = 35 (19)
+number-of-methods = 24
+classfile = org.apache.commons.lang3.Range
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.Validate
+Soot started on Tue Aug 01 23:37:11 CDT 2017
+Transforming org.apache.commons.lang3.Validate... 
+Writing to sootOutput/org.apache.commons.lang3.Validate.shimple
+Soot finished on Tue Aug 01 23:37:12 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 107 (47)
+if-throw-distance = 342 (57)
+pure-Veritesting-regions-size = 3 (2)
+number-of-methods = 39
+classfile = org.apache.commons.lang3.Validate
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.AnnotationUtils$1
+Soot started on Tue Aug 01 23:37:12 CDT 2017
+Transforming org.apache.commons.lang3.AnnotationUtils$1... 
+Writing to sootOutput/org.apache.commons.lang3.AnnotationUtils$1.shimple
+Soot finished on Tue Aug 01 23:37:13 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 57 (7)
+number-of-methods = 3
+classfile = org.apache.commons.lang3.AnnotationUtils$1
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.CharSequenceUtils
+Soot started on Tue Aug 01 23:37:13 CDT 2017
+Transforming org.apache.commons.lang3.CharSequenceUtils... 
+Writing to sootOutput/org.apache.commons.lang3.CharSequenceUtils.shimple
+Soot finished on Tue Aug 01 23:37:14 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 214 (34)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 78 (12)
+number-of-methods = 8
+classfile = org.apache.commons.lang3.CharSequenceUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.CharSetUtils
+Soot started on Tue Aug 01 23:37:14 CDT 2017
+Transforming org.apache.commons.lang3.CharSetUtils... 
+Writing to sootOutput/org.apache.commons.lang3.CharSetUtils.shimple
+Soot finished on Tue Aug 01 23:37:15 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 135 (14)
+if-ret-distance = 246 (40)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 187 (13)
+number-of-methods = 8
+classfile = org.apache.commons.lang3.CharSetUtils
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.mutable.MutableDouble
+Soot started on Tue Aug 01 23:37:15 CDT 2017
+Transforming org.apache.commons.lang3.mutable.MutableDouble... 
+Writing to sootOutput/org.apache.commons.lang3.mutable.MutableDouble.shimple
+Soot finished on Tue Aug 01 23:37:16 CDT 2017
+Soot has run for 0 min. 1 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 2 (2)
+number-of-methods = 27
+classfile = org.apache.commons.lang3.mutable.MutableDouble
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.mutable.MutableByte
+Soot started on Tue Aug 01 23:37:17 CDT 2017
+Transforming org.apache.commons.lang3.mutable.MutableByte... 
+Writing to sootOutput/org.apache.commons.lang3.mutable.MutableByte.shimple
+Soot finished on Tue Aug 01 23:37:17 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 7 (2)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 5 (3)
+number-of-methods = 26
+classfile = org.apache.commons.lang3.mutable.MutableByte
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.mutable.MutableBoolean
+Soot started on Tue Aug 01 23:37:18 CDT 2017
+Transforming org.apache.commons.lang3.mutable.MutableBoolean... 
+Writing to sootOutput/org.apache.commons.lang3.mutable.MutableBoolean.shimple
+Soot finished on Tue Aug 01 23:37:18 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 7 (2)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 9 (6)
+number-of-methods = 17
+classfile = org.apache.commons.lang3.mutable.MutableBoolean
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.mutable.Mutable
+Soot started on Tue Aug 01 23:37:19 CDT 2017
+Transforming org.apache.commons.lang3.mutable.Mutable... 
+Writing to sootOutput/org.apache.commons.lang3.mutable.Mutable.shimple
+Soot finished on Tue Aug 01 23:37:19 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 0
+classfile = org.apache.commons.lang3.mutable.Mutable
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.mutable.MutableFloat
+Soot started on Tue Aug 01 23:37:19 CDT 2017
+Transforming org.apache.commons.lang3.mutable.MutableFloat... 
+Writing to sootOutput/org.apache.commons.lang3.mutable.MutableFloat.shimple
+Soot finished on Tue Aug 01 23:37:20 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 0 (0)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 2 (2)
+number-of-methods = 27
+classfile = org.apache.commons.lang3.mutable.MutableFloat
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.mutable.MutableLong
+Soot started on Tue Aug 01 23:37:20 CDT 2017
+Transforming org.apache.commons.lang3.mutable.MutableLong... 
+Writing to sootOutput/org.apache.commons.lang3.mutable.MutableLong.shimple
+Soot finished on Tue Aug 01 23:37:21 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 8 (2)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 6 (3)
+number-of-methods = 25
+classfile = org.apache.commons.lang3.mutable.MutableLong
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.mutable.MutableObject
+Soot started on Tue Aug 01 23:37:21 CDT 2017
+Transforming org.apache.commons.lang3.mutable.MutableObject... 
+Writing to sootOutput/org.apache.commons.lang3.mutable.MutableObject.shimple
+Soot finished on Tue Aug 01 23:37:22 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 24 (7)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 4 (2)
+number-of-methods = 7
+classfile = org.apache.commons.lang3.mutable.MutableObject
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.mutable.MutableInt
+Soot started on Tue Aug 01 23:37:22 CDT 2017
+Transforming org.apache.commons.lang3.mutable.MutableInt... 
+Writing to sootOutput/org.apache.commons.lang3.mutable.MutableInt.shimple
+Soot finished on Tue Aug 01 23:37:23 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 7 (2)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 5 (3)
+number-of-methods = 25
+classfile = org.apache.commons.lang3.mutable.MutableInt
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.mutable.MutableShort
+Soot started on Tue Aug 01 23:37:23 CDT 2017
+Transforming org.apache.commons.lang3.mutable.MutableShort... 
+Writing to sootOutput/org.apache.commons.lang3.mutable.MutableShort.shimple
+Soot finished on Tue Aug 01 23:37:24 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 0 (0)
+if-ret-distance = 7 (2)
+if-throw-distance = 0 (0)
+pure-Veritesting-regions-size = 5 (3)
+number-of-methods = 26
+classfile = org.apache.commons.lang3.mutable.MutableShort
+
+java -Xms4096m SimpleMain -keep-offset -pp -cp /export/scratch/vaibhav/defects4j/lang_bugs/lang_1_buggy/target/classes -src-prec c -f S org.apache.commons.lang3.SerializationUtils
+Soot started on Tue Aug 01 23:37:25 CDT 2017
+Transforming org.apache.commons.lang3.SerializationUtils... 
+Writing to sootOutput/org.apache.commons.lang3.SerializationUtils.shimple
+Soot finished on Tue Aug 01 23:37:25 CDT 2017
+Soot has run for 0 min. 0 sec.
+if-iv-distance = 38 (7)
+if-ret-distance = 60 (8)
+if-throw-distance = 9 (3)
+pure-Veritesting-regions-size = 0 (0)
+number-of-methods = 6
+classfile = org.apache.commons.lang3.SerializationUtils
+
+global #if-ret-dist = 26586 (3967), avg = 6.701790
+global #if-iv-dist = 20686 (1777), avg = 11.640968
+global #if-throw-dist = 4645 (655), avg = 7.091603
+
