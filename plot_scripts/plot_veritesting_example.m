@@ -15,10 +15,10 @@ h_legend=legend('Vanilla SPF','SPF with Veritesting','Location','northwest');
 xlabel('allowed range of symbolic integers');
 ylabel('number of execution paths');
 xlim([3 51]);
-%ylim([0 20]);
+ylim([1 10000]);
 set(gca,'FontSize',15);
 
-toplot_legend_loc('allowed range of symbolic integers','number of execution paths','',h_legend,'northwest');  
+%toplot_legend_loc('allowed range of symbolic integers','number of execution paths','',h_legend,'northwest');  
 
 
 print -depsc '../figures/veritesting_example_semilogy'

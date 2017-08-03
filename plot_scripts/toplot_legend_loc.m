@@ -1,6 +1,6 @@
 function toplot_legend_loc(xaxis,yaxis,plotname,h_legend,new_location)
   %,legend1,legend2)
-  fontsize_val=17;
+  fontsize_val=15;
   
   %horrible hack placed just to get the XTickLabels to start showing up with the 
   %right size in the err_box_plot.m output
