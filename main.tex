@@ -91,7 +91,7 @@
            {δ}{$\delta$}{1}
 }
 
-\title{Veritesting Challenges in Symbolic Execution of Java Bytecode}
+\title{Veritesting Challenges in Symbolic Execution of Java}
 \author{Vaibhav Sharma}
 \affiliation{%
   \institution{University of Minnesota}
@@ -133,7 +133,7 @@
 \begin{abstract}
 Scaling symbolic execution to industrial-sized code is an important open research problem. 
 %
-Veritesting is a promising technique that overcomes the scalability problem by combining the advantages of static symbolic execution with those of dynamic symbolic execution.
+Veritesting is a promising technique that improves the scalability problem by combining the advantages of static symbolic execution with those of dynamic symbolic execution.
 %
 However, veritesting has been applied only to binary-level symbolic execution.
 %
@@ -141,14 +141,15 @@ Integrating veritesting with symbolic execution of Java bytecode presents unique
 %
 Veritesting with Java bytecode requires incorporating non-local control jumps caused by runtime polymorphism, exceptions, native calls, and dynamic class loading.
 %
-Instead of incorporation, veritesting may be performed using such non-local control jumps as exit points
+Instead of including non-local control jumps, veritesting may be performed using such non-local control jumps as exit points
 %
 But, in practice, we find such regions of code to be small, thereby motivating the need to perform static symbolic execution of such non-local control jumps as often as possible.
 %
 We confirm this motivation by running a Soot-based static analysis on six large open-source projects used in the Defects4J collection.
 %
-We find that while veritesting can be applied in thousands of regions, allowing static symbolic execution of non-local control jumps has the potential of providing exponential speedup to dynamic symbolic execution.
+We find that while veritesting can be applied in thousands of regions, allowing static symbolic execution of non-local control jumps amplifies the performance improvement obtained from veritesting.
 %
+Integrating veritesting with Java bytecode-level symbolic execution tools such as Symbolic PathFinder requires us to solve research challenges, such as doing static analysis of virtual function invocations, as well as engineering challenges, such as allowing reuse of structurally equivalent expressions.
 \end{abstract}
 
 %
