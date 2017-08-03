@@ -3,23 +3,25 @@ veritesting_execution_paths = 3:27;
 
 x_vals=3:2:51;
 
+figure
+semilogy(x_vals,normal_execution_paths,'r--','Linewidth',4);
+
 hold on;
+semilogy(x_vals,veritesting_execution_paths,'b-.','Linewidth',4);
 
-plot(x_vals,log10(normal_execution_paths),'r--','Linewidth',4);
-
-plot(x_vals,log10(veritesting_execution_paths),'b-.','Linewidth',4);
-
-
+set(gca,'yscale','log');
 set(gca,'FontSize',15); 
 h_legend=legend('Vanilla SPF','SPF with Veritesting','Location','northwest');
 xlabel('allowed range of symbolic integers');
-ylabel('log (number of execution paths)');
+ylabel('number of execution paths');
 xlim([3 51]);
 %ylim([0 20]);
 set(gca,'FontSize',15);
 
-toplot_legend_loc('allowed range of symbolic integers','log (number of execution paths)','',h_legend,'northwest');  
+toplot_legend_loc('allowed range of symbolic integers','number of execution paths','',h_legend,'northwest');  
 
-hold off;
 
-print -depsc '../figures/veritesting_example'
+print -depsc '../figures/veritesting_example_semilogy'
+
+x = 0:0.1:10;
+y = exp(x);
