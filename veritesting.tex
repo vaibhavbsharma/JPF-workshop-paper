@@ -6,7 +6,7 @@
 %Present results from Soot-based static analysis
 %
 %Talk about how veritesting gets harder to do when considering multi-threaded Java bytecode.
-\subsection{Exit points}
+%\subsection{Exit points}
 While the performance improvement shown in Figure~\ref{fig:v_ex_plot} with statically unrolling the three-way branches is clear, we need to automate this process.
 %
 Integrating veritesting with SPF requires a static analysis generalized for all possible Java constructs.
@@ -103,7 +103,7 @@ time    & 1202                                                 & 984            
 \end{tabular}
 \end{table}
 
-Table~\ref{t:r_s} shows the average size and Table~\ref{t:r_c} shows the number of times each such count was reported. 
+Table~\ref{t:r_s} shows the average size and Table~\ref{t:r_c} shows the number of times each such count was reported.
 %
 The \textit{if-return}, \textit{if-invokevirtual}, \textit{if-throw} columns in Table~\ref{t:r_s} report the average number of instructions observed between any \textit{if} opcode-containing bytecode instruction and a \textit{return}, \textit{invokevirtual} or \textit{invokeinterface}, \textit{throw} opcode-containing bytecode instruction.
 %
@@ -126,15 +126,15 @@ Tables~\ref{t:r_s} and~\ref{t:r_c} also show that early \textit{return} instruct
 \subsection{Veritesting with Multi-threading}
 Veritesting requires SPF to be able to perform static symbolic execution on a region of code and incorporate it as a disjunctive predicate into its path expression along with the corresponding updates to its symbolic store.
 %
-But, if the region being statically analyzed can be executed in a multi-threaded context, then it is necessary to consider all possible points of interference in the region.
+If the region being statically analyzed can be executed in a multi-threaded context, however, then it is necessary to consider all possible points of interference in the region.
 %
 This consideration requires changes to the updates made to SPF\rq s path expression and its symbolic store.
 %
-One way to handle this is to turn every point of interference as an exit point.
+One way to handle this is to turn every point of interference as an exit point, but determining the possible points of interference statically is itself a difficult problem.  Likely it will require some level of dynamic analysis to determine the points of interference at the time of creation of a veritesting region.
 %
-But, veritesting would be beneficial if its static analysis also includes computation of points at which interference is infeasible.
+%But, veritesting would be beneficial if its static analysis also includes computation of points at which interference is infeasible.
 %
-This makes veritesting challenging to perform since the cost of this computation must be less than the cost of doing plain dynamic symbolic execution. 
+This makes creating an efficient veritesting approach challenging since the cost of this computation must be less than the cost of doing plain dynamic symbolic execution.
 
 
 
@@ -151,7 +151,7 @@ This makes veritesting challenging to perform since the cost of this computation
 
 
 
-% Data from perl script-based static analysis 
+% Data from perl script-based static analysis
 % this script just counted the difference between instructions
 %
 % \begin{table}[]

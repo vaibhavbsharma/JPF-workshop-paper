@@ -10,7 +10,7 @@ It has also been extended for parallel symbolic execution~\cite{parallel}, and f
 %
 Given the large and diverse set of applications that stand to benefit from integrating veritesting with SPF, we discuss here the engineering challenges expected with such an integration.
 
-\subsection{Shared Expressions} 
+\subsection{Shared Expressions}
 %Sharing implementation needs to be fixed. Show this using the TestSharing example
 Veritesting causes regions of code to be executed using static symbolic execution.
 %
@@ -20,7 +20,7 @@ This causes large disjunctive formulas to be substituted and reused multiple tim
 %
 To evaluate reuse of structurally equivalent expressions in SPF, consider the code shown in Listing~\ref{lst:sharing}.
 %
-\lstinputlisting[caption={An example with an increasing formula size with every loop iteration}, 
+\lstinputlisting[caption={An example with an increasing formula size with every loop iteration},
 label={lst:sharing}]{code_samples/TestSharing.java}
 %
 The function \textit{testSharing} adds the value of \textit{x} to itself in every loop iteration on line 3 of Listing~\ref{lst:sharing}.
@@ -43,7 +43,7 @@ Figure~\ref{fig:sharing_time} shows the trend seen for increasing values of \tex
 \includegraphics[width=\columnwidth]{figures/sharing_time}
 \end{figure}
 %
-Figure~\ref{fig:sharing_time} shows that the running time remains constant until the value for \textit{bound} is 18, and then starts to rise exponentially.
+Figure~\ref{fig:sharing_time} shows that the running time remains constant until the value for \textit{bound} is 18, and then starts to rise exponentially. 
 %
 We also recorded the maximum memory usage reported by SPF for increasing values of \textit{bound}, and present our observation in Figure~\ref{fig:sharing_mem}.
 \begin{figure}[]
@@ -56,9 +56,9 @@ We observe that at a value of 17 for \textit{bound}, the memory usage starts to 
 %
 We also observed that the number of expression objects undergoes a linear increase with the value of \textit{bound}.
 %
-These three observations lead us to the hypothesis that while SPF does share expression objects internally, the traversal of such expressions breaks the sharing and causes an increase in time and memory.
+These three observations lead us to the hypothesis that while SPF does share expression objects internally, the traversal of such expressions breaks the sharing and causes an increase in time and memory.\mike{The time increase is (I suspect) due to garbage collection once the maximum memory threshold is reached. This may or may not be worth mentioning.}
 %
-Integrating veritesting with SPF to make it scale to industrial-sized code requires resolving such engineering issues. 
+Integrating veritesting with SPF to make it scale to industrial-sized code requires resolving such engineering issues.
 
 \subsection{Complex Expressions}
 %Engineering issue \#2: Need to have complex expressions, talk about how Comparators cannot be used anywhere below the top-level operator
@@ -74,12 +74,12 @@ SPF\rq s design needs to be changed to allow comparison operators in sub-express
 %
 But, because SPF has different classes for different expression types~(\textit{IntegerExpressions}, \textit{RealExpression}), this design change has to be made once for each expression type.
 %
-Thus, integrating veritesting presents a design challenge to allow complex expressions in SPF. 
+Thus, integrating veritesting presents a design challenge to allow complex expressions in SPF.
 
 \subsection{Intermediate variables}
 %Engineering issue \#3: Nice to introduce intermediate variables
 %
-During veritesting, symbolic formulas derived from static symbolic execution of a region may involve conditional write operations into other variables. 
+During veritesting, symbolic formulas derived from static symbolic execution of a region may involve conditional write operations into other variables.
 %
 It is convenient to have intermediate variables~(one per variable written to in the region) which capture such conditional write expressions during the static symbolic execution.
 %
