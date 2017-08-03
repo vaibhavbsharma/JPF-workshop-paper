@@ -1,4 +1,9 @@
 \section{Veritesting with Java bytecode}
+
+While the performance improvement demonstrated on the code in Listing 1 is impressive, it is perhaps not representative of most Java code.  Java conventions encourage the use of indirection when accessing class fields using non-static {\em get} and {\em set} methods, as well as liberal use of exceptions.  Unlike C compilers, which assume a ``closed world'' and often inline simple functions into the body of calling methods to improve performance, the Java compiler must assume an ``open world'' in which a class may be used in a new context, so inlining of non-final methods is unsafe.  
+
+Previous approaches to veritesting exit static code regions when indirect calls to functions or non-local jumps are made.  In this section, we explore how the structure of Java programs might reduce the performance of a n\"aive veritesting approach.
+
 %Talk about how veritesting is different when done on Java bytecode
 %
 %The transition points at the Java bytecode level are return, exceptions (done using athrow), virtual function invocations (invokevirtual, invokeinterface), native calls (also done using invokevirtual), reflection and dynamic class loading (also done using invokevirtual).
@@ -6,20 +11,10 @@
 %Present results from Soot-based static analysis
 %
 %Talk about how veritesting gets harder to do when considering multi-threaded Java bytecode.
-%\subsection{Exit points}
-While the performance improvement shown in Figure~\ref{fig:v_ex_plot} with statically unrolling the three-way branches is clear, we need to automate this process.
+\subsection{Exit points}
+%While the performance improvement shown in Figure~\ref{fig:v_ex_plot} with statically unrolling the three-way branches is clear, we need to automate this process.
 %
-Integrating veritesting with SPF requires a static analysis generalized for all possible Java constructs.
-%
-The primary benefit of implementing veritesting comes from its conversion of branches into disjunctions.
-%
-But this benefit exists only when the number of different exit points from the disjunction is less than the number of execution paths through the region in the first place.
-%
-For example, all execution paths in the first three-way branch in Listing~\ref{lst:v_ex} joined together on line 14, causing the thre-way branch to have a single exit point.
-%
-Therefore, it is crucial for us to identify the number of exit points in our statically-analyzed region.
-%
-Avgerinos et al.~\cite{veritesting} defined exit points as unresolved jumps, function boundaries, and system calls.
+Integrating veritesting with SPF requires that we can represent a region of a java program as a disjunctive formula with multiple exit points.  Each exit point describes a possible distinct continuation of the current path after the static code region completes execution.  Avgerinos et al.~\cite{veritesting} defined exit points as unresolved jumps, function boundaries, and system calls.
 %
 These exit points are nodes in a Control Flow Graph~(CFG) which represent non-local control flow, and therefore, need to be explored using plain dynamic symbolic execution.
 %
@@ -39,11 +34,23 @@ It is primarily used for extensibility purposes, achieving separate compilation,
 %
 Exceptions, virtual function invocations, and reflection create non-local control flow.
 %
-These are constructs which are difficult to analyze, and therefore form a boundary of our static analysis.
+An approach such as Avgerinos et al.~\cite{veritesting} would bound static code regions at each of these boundaries.
+
+
+%Such regions must correctly preserve the semantics of symbolic execution for all possible Java constructs.
 %
-Native calls are used to execute code outside of the Java Runtime Environment.
+The primary benefit of implementing veritesting comes from its conversion of branches into disjunctions.
 %
-Incorporating these into our static analysis would require handling virtual function invocations as well as static analysis of binary code.
+But this benefit exists only when the number of different exit points from the disjunctive formula is less than the number of execution paths through the region in the first place.
+%
+For example, all execution paths in the first three-way branch in Listing~\ref{lst:v_ex} joined together on line 14, causing the thre-way branch to have a single exit point.
+%
+Therefore, it is crucial for us to study the number of exit points for each of our statically-analyzed regions vs. the reduction in the number of branches within the region.
+%
+%
+%Native calls are used to execute code outside of the Java Runtime Environment.
+%
+%Incorporating these into our static analysis would require handling virtual function invocations as well as static analysis of binary code.
 
 These five types of exit points create the kind of non-local control flow which formed the frontier of the visible CFG created as a result of \textit{CFGReduce} step by Avgerinos et al.
 %
@@ -104,6 +111,7 @@ time    & 1202                                                 & 984            
 \end{table}
 
 Table~\ref{t:r_s} shows the average size and Table~\ref{t:r_c} shows the number of times each such count was reported.
+\mike{We need to explain these tables better: can we take a small code fragment (say, that of Listing 1) and explain it according to these numbers, or create a very tiny code fragment that demonstrates them?}
 %
 The \textit{if-return}, \textit{if-invokevirtual}, \textit{if-throw} columns in Table~\ref{t:r_s} report the average number of instructions observed between any \textit{if} opcode-containing bytecode instruction and a \textit{return}, \textit{invokevirtual} or \textit{invokeinterface}, \textit{throw} opcode-containing bytecode instruction.
 %
