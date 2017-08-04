@@ -37,19 +37,17 @@ We increased the value of \textit{bound} from 1 to 29 and recorded the time take
 %
 Figure~\ref{fig:sharing_time} shows the trend seen for increasing values of \textit{bound}.
 %
-\begin{figure}[]
-\caption{Time required for covering paths in Listing~\ref{lst:sharing} with increasing values for \textit{bound}}
-\label{fig:sharing_time}
-\includegraphics[width=\columnwidth]{figures/sharing_time}
-\end{figure}
-%
 Figure~\ref{fig:sharing_time} shows that the running time remains constant until the value for \textit{bound} is 18, and then starts to rise exponentially. \mike{These figures are {\em way} too large.  They could be compressed both vertically and horizontally to fit into one column while still telling the story}
 %
 We also recorded the maximum memory usage reported by SPF for increasing values of \textit{bound}, and present our observation in Figure~\ref{fig:sharing_mem}.
-\begin{figure}[]
-\caption{Maximum memory usage of SPF for covering paths in Listing~\ref{lst:sharing} with increasing values for \textit{bound}}
-\label{fig:sharing_mem}
-\includegraphics[width=\columnwidth]{figures/sharing_mem}
+
+\begin{figure}%
+    \centering
+    \subfloat[Time required for covering paths in Listing~\ref{lst:sharing}]{{\includegraphics[width=0.4\columnwidth]{figures/sharing_time} }\label{fig:sharing_time}}%
+    \qquad
+    \subfloat[Maximum memory usage of SPF for covering paths in Listing~\ref{lst:sharing}]{{\includegraphics[width=0.4\columnwidth]{figures/sharing_mem} }\label{fig:sharing_mem}}%
+    \caption{Time and memory usage of Listing~\ref{lst:sharing} when increasing \textit{bound}}%
+    \label{fig:sharing}%
 \end{figure}
 %
 We observe that at a value of 17 for \textit{bound}, the memory usage starts to rise from 240 MB and has reached 910 MB when \textit{bound} equals 21.

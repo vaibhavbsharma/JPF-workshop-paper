@@ -10,13 +10,13 @@ plot(x_vals,seconds,'r--','Linewidth',4);
 
 set(gca,'FontSize',15); 
 h_legend=0; %legend('SPF','Location','northwest');
-xlabel('increasing \it{bound}');
+xlabel('value of \it{bound}');
 ylabel('Time (seconds) to complete exploration');
-%xlim([3 51]);
+xlim([18 30]);
 %ylim([0 20]);
 set(gca,'FontSize',15);
 
-toplot('increasing \it{bound}','Time (seconds) to complete exploration','');  
+%toplot('increasing \it{bound}','Time (seconds) to complete exploration','');  
 
 hold off;
 

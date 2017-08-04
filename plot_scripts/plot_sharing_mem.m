@@ -10,13 +10,13 @@ plot(x_vals,seconds,'r--','Linewidth',4);
 
 set(gca,'FontSize',15); 
 h_legend=0; %legend('SPF','Location','northwest');
-xlabel('increasing \it{bound}');
+xlabel('value of \it{bound}');
 ylabel('Max memory (MB) reported by SPF');
-%xlim([3 51]);
+xlim([18 30]);
 %ylim([0 20]);
 set(gca,'FontSize',15);
 
-toplot('increasing \it{bound}','Max memory (MB) reported by SPF','');  
+%toplot('increasing \it{bound}','Max memory (MB) reported by SPF','');  
 
 hold off;
 
