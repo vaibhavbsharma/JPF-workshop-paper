@@ -2,59 +2,71 @@
 %Introduce veritesting, present our simple example and its performance improvement, segue into how veritesting at Java bytecode level is different from binary level
 Symbolic execution is a popular testing technique that performs non-standard execution of a program.
 %
-Having been originally proposed in the 1970s, it has been applied for test generation~\cite{dart,cute}, equivalence checking~\cite{ramos,adaptorsynth}, finding vulnerabilities~\cite{driller,angr}, and even for checking correctness of transport protocols~\cite{transport}.
+Having been originally proposed in the 1970s, it has many applications
+like test generation~\cite{dart,cute}, equivalence checking~\cite{ramos,adaptorsynth}, finding vulnerabilities~\cite{driller,angr}, checking correctness of transport protocols~\cite{transport}.
 %
 However, scalability continues to remain a challenge for symbolic execution.
 %
-Veritesting~\cite{veritesting} is a recently proposed technique that uses static symbolic execution to improve the scalability of dynamic symbolic execution.
+Dynamic State Merging~\cite{kuznetsov} provides one way to
+alleviate scalability challenges by opportunistically merging dynamic
+symbolic executors.
+%
+Veritesting~\cite{veritesting} is a different recently proposed
+technique that is more suitable to symbolic execution tools that execute
+one path at a time.
 %
 It has been shown to find more bugs, and achieve more node and path coverage, when implemented at the X86 binary level.
 %
 This provides motivation for investigating integration of veritesting with symbolic execution at the Java bytecode level.
 
-\lstinputlisting[caption={An example with a symbolic loop bound and nine execution paths through the loop body},
+\lstinputlisting[caption={An example to loop through a symbolic array with three execution paths through the loop body},
 label={lst:v_ex}]{code_samples/VeritestingPerf.java}
 
 Symbolic Pathfinder~(SPF)~\cite{spf} is a tool that performs symbolic execution of Java bytecode.
 %
-SPF is tightly integrated with Java PathFinder~(JPF)~\cite{jpf} and uses JPF extensions to replace concrete execution with symbolic execution.
+%SPF is tightly integrated with Java PathFinder~(JPF)~\cite{jpf} and uses JPF extensions to replace concrete execution with symbolic execution.
 %
 We present an example demonstrating the potential benefit of integrating veritesting with SPF in Listing~\ref{lst:v_ex}.
 %
-The number of iterations done by the \textit{while} loop depends on the variable \textit{i}, which has been made symbolic.
+It checks if positive or negative integers occur more frequently in the
+array~\textit{x}.
 %
-The minimum and maximum values of symbolic integers is specified in a configuration file not shown here.
+But, Listing~\ref{lst:v_ex} contains a bug if \textit{x} contains an
+equal number of positive and negative integers.
 %
-The presence of two three-way branches through the loop body creates nine execution paths.
+The three-way branch on lines 5, 6 causes the total number of execution
+paths required to cover the \textit{for} loop to be $3^{\textit{len}}$.
 %
-Achieving complete path coverage when symbolically executing the \textit{while} loop beginning on line 9 requires a exponential number of paths with 9 as the base.
+However, this three-way branch can be combined into a multi-path region
+and represented as a predicate.
 %
-However, the three-way branches represent a comparison of \textit{x+i} with 0.
+Each iteration through the loop can be represented by such a predicate.
 %
-Such a comparison can be represented by SPF using the \textit{CMP} operator.
+We present such predicates in SMT2 notation in
+Listing~\ref{lst:v_ex_smt2} assuming \textit{x} to contain two symbolic
+integers named \textit{x0} and \textit{x1}~(\textit{len} equals 2).
 %
-Each such three-way branch can be unrolled into a multi-path symbolic formula.
+The updates to \textit{sum} in the two loop iterations are captured by
+\textit{sum0} and \textit{sum1}.
 %
-We show this formula in SMT2 format in Listing ~\ref{lst:v_ex_smt2}.
+Using such predicates to represent the three-way branch on lines 5, 6 of
+Listing~\ref{lst:v_ex} allows us to have only one execution path through
+the loop body.
 %
-%\mike{This looks weird because of the stupidity of the class names: there is nothing non-linear about what we are doing here.  It would be better with abstract names; in fact, it would be better still as the SMTLIB formula describing the region.  Could you replace w/the SMTLIB formula?}.
+Figure~\ref{fig:v_ex_plot} shows a comparison of the number of execution
+paths explored to find the bug on line 11 of Listing~\ref{lst:v_ex}.
+%
+The exponential speed-up from our predicates, representing multi-path
+region, allows us to find
+the bug using just three test cases.
+%
+Veritesting provides a way to get such performance improvements by using
+static analysis to identify multi-path
+regions and create predicates to represent them.
 %
 \lstinputlisting[caption={SMT2 representation of multi-path execution in
 Listing ~\ref{lst:v_ex} using \textit{len} = 2}, label={lst:v_ex_smt2}, language=lisp]{code_samples/ex.smt2.snippet}
 %
-%
-%
-Statically unrolling the three-way branches from lines 11-16 creates a single execution path through the loop body.
-%
-Varying the range of symbolic integers in SPF from (-1, 1) to (-25, 25) using both, the plain and the statically unrolled symbolic formulas, causes the performance benefits of the latter version to be obvious.
-%
-We present such a comparison in Figure~\ref{fig:v_ex_plot}.
-%\mike{This figure is ridiculously large vertically and we could use a little more space.  Shrink the scale and use numbers: 1, 10, 1000, ... as suggested by Stephen}
-%
-With the symbolic integer range being (-25, 25), plain SPF explores 7855 execution paths and takes 104 seconds on a Ubuntu 14.04 machine with Intel(R) Core(TM) i7-4790 and 16 GB RAM to achieve complete path coverage.
-%
-This is in contrast to SPF, summarizing the three-way branches with static unrolling, which explores 27 execution paths and takes a fraction of a second on the same machine to achieve complete path coverage.
-
 \begin{figure}[]
 \caption{Comparing number of execution paths from Listing~\ref{lst:v_ex} using vanilla SPF and SPF with static unrolling}
 \label{fig:v_ex_plot}
