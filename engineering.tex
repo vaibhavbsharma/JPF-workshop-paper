@@ -59,7 +59,7 @@ We also observed that the number of expression objects undergoes a linear increa
 These three observations lead us to the hypothesis that while SPF does share expression objects internally, the traversal of such expressions breaks the sharing and causes an increase in time and memory.\mike{The time increase is (I suspect) due to garbage collection once the maximum memory threshold is reached. This may or may not be worth mentioning.}
 %
 Integrating veritesting with SPF to make it scale to industrial-sized code requires resolving such engineering issues.
-
+%
 \subsection{Complex Expressions}
 %Engineering issue \#2: Need to have complex expressions, talk about how Comparators cannot be used anywhere below the top-level operator
 SPF creates conjunctions of expressions and adds them to its path expression.
@@ -75,22 +75,22 @@ SPF\rq s design needs to be changed to allow comparison operators in sub-express
 But, because SPF has different classes for different expression types~(\textit{IntegerExpressions}, \textit{RealExpression}), this design change has to be made once for each expression type.
 %
 Thus, integrating veritesting presents a design challenge to allow complex expressions in SPF.
-
-\subsection{Intermediate variables}
-%Engineering issue \#3: Nice to introduce intermediate variables
 %
-During veritesting, symbolic formulas derived from static symbolic execution of a region may involve conditional write operations into other variables.
-%
-It is convenient to have intermediate variables~(one per variable written to in the region) which capture such conditional write expressions during the static symbolic execution.
-%
-Later, at an exit point, the intermediate variables can be written into the original variables written to in the region.
-%
-This allows sub-expressions to be shared, and even simplified, without affecting the original variables from the Java bytecode.
-%
-Smaller formulas written into the region\rq s output variables also makes it easier to debug veritesting of regions.
-%
-However, creation of such intermediate variables presents a design challenge in SPF.
-%
-SPF stores and propagates symbolic information through attribute objects.
-%
-This, in turn, creates an invariant that every symbolic variable in the path expression needs to be mapped to an attribute object.
+% \subsection{Intermediate variables}
+% %Engineering issue \#3: Nice to introduce intermediate variables
+% %
+% During veritesting, symbolic formulas derived from static symbolic execution of a region may involve conditional write operations into other variables.
+% %
+% It is convenient to have intermediate variables~(one per variable written to in the region) which capture such conditional write expressions during the static symbolic execution.
+% %
+% Later, at an exit point, the intermediate variables can be written into the original variables written to in the region.
+% %
+% This allows sub-expressions to be shared, and even simplified, without affecting the original variables from the Java bytecode.
+% %
+% Smaller formulas written into the region\rq s output variables also makes it easier to debug veritesting of regions.
+% %
+% However, creation of such intermediate variables presents a design challenge in SPF.
+% %
+% SPF stores and propagates symbolic information through attribute objects.
+% %
+% This, in turn, creates an invariant that every symbolic variable in the path expression needs to be mapped to an attribute object.
