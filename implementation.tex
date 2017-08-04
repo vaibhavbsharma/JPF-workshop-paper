@@ -1,0 +1,33 @@
+\section{Implementing Veritesting}
+Implementing veritesting with a symbolic execution engine for Java
+source code or Java bytecode requires making a few design choices.
+%
+Any such implementation would be required to use a static analysis tool
+for creating predicates which represented multi-path regions.
+%
+Another design choice is whether the predicate construction should be
+performed in an online or in offline manner.
+%
+We explore these two questions in the following subsections.
+%
+\subsection{Soot-based analysis for veritesting}
+%
+This implementation task is made simpler by using a Static Single
+Assignment~(SSA)~\cite{ssa} representation of the multi-path region.
+%
+Using an SSA form allows us to use the $\phi$-expressions created by the
+SSA form and translate them into points at the end of the veritesting
+region where updates to system state along different paths in the region
+can be merged.
+%
+\subsection{Integrating Veritesting with Symbolic PathFinder}
+%
+We need to talk about using a listener to pause SPF at instructions that
+are the beginning of a veritesting region, load (1) path expression
+predicate that represents the multi-path region, (2) symbolic store
+updates, (3) exit points, (4) the expression to branch on (using
+SPF's PCChoiceGenerator) to one of the exit points.
+SPF will then update the path expression and symbolic store, create a
+new PCChoiceGenerator if there is more than one exit point, and continue
+plain symbolic execution.
+
