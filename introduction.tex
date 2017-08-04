@@ -33,14 +33,23 @@ However, the three-way branches represent a comparison of \textit{x+i} with 0.
 %
 Such a comparison can be represented by SPF using the \textit{CMP} operator.
 %
-Each such three-way branch can be unrolled by using creating a symbolic formula as \textit{new BinaryNonLinearIntegerExpression(new BinaryNonLinearIntegerExpression(x\_v, PLUS, i\_v), CMP, new IntegerConstant(0))}.\mike{This looks weird because of the stupidity of the class names: there is nothing non-linear about what we are doing here.  It would be better with abstract names; in fact, it would be better still as the SMTLIB formula describing the region.  Could you replace w/the SMTLIB formula?}.
-
+Each such three-way branch can be unrolled into a multi-path symbolic formula.
 %
+We show this formula in SMT2 format in Listing ~\ref{lst:v_ex_smt2}.
+%
+%\mike{This looks weird because of the stupidity of the class names: there is nothing non-linear about what we are doing here.  It would be better with abstract names; in fact, it would be better still as the SMTLIB formula describing the region.  Could you replace w/the SMTLIB formula?}.
+%
+\lstinputlisting[caption={SMT2 representation of multi-path execution in
+  Listing ~\ref{lst:v_ex}}, label={lst:v_ex_smt2}, language=lisp]{code_samples/ex.smt2.snippet}
+
+
+
 Statically unrolling the three-way branches from lines 11-16 creates a single execution path through the loop body.
 %
 Varying the range of symbolic integers in SPF from (-1, 1) to (-25, 25) using both, the plain and the statically unrolled symbolic formulas, causes the performance benefits of the latter version to be obvious.
 %
-We present such a comparison in Figure~\ref{fig:v_ex_plot}.\mike{This figure is ridiculously large vertically and we could use a little more space.  Shrink the scale and use numbers: 1, 10, 1000, ... as suggested by Stephen}
+We present such a comparison in Figure~\ref{fig:v_ex_plot}.
+%\mike{This figure is ridiculously large vertically and we could use a little more space.  Shrink the scale and use numbers: 1, 10, 1000, ... as suggested by Stephen}
 %
 With the symbolic integer range being (-25, 25), plain SPF explores 7855 execution paths and takes 104 seconds on a Ubuntu 14.04 machine with Intel(R) Core(TM) i7-4790 and 16 GB RAM to achieve complete path coverage.
 %
