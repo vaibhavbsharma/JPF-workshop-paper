@@ -5,7 +5,7 @@
 
 len = 20;
 x_vals=1:1:len;
-normal_execution_paths = 3.^x_vals;
+normal_execution_paths = 3.^(x_vals+1);
 veritesting_execution_paths = repmat(3, len, 1);
 
 figure
