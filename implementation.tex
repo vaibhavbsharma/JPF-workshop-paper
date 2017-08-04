@@ -1,4 +1,4 @@
-\section{Implementing Veritesting}
+\section{Implementing Veritesting for Java}
 Implementing veritesting with a symbolic execution engine for Java
 source code or Java bytecode requires making a few design choices.
 %
@@ -12,13 +12,50 @@ We explore these two questions in the following subsections.
 %
 \subsection{Soot-based analysis for veritesting}
 %
-This implementation task is made simpler by using a Static Single
+Veritesting requires static construction of
+predicates of a multi-path region which represent changes to the path expression of the dynamic
+symbolic executor.
+%
+It also requires construction of a Control Flow Graph~(CFG) of method bodies
+from Java bytecode and finding exit points of the region, which in turn
+requires creation of a CFG of the region.
+%
+Implementing veritesting is made simpler by using a Static Single
 Assignment~(SSA)~\cite{ssa} representation of the multi-path region.
 %
 Using an SSA form allows us to use the $\phi$-expressions created by the
 SSA form and translate them into points at the end of the veritesting
 region where updates to system state along different paths in the region
 can be merged.
+%
+Soot~\cite{soot} is a static analysis framework for Java programs that
+has both these features, with
+ExceptionalUnitGraph~\cite{exceptionalunitgraph} and the Shimple
+IR~\cite{shimple}.
+%
+For simple regions with only one exit point, like the one presented in Listing~\ref{lst:v_ex}, we
+were able to use Soot to automate static construction of the predicate representing
+an update to the expression. 
+%
+For doing this, we used nodes with more than one successor as the
+starting point, found the immediate post-dominator of the starting
+point, and traversed the CFG on all sides of such branches.
+%
+During such a traversal, we constructed predicates representing the
+multi-path region, similar to the ones presented in
+Listing~\ref{lst:v_ex_smt2}.
+%
+As explained in Section~\ref{sec:exit_points}, including virtual
+function invocations in the construction of our predicates amplifies the
+benefits of veritesting even further.
+%
+We plan to automate this inclusion in the future using Soot.
+%
+Providing SPF with updates to be made to its symbolic store also
+requires Soot to maintain stack location information for variables.
+%
+We plan to automate SPF\rq s symbolic store updates using Soot in the
+future.
 %
 \subsection{Integrating Veritesting with Symbolic PathFinder}
 %

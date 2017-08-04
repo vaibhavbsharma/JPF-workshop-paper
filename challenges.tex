@@ -12,6 +12,7 @@ Previous approaches to veritesting exit static code regions when indirect calls 
 %
 %Talk about how veritesting gets harder to do when considering multi-threaded Java bytecode.
 \subsection{Exit Points}
+\label{sec:exit_points}
 %While the performance improvement shown in Figure~\ref{fig:v_ex_plot} with statically unrolling the three-way branches is clear, we need to automate this process.
 %
 Integrating veritesting with SPF requires that we can represent a region of a java program as a disjunctive formula with multiple exit points.  Each exit point describes a possible distinct continuation of the current path after the static code region completes execution.  Avgerinos et al.~\cite{veritesting} defined exit points as unresolved jumps, function boundaries, and system calls.
