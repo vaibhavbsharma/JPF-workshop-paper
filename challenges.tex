@@ -32,10 +32,8 @@ Using reflection requires loading a class at runtime, identifying a method withi
 %
 It is primarily used for extensibility purposes, achieving separate compilation, and generating a class at runtime.
 %
-Exceptions, virtual function invocations, and reflection create non-local control flow.
-%
-An approach such as Avgerinos et al.~\cite{veritesting} would bound static code regions at each of these boundaries.
-
+An approach such as Avgerinos et al.~\cite{veritesting} would force
+static code regions when any of these five constructs are encountered.
 
 %Such regions must correctly preserve the semantics of symbolic execution for all possible Java constructs.
 %
@@ -43,7 +41,8 @@ The primary benefit of implementing veritesting comes from its conversion of bra
 %
 But this benefit exists only when the number of different exit points from the disjunctive formula is less than the number of execution paths through the region in the first place.
 %
-For example, all execution paths in the first three-way branch in Listing~\ref{lst:v_ex} joined together on line 14, causing the thre-way branch to have a single exit point.
+For example, all execution paths in the first three-way branch in
+Listing~\ref{lst:v_ex} joined together on line 14, causing the three-way branch to have a single exit point.
 %
 Therefore, it is crucial for us to study the number of exit points for each of our statically-analyzed regions vs. the reduction in the number of branches within the region.
 %
@@ -68,9 +67,7 @@ We used Soot to create a CFG for every method body in every class file in these 
 %
 For each CFG, we used nodes corresponding to \textit{if} bytecode instructions as a starting point of our analysis.
 %
-We measured the number of instructions encountered when traversing down each side of the branch until we get to an exit point.
-%
-While continuing to monitor for exit points, we continued our traversal of the CFG until we got to the immediate post dominator~\cite{dragon-book} of our starting point.
+We measured the number of instructions encountered when traversing down each side of the branch until we get to the immediate post dominator~\cite{dragon-book} of our starting point.
 %
 If there were no exit points encountered on any side of the branch, we considered this region as a pure veritesting region and calculated its size in bytecode instructions.
 %
@@ -80,8 +77,6 @@ We report our results in Tables~\ref{t:r_s} and~\ref{t:r_c}.
 
 \begin{table}[]
 \centering
-\caption{Soot-based analysis for number of bytecode instructions between starting and exit points}
-\label{t:r_s}
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
         & \#classes & \begin{tabular}[c]{@{}l@{}}if-\\ return\end{tabular} & \begin{tabular}[c]{@{}l@{}}if-\\ invokevirtual\end{tabular} & \begin{tabular}[c]{@{}l@{}}if-\\ throw\end{tabular} & \begin{tabular}[c]{@{}l@{}}region \\ size\end{tabular} \\ \hline
@@ -92,12 +87,12 @@ math    & 1104      & 18.27                                                & 56.
 mockito & 382       & 6.02                                                 & 12.51                                                       & 8.05                                                & 13.57                                                  \\ \hline
 time    & 209       & 7.79                                                 & 13.10                                                       & 7.08                                                & 8.10                                                   \\ \hline
 \end{tabular}
+\caption{Soot-based analysis for number of bytecode instructions between starting and exit points}
+\label{t:r_s}
 \end{table}
-
+%
 \begin{table}[]
 \centering
-\caption{Number of occurences in Soot-based static analysis}
-\label{t:r_c}
 \begin{tabular}{|l|l|l|l|l|}
 \hline
         & \begin{tabular}[c]{@{}l@{}}if-\\ return\end{tabular} & \begin{tabular}[c]{@{}l@{}}if-\\ invokevirtual\end{tabular} & \begin{tabular}[c]{@{}l@{}}if-\\ throw\end{tabular} & \begin{tabular}[c]{@{}l@{}}region\\ count\end{tabular} \\ \hline
@@ -108,6 +103,8 @@ math    & 2219                                                 & 5582           
 mockito & 372                                                  & 572                                                         & 15                                                  & 574                                                    \\ \hline
 time    & 1202                                                 & 984                                                         & 204                                                 & 1421                                                   \\ \hline
 \end{tabular}
+\caption{Number of occurences in Soot-based static analysis}
+\label{t:r_c}
 \end{table}
 
 Table~\ref{t:r_s} shows the average size and Table~\ref{t:r_c} shows the number of times each such count was reported.
