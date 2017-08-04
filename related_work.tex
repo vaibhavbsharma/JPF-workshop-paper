@@ -13,11 +13,12 @@ Veritesting was added to {\tt angr} with similar goals of statically and selecti
 %
 However, path merging from veritesting integration with {\tt angr} caused complex expressions to be introduced which overloaded the constraint solver.
 %
+Using the Green~\cite{green} solver may alleviate such problems when implementing veritesting with SPF.
 %This observation became even more apparent for longer paths.
 %
-Integrating veritesting with SPF may expose a similar trade-off.
+%Integrating veritesting with SPF may expose a similar trade-off.
 %
-But we expect this problem to be less severe for when doing static symbolic execution of Java bytecode because Java bytecode instructions have fewer behaviors to be statically analyzed than X86 architecture instructions.
+%But we expect this problem to be less severe for when doing static symbolic execution of Java bytecode because Java bytecode instructions have fewer behaviors to be statically analyzed than X86 architecture instructions.
 
 %Talk about other symbolic execution performance improvements.
 %mentioned in Christopher Kruegel's ISSTA keynote talk as Static Analysis support

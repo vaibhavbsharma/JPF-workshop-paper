@@ -41,9 +41,9 @@ We show this formula in SMT2 format in Listing ~\ref{lst:v_ex_smt2}.
 %
 \lstinputlisting[caption={SMT2 representation of multi-path execution in
   Listing ~\ref{lst:v_ex}}, label={lst:v_ex_smt2}, language=lisp]{code_samples/ex.smt2.snippet}
-
-
-
+%
+%
+%
 Statically unrolling the three-way branches from lines 11-16 creates a single execution path through the loop body.
 %
 Varying the range of symbolic integers in SPF from (-1, 1) to (-25, 25) using both, the plain and the statically unrolled symbolic formulas, causes the performance benefits of the latter version to be obvious.
