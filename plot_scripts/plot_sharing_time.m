@@ -4,7 +4,7 @@ x_vals=1:30;
 
 hold on;
 
-plot(x_vals,seconds,'r--','Linewidth',4);
+plot(x_vals,seconds,'r-','Linewidth',2);
 
 
 

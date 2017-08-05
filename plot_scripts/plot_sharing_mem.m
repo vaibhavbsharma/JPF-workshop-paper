@@ -4,7 +4,7 @@ x_vals=1:30;
 
 hold on;
 
-plot(x_vals,seconds,'r--','Linewidth',4);
+plot(x_vals,seconds,'r-','Linewidth',2);
 
 
 
@@ -12,7 +12,7 @@ set(gca,'FontSize',15);
 h_legend=0; %legend('SPF','Location','northwest');
 xlabel('value of \it{bound}');
 ylabel('Max memory (MB) reported by SPF');
-xlim([18 30]);
+xlim([16 30]);
 %ylim([0 20]);
 set(gca,'FontSize',15);
 

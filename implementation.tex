@@ -7,12 +7,12 @@ Veritesting requires static construction of
 predicates of a multi-path region which represent changes to the path expression of the dynamic
 symbolic executor.
 %
-It also requires construction of a Control Flow Graph~(CFG) of method bodies
+It also requires construction of a control-flow graph of method bodies
 from Java bytecode and finding exit points of the region, which in turn
-requires creation of a CFG of the region.
+requires creation of a control-flow graph of the region.
 %
-Implementing veritesting is made simpler by using a Static Single
-Assignment~(SSA)~\cite{ssa} representation of the multi-path region.
+Implementing veritesting is made simpler by using a static single
+assignment~(SSA)~\cite{ssa} representation of the multi-path region.
 %
 Using an SSA form allows us to use the $\phi$-expressions created by the
 SSA form and translate them into points at the end of the veritesting
@@ -30,7 +30,7 @@ an update to the expression.
 %
 For doing this, we used nodes with more than one successor as the
 starting point, found the immediate post-dominator of the starting
-point, and traversed the CFG on all sides of such branches.
+point, and traversed the control-flow graph on all sides of such branches.
 %
 During such a traversal, we constructed predicates representing the
 multi-path region, similar to the ones presented in
