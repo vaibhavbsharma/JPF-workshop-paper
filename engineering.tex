@@ -15,6 +15,9 @@ Given the large and diverse set of applications that stand to benefit from integ
 
 \subsection{Shared Expressions}
 %Sharing implementation needs to be fixed. Show this using the TestSharing example
+\lstinputlisting[caption={An example with an increasing formula size with every loop iteration},
+label={lst:sharing}]{code_samples/TestSharing.java}
+%
 Veritesting causes regions of code to be executed using static symbolic execution.
 %
 Symbolic formulas representing the static symbolic execution are then gathered at the exit points of the region and added to the path expression and symbolic store of dynamic symbolic execution.
@@ -22,9 +25,6 @@ Symbolic formulas representing the static symbolic execution are then gathered a
 This causes large disjunctive formulas to be substituted and reused multiple times, necessitating the use of techniques like hash consing~\cite{hashconsing}, or its variants such as maximally-shared graphs~\cite{babic}, or using expression caching~\cite{green}.
 %
 To evaluate reuse of structurally equivalent expressions in SPF, consider the code shown in Listing~\ref{lst:sharing}.
-%
-\lstinputlisting[caption={An example with an increasing formula size with every loop iteration},
-label={lst:sharing}]{code_samples/TestSharing.java}
 %
 The function \textit{testSharing} adds the value of \textit{x} to itself in every loop iteration on line 3 of Listing~\ref{lst:sharing}.
 %
