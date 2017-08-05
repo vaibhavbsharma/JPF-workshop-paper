@@ -41,7 +41,7 @@ It is primarily used for extensibility purposes, achieving separate compilation,
 
 %Such regions must correctly preserve the semantics of symbolic execution for all possible Java constructs.
 %
-The primary benefit of implementing veritesting comes from its conversion of branches into disjunctions.
+The primary benefit of implementing veritesting comes from its conversion of branches into disjunctions in a multipath region.
 %
 But this benefit exists only when the number of different exit points from the disjunctive formula is less than the number of execution paths through the region in the first place.
 %
@@ -73,9 +73,9 @@ For each CFG, we used nodes corresponding to conditional jump bytecodes as a sta
 %
 We measured the number of instructions encountered when traversing down each side of the branch until we get to the immediate post dominator~\cite{dragon-book} of our starting point.
 %
-If there were no exit points encountered on any side of the branch, we considered this region as a pure veritesting region and calculated its size in bytecode instructions.
+If there were no exit points encountered on any side of the branch, we considered this region as a pure multipath region and calculated its size in bytecode instructions.
 %
-Finally, we allowed upto five nested branches and calculated the number of bytecode instructions from the earliest, as well as, the latest starting point in our CFG traversal to an exit point.
+Finally, we allowed up to five nested branches and calculated the number of bytecode instructions from the earliest, as well as, the latest starting point in our CFG traversal to an exit point.
 %
 We report our results in Tables~\ref{t:r_s} and~\ref{t:r_c}.
 %
@@ -116,7 +116,7 @@ time    & 1202                                                 & 984            
 \end{table}
 %
 Table~\ref{t:r_s} shows the average size and Table~\ref{t:r_c} shows the number of times each such count was reported.
-\mike{We need to explain these tables better: can we take a small code fragment (say, that of Listing 1) and explain it according to these numbers, or create a very tiny code fragment that demonstrates them?}
+%\mike{We need to explain these tables better: can we take a small code fragment (say, that of Listing 1) and explain it according to these numbers, or create a very tiny code fragment that demonstrates them?}
 %
 The \textit{if-return}, \textit{if-invokevirtual}, \textit{if-throw} columns in Table~\ref{t:r_s} report the average number of instructions observed between any \textit{if} opcode-containing bytecode instruction and a \textit{return}, \textit{invokevirtual} or \textit{invokeinterface}, \textit{throw} opcode-containing bytecode instruction.
 %
@@ -126,7 +126,7 @@ Tables~\ref{t:r_s} and~\ref{t:r_c} show that while we discover thousands of regi
 %
 They also show that early \textit{return} instructions are another often used construct in Java.
 %
-Having veritesting for these regions alone would provide a significant performance boost to SPF.
+We believe that creating multipath regions for these no-exit-point cases alone would provide a significant performance boost to SPF.
 %
 Table~\ref{t:r_c} shows \textit{invokevirtual} or \textit{invokeinterface} instructions are encountered far more often than \textit{return} or \textit{throw} instructions.
 %
@@ -135,7 +135,7 @@ This can be explained by the pervasive use of runtime polymorphism and exception
 Instead of using \textit{invokevirtual} and \textit{invokeinterface}
 instructions as exit points, if we can continue our predicate
 construction for multi-path regions beyond them, we would almost double
-the number of veritesting regions.
+the number of multipath regions.
 %
 \input{engineering}
 %
