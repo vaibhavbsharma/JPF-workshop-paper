@@ -1,6 +1,6 @@
 \section{Challenges}
 
-While the performance improvement demonstrated on the code in Listing 1 is impressive, it is perhaps not representative of most Java code.  Java conventions encourage the use of indirection when accessing class fields using non-static {\em get} and {\em set} methods, as well as liberal use of exceptions.  Unlike C compilers, which assume a ``closed world'' and often inline simple functions into the body of calling methods to improve performance, the Java compiler must assume an ``open world'' in which a class may be used in a new context, so inlining of non-final methods is unsafe.  
+While the performance improvement demonstrated on the code in Listing 1 is impressive, it is perhaps not representative of most Java code.  Java conventions encourage the use of indirection when accessing class fields using non-static {\em get} and {\em set} methods, as well as liberal use of exceptions.  Unlike C compilers, which assume a ``closed world'' and often inline simple functions into the body of calling methods to improve performance, the Java compiler must assume an ``open world'' in which a class may be used in a new context, so inlining of non-final methods is unsafe.
 
 Previous approaches to veritesting exit static code regions when indirect calls to functions or non-local jumps are made.  In this section, we explore how the structure of Java programs might reduce the performance of a n\"aive veritesting approach.
 
@@ -21,6 +21,8 @@ These exit points are nodes in a Control Flow Graph~(CFG) which represent non-lo
 %
 In the context of Java bytecode, we find such non-local control flow in five ways listed as follows: (1) return statements, (2) exceptions, (3) virtual function invocations~(\textit{invokevirtual}, \textit{invokeinterface}), (4) reflection, (5) native calls.
 %
+\iffalse
+\mike{These explanations are obvious and can be dispensed with if we need space}
 Return statements form the function boundary, and are obvious candidates to be considered as exit points.
 %
 Exceptions are used to catch unexpected behavior, and often help design of cleaner code, and allow developers to capture useful information when such errors occur.
@@ -32,9 +34,10 @@ The runtime environment binds the method call to its body by using the type of t
 Using reflection requires loading a class at runtime, identifying a method within the class, and calling it.
 %
 It is primarily used for extensibility purposes, achieving separate compilation, and generating a class at runtime.
+\fi
 %
-An approach such as Avgerinos et al.~\cite{veritesting} would force
-static code regions when any of these five constructs are encountered.
+%An approach such as Avgerinos et al.~\cite{veritesting} would force
+%static code regions when any of these five constructs are encountered.
 
 %Such regions must correctly preserve the semantics of symbolic execution for all possible Java constructs.
 %
@@ -66,7 +69,7 @@ Software faults from these six projects are maintained in the Defects4J~\cite{de
 %
 We used Soot to create a CFG for every method body in every class file in these six projects.
 %
-For each CFG, we used nodes corresponding to \textit{if} bytecode instructions as a starting point of our analysis.
+For each CFG, we used nodes corresponding to conditional jump bytecodes as a starting point of our analysis.
 %
 We measured the number of instructions encountered when traversing down each side of the branch until we get to the immediate post dominator~\cite{dragon-book} of our starting point.
 %
@@ -89,8 +92,11 @@ mockito & 382       & 6.02                                                 & 12.
 time    & 209       & 7.79                                                 & 13.10                                                       & 7.08                                                & 8.10                                                   \\ \hline
 \end{tabular}
 \caption{Soot-based analysis for number of bytecode instructions between starting and exit points}
+\vspace{-0.3in}
 \label{t:r_s}
 \end{table}
+%
+%\vspace{-0.7in}
 %
 \begin{table}[]
 \centering
@@ -105,6 +111,7 @@ mockito & 372                                                  & 572            
 time    & 1202                                                 & 984                                                         & 204                                                 & 1421                                                   \\ \hline
 \end{tabular}
 \caption{Number of occurences in Soot-based static analysis}
+\vspace{-0.2in}
 \label{t:r_c}
 \end{table}
 %
@@ -128,7 +135,7 @@ This can be explained by the pervasive use of runtime polymorphism and exception
 Instead of using \textit{invokevirtual} and \textit{invokeinterface}
 instructions as exit points, if we can continue our predicate
 construction for multi-path regions beyond them, we would almost double
-the number of veritesting regions in many cases.
+the number of veritesting regions.
 %
 \input{engineering}
 %

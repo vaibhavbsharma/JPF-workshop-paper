@@ -134,14 +134,14 @@
 
 
 \begin{abstract}
-Scaling symbolic execution to industrial-sized code is an important open research problem.
+Scaling symbolic execution to industrial-sized programs is an important open research problem.
 %
 Veritesting is a promising technique that improves scalability by combining the advantages of static symbolic execution with those of dynamic symbolic execution.  The goal of veritesting is to reduce the number of paths to explore in symbolic execution by creating formulas describing regions of code using disjunctive formulas.
 %
 In previous work, veritesting was applied to binary-level symbolic execution.
 
 Integrating veritesting with Java bytecode presents unique challenges,
-notably, incorporating non-local control jumps caused by runtime polymorphism, exceptions, native calls, and dynamic class loading, and dealing with concurrency.
+notably, incorporating non-local control jumps caused by runtime polymorphism, exceptions, native calls, and dynamic class loading.
 %
 If these languages features are not accounted for, we hypothesize that the static code regions described by veritesting are often small and may not lead to substantial reduction in paths.  We examine this hypothesis by running a Soot-based static analysis on six large open-source projects used in the Defects4J collection.
 %
