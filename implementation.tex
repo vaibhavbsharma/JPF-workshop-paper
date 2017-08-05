@@ -59,12 +59,39 @@ future.
 %
 \subsection{Integrating Veritesting with Symbolic PathFinder}
 %
-We need to talk about using a listener to pause SPF at instructions that
-are the beginning of a veritesting region, load (1) path expression
-predicate that represents the multi-path region, (2) symbolic store
-updates, (3) exit points, (4) the expression to branch on (using
-SPF's PCChoiceGenerator) to one of the exit points.
-SPF will then update the path expression and symbolic store, create a
-new PCChoiceGenerator if there is more than one exit point, and continue
-plain symbolic execution.
+Integration of veritesting requires changing Symbolic PathFinder so that it can 
+use a Soot-based analysis.
+%
+We present the sequence of actions SPF must take to implement veritesting in 
+Figure~\ref{fig:spf_veritesting}.
+%
+The source code in Listing~\ref{lst:v_ex} was modified to add a {\tt else return;} 
+statement on line 7 to create the Java bytecode shown in Figure~\ref{fig:spf_veritesting}. 
+%
+This integration assumes our prior Soot-based analyis provides SPF 
+with a table that maps instruction offsets~(representing the start of a 
+veritesting region) to a set containing (1) the multi-path region predicate to be 
+added to the path expression as a conjunction, (2) symbolic store
+updates, (3) exit points, (4) the expression to branch on to one of the exit points.
+%
+Using SPF\rq s listener mechanism, we add a listener~(named SMPListener in Figure~\ref{fig:spf_veritesting}) which listens for instructions that are starting points for a Symbolic Multi-Path~(SMP) region.
+%
+On finding such an instruction, \textit{SMPListener} 
+(1) updates the path expression, which may involve using the symbolic stack and/or heap, 
+(2) updates the symbolic stack and heap, 
+(3) creates a branch~(using SPF's \textit{PCChoiceGenerator}) to 
+jump to one of the exit points~(which are instructions at offsets 40 and
+41 in Figure~\ref{fig:spf_veritesting})
+%
+SPF will then continue plain symbolic execution.
+%
+Thus, veritesting causes SPF to explore fewer branches.
+%
+For example, SPF only explores a two-way branch in Figure~\ref{fig:spf_veritesting}.
+%
+\begin{figure}[]
+\caption{Veritesting with Symbolic PathFinder}
+\label{fig:spf_veritesting}
+\includegraphics[width=\columnwidth]{figures/spf_veritesting}
+\end{figure}
 
