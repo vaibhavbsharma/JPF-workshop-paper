@@ -1,14 +1,5 @@
 \section{Implementing Veritesting for Java}
-Implementing veritesting with a symbolic execution engine for Java
-source code or Java bytecode requires making a few design choices.
-%
-Any such implementation would be required to use a static analysis tool
-for creating predicates which represented multi-path regions.
-%
-Another design choice is whether the predicate construction should be
-performed in an online or in offline manner.
-%
-We explore these two questions in the following subsections.
+In order to implement veritesting for SPF, we are leveraging existing tools and framework features within SPF.  The trickiest implementation aspects involve determining the bounds of static code regions over Java bytecodes and the mechanism for switching from ``standard'' symbolic execution using the SPF {\em SymbolicListener} class to one that can evaluate these multipath code regions. We briefly describe our prototype implementations for these aspects.
 %
 \subsection{Soot-based analysis for veritesting}
 %
@@ -35,7 +26,7 @@ IR~\cite{shimple}.
 %
 For simple regions with only one exit point, like the one presented in Listing~\ref{lst:v_ex}, we
 were able to use Soot to automate static construction of the predicate representing
-an update to the expression. 
+an update to the expression.
 %
 For doing this, we used nodes with more than one successor as the
 starting point, found the immediate post-dominator of the starting

@@ -1,3 +1,5 @@
+
+\iffalse
 \subsection{Engineering Challenges}
 Research challenges such as static analysis of exit points and veritesting in a multi-threaded context need to be solved for integrating veritesting with any bytecode-level symbolic execution engine.
 %
@@ -8,7 +10,8 @@ It has been used to find bugs in flight software~\cite{pasareanu2008}, to test l
 %It has also been extended for parallel symbolic execution~\cite{parallel}, and for load testing~\cite{load_testing_spf}.
 %Talk about the engineering challenges we face when implementing veritesting with Symbolic PathFinder
 %
-Given the large and diverse set of applications that stand to benefit from integrating veritesting with SPF, we discuss here the engineering challenges expected with such an integration.
+Given the large and diverse set of applications that stand to benefit from integrating veritesting into SPF, we discuss here the engineering challenges expected with such an integration.
+\fi
 
 \subsection{Shared Expressions}
 %Sharing implementation needs to be fixed. Show this using the TestSharing example
@@ -59,23 +62,17 @@ These three observations lead us to the hypothesis that while SPF does share exp
 %
 %The time increase is due to garbage collection once the maximum memory threshold is reached.
 %
-Integrating veritesting with SPF to make it scale to industrial-sized code requires resolving such engineering issues.
+%Integrating veritesting with SPF to make it scale to industrial-sized code requires resolving such engineering issues.
 %
 \subsection{Complex Expressions}
 %Engineering issue \#2: Need to have complex expressions, talk about how Comparators cannot be used anywhere below the top-level operator
-SPF creates conjunctions of expressions and adds them to its path expression.
+During exploration, SPF creates conjunctions of expressions and adds them to its {\em PathCondition} to determine satisfiability of paths.
 %
-The expression being added to its \textit{PathCondition} is allowed to have a \textit{Comparator}~(a comparison operator such as !=) as the top-level operator, but comparison operators are not allowed in sub-expressions.
+These expressions are allowed to have a \textit{Comparator}~(a comparison operator such as !=) as the top-level operator; however, comparison and Boolean operators are not allowed in sub-expressions.  Thus, the current set of SPF expressions is insufficiently expressive to represent the disjunctive formulas required for multipath regions, and we are currently refactoring the SPF expression hierarchy to allow for richer expression types.
 %
-But, symbolic formulas derived from static symbolic execution of regions does not guarantee that such an invariant would always hold for formulas.
+%Because SPF has different classes for different expression types~(\textit{IntegerExpressions}, \textit{RealExpression}), these changes must be made in several different places; we believe that moving forward, the 
 %
-This design choice prevents symbolic formulas derived from static symbolic execution from being added to SPF\rq s path expression.
-%
-SPF\rq s design needs to be changed to allow comparison operators in sub-expressions.
-%
-But, because SPF has different classes for different expression types~(\textit{IntegerExpressions}, \textit{RealExpression}), this design change has to be made once for each expression type.
-%
-Thus, integrating veritesting presents a design challenge to allow complex expressions in SPF.
+%Thus, integrating veritesting presents a design challenge to allow complex expressions in SPF.
 %
 % \subsection{Intermediate variables}
 % %Engineering issue \#3: Nice to introduce intermediate variables
