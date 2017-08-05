@@ -41,7 +41,7 @@ It is primarily used for extensibility purposes, achieving separate compilation,
 
 %Such regions must correctly preserve the semantics of symbolic execution for all possible Java constructs.
 %
-The primary benefit of implementing veritesting comes from its conversion of branches into disjunctions in a multipath region.
+The primary benefit of implementing veritesting comes from its conversion of branches into disjunctions in a multi-path region.
 %
 But this benefit exists only when the number of different exit points from the disjunctive formula is less than the number of execution paths through the region in the first place.
 %
@@ -73,7 +73,7 @@ For each control-flow graph, we used nodes corresponding to conditional jump byt
 %
 We measured the number of instructions encountered when traversing down each side of the branch until we get to the immediate post dominator~\cite{dragon-book} of our starting point.
 %
-If there were no exit points encountered on any side of the branch, we considered this region as a pure multipath region and calculated its size in bytecode instructions.
+If there were no exit points encountered on any side of the branch, we considered this region as a pure multi-path region and calculated its size in bytecode instructions.
 %
 Finally, we allowed up to five nested branches and calculated the number of bytecode instructions from the earliest, as well as, the latest starting point in our control-flow graph traversal to an exit point.
 
@@ -88,13 +88,13 @@ Nodes are numbered 1 through 6 with node (1) being the starting point and node (
 %
 Nodes contain bytecode instructions along with instruction offsets.
 %
-The added \textit{return} statement creates an exit point, which causes the three-way branch on lines 5, 6 (and the newly added line 7) of Listing~\ref{lst:v_ex} to contain two exit points.
+The added \textit{return} statement creates an exit point, which causes the three-way branch in Listing~\ref{lst:v_ex_modified} to contain two exit points.
 %
 Counting the number of instructions after the {\tt ifge} instruction in node (1) through node (2) to node (6) gives us two instructions.
 %
-The same count going through nodes (3) and (4) gives us 6 instructions, and through node (3) to node (5) gives us 4 instructions.
+The same count going through nodes (3) and (4) to (6) gives us 6 instructions, and through nodes (3) to (5) gives us 4 instructions.
 %
-The presence of the \textit{return} statement in node (5) prevents this region from being a pure multipath region.
+The presence of the \textit{return} statement in node (5) prevents this region from being a pure multi-path region.
 %
 \begin{figure}[]
 \caption{Control-flow graph with {\tt else return;} added as line 7 of Listing~\ref{lst:v_ex}}
@@ -152,7 +152,7 @@ Tables~\ref{t:r_s} and~\ref{t:r_c} show that while we discover thousands of regi
 %
 They also show that early \textit{return} instructions are another often used construct in Java.
 %
-We believe that creating multipath regions for these no-exit-point cases alone would provide a significant performance boost to SPF.
+We believe that creating multi-path regions for these no-exit-point cases alone would provide a significant performance boost to SPF.
 %
 Table~\ref{t:r_c} shows \textit{invokevirtual} or \textit{invokeinterface} instructions are encountered far more often than \textit{return} or \textit{throw} instructions.
 %
@@ -161,7 +161,7 @@ This can be explained by the pervasive use of runtime polymorphism and exception
 Instead of using \textit{invokevirtual} and \textit{invokeinterface}
 instructions as exit points, if we can continue our predicate
 construction for multi-path regions beyond them, we would almost double
-the number of multipath regions.
+the number of multi-path regions.
 %
 \input{engineering}
 %
