@@ -17,7 +17,7 @@ Previous approaches to veritesting exit static code regions when indirect calls 
 %
 Integrating veritesting with SPF requires that we can represent a region of a java program as a disjunctive formula with multiple exit points.  Each exit point describes a possible distinct continuation of the current path after the static code region completes execution.  Avgerinos et al.~\cite{veritesting} defined exit points as unresolved jumps, function boundaries, and system calls.
 %
-These exit points are nodes in a Control Flow Graph~(CFG) which represent non-local control flow, and therefore, need to be explored using plain dynamic symbolic execution.
+These exit points are nodes in a control-flow graph which represent non-local control flow, and therefore, need to be explored using plain dynamic symbolic execution.
 %
 In the context of Java bytecode, we find such non-local control flow in five ways listed as follows: (1) return statements, (2) exceptions, (3) virtual function invocations~(\textit{invokevirtual}, \textit{invokeinterface}), (4) reflection, (5) native calls.
 %
@@ -55,7 +55,7 @@ Therefore, it is crucial for us to study the number of exit points for each of o
 %
 %Incorporating these into our static analysis would require handling virtual function invocations as well as static analysis of binary code.
 
-These five types of exit points create the kind of non-local control flow which formed the frontier of the visible CFG created as a result of \textit{CFGReduce} step by Avgerinos et al.
+These five types of exit points create the kind of non-local control flow which formed the frontier of the visible control-flow graph created as a result of \textit{CFGReduce} step by Avgerinos et al.
 %
 However, many of these exit points are used pervasively by Java developers.
 %
@@ -67,17 +67,43 @@ We investigated the occurrence of these exit points further by creating a Soot-b
 %
 Software faults from these six projects are maintained in the Defects4J~\cite{defects4j} repository.
 %
-We used Soot to create a CFG for every method body in every class file in these six projects.
+We used Soot to create a control-flow graph for every method body in every class file in these six projects.
 %
-For each CFG, we used nodes corresponding to conditional jump bytecodes as a starting point of our analysis.
+For each control-flow graph, we used nodes corresponding to conditional jump bytecodes as a starting point of our analysis.
 %
 We measured the number of instructions encountered when traversing down each side of the branch until we get to the immediate post dominator~\cite{dragon-book} of our starting point.
 %
 If there were no exit points encountered on any side of the branch, we considered this region as a pure multipath region and calculated its size in bytecode instructions.
 %
-Finally, we allowed up to five nested branches and calculated the number of bytecode instructions from the earliest, as well as, the latest starting point in our CFG traversal to an exit point.
+Finally, we allowed up to five nested branches and calculated the number of bytecode instructions from the earliest, as well as, the latest starting point in our control-flow graph traversal to an exit point.
+
+As an example, we modify the three-way branch in Listing~\ref{lst:v_ex} by adding a {\tt else return;} to get the snippet shown in Listing~\ref{lst:v_ex_modified}.
 %
-We report our results in Tables~\ref{t:r_s} and~\ref{t:r_c}.
+\lstinputlisting[caption={Listing~\ref{lst:v_ex} modified to have a return statement in the three-way branch},
+label={lst:v_ex_modified}, language=Java]{code_samples/VeritestingPerf_modified.java}
+%
+This results in bytecode that produces the control-flow graph shown in Figure~\ref{fig:v_ex_cfg}.
+%
+Nodes are numbered 1 through 6 with node (1) being the starting point and node (6) being the immediate post-dominator of node (1).
+%
+Nodes contain bytecode instructions along with instruction offsets.
+%
+The added \textit{return} statement creates an exit point, which causes the three-way branch on lines 5, 6 (and the newly added line 7) of Listing~\ref{lst:v_ex} to contain two exit points.
+%
+Counting the number of instructions after the {\tt ifge} instruction in node (1) through node (2) to node (6) gives us two instructions.
+%
+The same count going through nodes (3) and (4) gives us 6 instructions, and through node (3) to node (5) gives us 4 instructions.
+%
+The presence of the \textit{return} statement in node (5) prevents this region from being a pure multipath region.
+%
+\begin{figure}[]
+\caption{Control-flow graph with {\tt else return;} added as line 7 of Listing~\ref{lst:v_ex}}
+\label{fig:v_ex_cfg}
+\includegraphics[width=\columnwidth]{figures/v_ex_cfg}
+\end{figure}
+
+%
+We report our results from a Soot-based static analysis in Tables~\ref{t:r_s} and~\ref{t:r_c}.
 %
 \begin{table}[]
 \centering

@@ -56,8 +56,9 @@ use a Soot-based analysis.
 We present the sequence of actions SPF must take to implement veritesting in 
 Figure~\ref{fig:spf_veritesting}.
 %
-The source code in Listing~\ref{lst:v_ex} was modified to add a {\tt else return;} 
-statement on line 7 to create the Java bytecode shown in Figure~\ref{fig:spf_veritesting}. 
+The bytecode used in Figure~\ref{fig:spf_veritesting} was obtained by compiling 
+source code shown in Listing~\ref{lst:v_ex_modified} with its corresponding 
+control-flow graph shown in Figure~\ref{fig:v_ex_cfg}.
 %
 This integration assumes our prior Soot-based analyis provides SPF 
 with a table that maps instruction offsets~(representing the start of a 
@@ -85,4 +86,4 @@ For example, SPF only explores a two-way branch in Figure~\ref{fig:spf_veritesti
 \label{fig:spf_veritesting}
 \includegraphics[width=\columnwidth]{figures/spf_veritesting}
 \end{figure}
-
+%
