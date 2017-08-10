@@ -66,14 +66,15 @@ veritesting region) to a set containing (1) the multi-path region predicate to b
 added to the path expression as a conjunction, (2) symbolic store
 updates, (3) exit points, (4) the expression to branch on to one of the exit points.
 %
-Using SPF\rq s listener mechanism, we add a listener~(named SMPListener in Figure~\ref{fig:spf_veritesting}) which listens for instructions that are starting points for a Symbolic Multi-Path~(SMP) region.
+Using SPF\rq s listener mechanism, we add a listener~(named
+\textit{SMPListener} in Figure~\ref{fig:spf_veritesting}) which listens for instructions that are starting points for a Symbolic Multi-Path~(SMP) region.
 %
 On finding such an instruction, \textit{SMPListener} 
 (1) updates the path expression, which may involve using the symbolic stack and/or heap, 
 (2) updates the symbolic stack and heap, 
 (3) creates a branch~(using SPF's \textit{PCChoiceGenerator}) to 
 jump to one of the exit points~(which are instructions at offsets 40 and
-41 in Figure~\ref{fig:spf_veritesting})
+41 in Figure~\ref{fig:spf_veritesting}).
 %
 SPF will then continue plain symbolic execution.
 %
