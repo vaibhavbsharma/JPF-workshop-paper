@@ -1,16 +1,18 @@
-\documentclass[sigconf]{acmart}
+\documentclass{acm_sen_article}
 
 \usepackage{booktabs} % For formal tables
 \usepackage{listings}
 \usepackage{subfig}
 \usepackage{url}
+\usepackage{color}
+\usepackage{authblk}
 %\renewcommand{\baselinestretch}{0.99}
 
 % Copyright
 %\setcopyright{none}
-%\setcopyright{acmcopyright}
+% \setcopyright{acmcopyright}
 %\setcopyright{acmlicensed}
-\setcopyright{rightsretained}
+% \setcopyright{rightsretained}
 %\setcopyright{usgov}
 %\setcopyright{usgovmixed}
 %\setcopyright{cagov}
@@ -24,9 +26,9 @@
 % \acmISBN{123-4567-24-567/08/06}
 
 %Conference
-\acmConference[]{JPF Workshop}{Nov 2017}{Urbana-Champaign, IL USA}
-\acmYear{2017}
-\copyrightyear{2017}
+% \acmConference[]{JPF Workshop}{Nov 2017}{Urbana-Champaign, IL USA}
+% \acmYear{2017}
+% \copyrightyear{2017}
 
 %\acmPrice{15.00}
 
@@ -94,44 +96,55 @@
 }
 
 \title{Veritesting Challenges in Symbolic Execution of Java}
-\author{Vaibhav Sharma}
-\affiliation{%
-  \institution{University of Minnesota}
-  \city{Minneapolis}
-  \state{MN}
-  \postcode{55455}
-}
-\email{vaibhav@umn.edu}
+\author[1]{Vaibhav Sharma}
+\author[1]{Michael W. Whalen}
+\author[1]{Stephen McCamant}
+\author[2]{Willem Visser}
+\affil[1]{University of Minnesota, Minneapolis, MN, United States of
+America }
+\affil[2]{University of Stellenbosch, Stellenbosch, South Africa}
+\affil[1]{\textit {\{vaibhav,mwwhalen\}@umn.edu},
+\textit{mccamant@cs.umn.edu}}
+\affil[2]{\textit{wvisser@cs.sun.ac.za}}
+% \author{Vaibhav Sharma}
+% \affiliation{%
+%   \institution{University of Minnesota}
+%   \city{Minneapolis}
+%   \state{MN}
+%   \postcode{55455}
+% }
+% \email{vaibhav@umn.edu}
+% 
+% \author{Michael W. Whalen}
+% \affiliation{%
+%   \institution{University of Minnesota}
+%   \city{Minneapolis}
+%   \state{MN}
+%   \postcode{55455}
+% }
+% \email{whalen@umn.edu}
+% 
+% \author{Stephen McCamant}
+% \affiliation{%
+%   \institution{University of Minnesota}
+%   %\streetaddress{P.O. Box 1212}
+%   \city{Minneapolis}
+%   \state{MN}
+%   \postcode{55455}
+% }
+% \email{mccamant@cs.umn.edu}
+% 
+% \author{Willem Visser}
+% \affiliation{%
+%   \institution{University of Stellenbosch}
+%   \city{Stellenbosch}
+%   \country{South Africa}
+% }
+% \email{wvisser@cs.sun.ac.za}
+% \renewcommand{\shortauthors}{V. Sharma et al.}
 
-\author{Michael W. Whalen}
-\affiliation{%
-  \institution{University of Minnesota}
-  \city{Minneapolis}
-  \state{MN}
-  \postcode{55455}
-}
-\email{whalen@umn.edu}
 
-\author{Stephen McCamant}
-\affiliation{%
-  \institution{University of Minnesota}
-  %\streetaddress{P.O. Box 1212}
-  \city{Minneapolis}
-  \state{MN}
-  \postcode{55455}
-}
-\email{mccamant@cs.umn.edu}
-
-\author{Willem Visser}
-\affiliation{%
-  \institution{University of Stellenbosch}
-  \city{Stellenbosch}
-  \country{South Africa}
-}
-\email{wvisser@cs.sun.ac.za}
-\renewcommand{\shortauthors}{V. Sharma et al.}
-
-
+\maketitle
 \begin{abstract}
 Scaling symbolic execution to industrial-sized programs is an important open research problem.
 %
@@ -184,11 +197,9 @@ We hope to use these insights to support efficient veritesting in Symbolic PathF
 % \ccsdesc{Computer systems organization~Robotics}
 % \ccsdesc[100]{Networks~Network reliability}
 
+\keywords{multi-path symbolic execution; veritesting; Symbolic
+PathFinder; static analysis}
 
-%\keywords{ACM proceedings, \LaTeX, text tagging}
-
-
-\maketitle
 
 \input{introduction}
 \input{challenges}

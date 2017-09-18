@@ -19,9 +19,6 @@ It has been shown to find more bugs, and achieve more node and path coverage, wh
 %
 This provides motivation for investigating integration of veritesting with symbolic execution at the Java bytecode level.
 
-\lstinputlisting[caption={An example to loop through a symbolic array with three execution paths through the loop body},
-label={lst:v_ex}]{code_samples/VeritestingPerf.java}
-
 Symbolic Pathfinder~(SPF)~\cite{spf} is a tool that performs symbolic execution of Java bytecode.
 %
 %SPF is tightly integrated with Java PathFinder~(JPF)~\cite{jpf} and uses JPF extensions to replace concrete execution with symbolic execution.
@@ -46,6 +43,12 @@ We present such predicates in SMT2 notation in
 Listing~\ref{lst:v_ex_smt2} assuming \textit{x} to contain two symbolic
 integers named \textit{x0} and \textit{x1}~(\textit{len} equals 2).
 %
+\lstinputlisting[caption={An example to loop through a symbolic array with three execution paths through the loop body},
+label={lst:v_ex}]{code_samples/VeritestingPerf.java}
+%
+\lstinputlisting[caption={SMT2 representation of multi-path execution in
+Listing ~\ref{lst:v_ex} using \textit{len} = 2}, label={lst:v_ex_smt2}, language=lisp]{code_samples/ex.smt2.snippet}
+%
 The updates to \textit{sum} in the two loop iterations are captured by
 \textit{sum0} and \textit{sum1}.
 %
@@ -63,9 +66,6 @@ the bug using just three test cases.
 Veritesting provides a way to get such performance improvements by using
 static analysis to identify multi-path
 regions and create predicates to represent them.
-%
-\lstinputlisting[caption={SMT2 representation of multi-path execution in
-Listing ~\ref{lst:v_ex} using \textit{len} = 2}, label={lst:v_ex_smt2}, language=lisp]{code_samples/ex.smt2.snippet}
 %
 \begin{figure}[]
 \caption{Comparing number of execution paths from Listing~\ref{lst:v_ex} using vanilla SPF and SPF with static unrolling}
