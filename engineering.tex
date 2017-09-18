@@ -62,7 +62,7 @@ We also observed that the number of expression objects undergoes a linear increa
 %
 These three observations lead us to the hypothesis that while SPF does
 share expression objects internally, the traversal of such
-expressions~(caused due to garbage collection) breaks the sharing and causes an increase in time and memory.
+expressions breaks the sharing and causes an increase in time and memory.
 %
 %The time increase is due to garbage collection once the maximum memory threshold is reached.
 %
@@ -73,7 +73,7 @@ expressions~(caused due to garbage collection) breaks the sharing and causes an 
 During exploration, SPF creates conjunctions of expressions and adds them to its {\em PathCondition} to determine satisfiability of paths.
 %
 These expressions are allowed to have a \textit{Comparator}~(a comparison operator such as !=) as the top-level operator; however, comparison and Boolean operators are not allowed in sub-expressions.  Thus, the current set of SPF expressions is insufficiently expressive to represent the disjunctive formulas required for multi-path regions, and we are currently refactoring the SPF expression hierarchy to allow for richer expression types.
-\pagebreak
+%\pagebreak
 %
 %Because SPF has different classes for different expression types~(\textit{IntegerExpressions}, \textit{RealExpression}), these changes must be made in several different places; we believe that moving forward, the 
 %

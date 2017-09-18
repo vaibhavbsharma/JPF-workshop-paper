@@ -28,26 +28,26 @@ We present an example demonstrating the potential benefit of integrating verites
 It checks if positive or negative integers occur more frequently in the
 array~\textit{x}.
 %
-But, Listing~\ref{lst:v_ex} contains a bug if \textit{x} contains an
+But, Listing~\ref{lst:v_ex} contains a hypothetical bug if \textit{x} contains an
 equal number of positive and negative integers.
 %
 The three-way branch on lines 5, 6 causes the total number of execution
 paths required to cover the \textit{for} loop to be $3^{\textit{len}}$.
 %
 However, this three-way branch can be combined into a multi-path region
-and represented as a predicate.
+and represented as a predicate by using disjunctions.
 %
 Each iteration through the loop can be represented by such a predicate.
-%
-We present such predicates in SMT2 notation in
-Listing~\ref{lst:v_ex_smt2} assuming \textit{x} to contain two symbolic
-integers named \textit{x0} and \textit{x1}~(\textit{len} equals 2).
 %
 \lstinputlisting[caption={An example to loop through a symbolic array with three execution paths through the loop body},
 label={lst:v_ex}]{code_samples/VeritestingPerf.java}
 %
 \lstinputlisting[caption={SMT2 representation of multi-path execution in
 Listing ~\ref{lst:v_ex} using \textit{len} = 2}, label={lst:v_ex_smt2}, language=lisp]{code_samples/ex.smt2.snippet}
+%
+We present such predicates in SMT2 notation in
+Listing~\ref{lst:v_ex_smt2} assuming \textit{x} to contain two symbolic
+integers named \textit{x0} and \textit{x1}~(\textit{len} equals 2).
 %
 The updates to \textit{sum} in the two loop iterations are captured by
 \textit{sum0} and \textit{sum1}.

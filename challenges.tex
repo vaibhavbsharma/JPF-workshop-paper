@@ -71,7 +71,16 @@ We used Soot to create a control-flow graph for every method body in every class
 %
 For each control-flow graph, we used nodes corresponding to conditional jump bytecodes as a starting point of our analysis.
 %
-We measured the number of instructions encountered when traversing down each side of the branch until we get to the immediate post dominator~\cite{dragon-book} of our starting point.
+We measured the number of instructions encountered when traversing down
+each side of the branch until we get to the immediate post-dominator~\cite{dragon-book} of our starting point.
+%
+A node~\textit{d} strictly postdominates node~\textit{n} if every path from
+\textit{n} to the exit node of the graph goes through~\textit{d}
+and~\textit{d} is not the same as ~\textit{n}.
+%
+~\textit{d} is an immediate post-dominator of~\textit{n} if
+it strictly postdominates~\textit{n} but does not postdominate any other
+strict postdominators of~\textit{n}.
 %
 If there were no exit points encountered on any side of the branch, we considered this region as a pure multi-path region and calculated its size in bytecode instructions.
 %
@@ -81,6 +90,13 @@ As an example, we modify the three-way branch in Listing~\ref{lst:v_ex} by addin
 %
 \lstinputlisting[caption={Listing~\ref{lst:v_ex} modified to have a return statement in the three-way branch},
 label={lst:v_ex_modified}, language=Java]{code_samples/VeritestingPerf_modified.java}
+%
+\begin{figure}[]
+\caption{Control-flow graph with {\tt else return;} added as line 7 of Listing~\ref{lst:v_ex}}
+\label{fig:v_ex_cfg}
+\includegraphics[width=\columnwidth]{figures/v_ex_cfg}
+%\vspace{-0.3in}
+\end{figure}
 %
 This results in bytecode that produces the control-flow graph shown in Figure~\ref{fig:v_ex_cfg}.
 %
@@ -96,15 +112,6 @@ The same count going through nodes (3) and (4) to (6) gives us 6 instructions, a
 %
 The presence of the \textit{return} statement in node (5) prevents this region from being a pure multi-path region.
 %
-\begin{figure}[]
-\caption{Control-flow graph with {\tt else return;} added as line 7 of Listing~\ref{lst:v_ex}}
-\label{fig:v_ex_cfg}
-\includegraphics[width=\columnwidth]{figures/v_ex_cfg}
-\end{figure}
-%
-%
-We report our results from a Soot-based static analysis in Tables~\ref{t:r_s} and~\ref{t:r_c}.
-%
 \begin{table}[]
 \centering
 \begin{tabular}{|l|l|l|l|l|l|}
@@ -118,7 +125,7 @@ mockito & 382       & 6.02                                                 & 12.
 time    & 209       & 7.79                                                 & 13.10                                                       & 7.08                                                & 8.10                                                   \\ \hline
 \end{tabular}
 \caption{Soot-based analysis for number of bytecode instructions between starting and exit points}
-\vspace{-0.3in}
+%\vspace{-0.3in}
 \label{t:r_s}
 \end{table}
 %
@@ -137,7 +144,7 @@ mockito & 372                                                  & 572            
 time    & 1202                                                 & 984                                                         & 204                                                 & 1421                                                   \\ \hline
 \end{tabular}
 \caption{Number of occurences in Soot-based static analysis}
-\vspace{-0.2in}
+%\vspace{-0.2in}
 \label{t:r_c}
 \end{table}
 %
