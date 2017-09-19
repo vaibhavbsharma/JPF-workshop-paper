@@ -59,11 +59,12 @@ These five types of exit points create the kind of non-local control flow which 
 %
 However, many of these exit points are used pervasively by Java developers.
 %
-For example, the Visitor design pattern is used extensively by the ASM framework~\cite{asm}, Soot~\cite{soot} and makes use of Java\rq s dynamic dispatch mechanism.
+%For example, the Visitor design pattern is used extensively by the ASM framework~\cite{asm}, Soot~\cite{soot} and makes use of Java\rq s dynamic dispatch mechanism.
 %
-Running into exit points too often causes our statically-analyzed regions to be small and our performance gain from having fewer branches to be lost.
+Running into exit points too often causes the performance gain from having fewer branches to be lost.
 
-We investigated the occurrence of these exit points by creating a Soot-based static analysis of six large open-source projects written in Java.
+We investigated the occurrence of these exit points by creating a
+Soot-based~\cite{soot} static analysis of six large open-source projects written in Java.
 %
 Software faults from these six projects are maintained in the Defects4J~\cite{defects4j} repository.
 %
@@ -82,11 +83,13 @@ and~\textit{d} is not the same as ~\textit{n}.
 it strictly postdominates~\textit{n} but does not postdominate any other
 strict postdominators of~\textit{n}.
 %
-If there were no exit points encountered on any side of the branch, we considered this region as a pure multi-path region and calculated its size in bytecode instructions.
+Starting from a branch, if there were no exit points encountered on any
+side of the branch until we got to its immediate post-dominator, we considered this region as a pure multi-path region and calculated its size in bytecode instructions.
 %
 On observing 10 randomly chosen files from each project of the Defects4J repository, we did not find any instance of more than five nested branches. 
 %
-Therefore, finally, we allowed up to five nested branches and calculated the number of bytecode instructions from the earliest, as well as, the latest starting point in our control-flow graph traversal to an exit point.
+We allowed up to five nested branches and calculated the number of
+bytecode instructions from the earliest and the latest starting point in our control-flow graph traversal to an exit point.
 %
 
 As an example, we modify the three-way branch in Listing~\ref{lst:v_ex} by adding a {\tt else return;} to get the snippet shown in Listing~\ref{lst:v_ex_modified}.
@@ -154,16 +157,13 @@ time    & 1202                                                 & 984            
 We performed this analysis on the six projects in the Defects4J
 repository.
 %
-Table~\ref{t:r_s} shows the average size and Table~\ref{t:r_c} shows the number of times each such count was reported.
-%\mike{We need to explain these tables better: can we take a small code fragment (say, that of Listing 1) and explain it according to these numbers, or create a very tiny code fragment that demonstrates them?}
-%
 The \textit{if-return}, \textit{if-invokevirtual}, \textit{if-throw} columns in Table~\ref{t:r_s} report the average number of instructions observed between any \textit{if} opcode-containing bytecode instruction and a \textit{return}, \textit{invokevirtual} or \textit{invokeinterface}, \textit{throw} opcode-containing bytecode instruction.
 %
-These same columns in Table~\ref{t:r_c} report the number of times we observed an occurence of one of \textit{return}, \textit{invokevirtual}, \textit{invokeinterface}, \textit{throw} opcode-containing bytecode instructions before reaching the immediate post-dominator of the starting \textit{if} node on any side of the branch.
+These same columns in Table~\ref{t:r_c} report the total number of times we observed an occurence of one of \textit{return}, \textit{invokevirtual}, \textit{invokeinterface}, \textit{throw} opcode-containing bytecode instructions before reaching the immediate post-dominator of the starting \textit{if} node on any side of the branch.
 %
 The \textit{region size} and \textit{region count} columns in
 Tables~\ref{t:r_s} and~\ref{t:r_c} report the average size~(in terms of
-Java bytecode instructions) and number of occurences of multi-path
+Java bytecode instructions) and total number of occurences of multi-path
 regions with a single exit point. 
 %
 These represent pure multi-path regions.
@@ -176,26 +176,25 @@ We believe that creating multi-path regions for these no-exit-point cases alone 
 %
 Table~\ref{t:r_c} shows \textit{invokevirtual} or \textit{invokeinterface} instructions are encountered far more often than \textit{return} or \textit{throw} instructions.
 %
-This can be explained by the pervasive use of runtime polymorphism and exception handling by Java developers.
+This can be intuitively explained by the pervasive use of runtime polymorphism and exception handling by Java developers.
 %
 Instead of using \textit{invokevirtual} and \textit{invokeinterface}
 instructions as exit points, if we can continue our predicate
 construction for multi-path regions beyond them, we would almost double
 the number of multi-path regions.
 
-While dynamic dispatch and return statements are some factors which
-should not be allowed to limit veritesting of Java, there exist other
-research challenges which need to be addressed to push the veritesting
+While dynamic dispatch and return statements are challenges for veritesting, 
+there exist other challenges which need to be addressed to push the veritesting
 frontier further.
 %
-Heap allocations which occur within a veritesting region can be treated
-as exit points but including them in our predicate construction require
+Heap allocations, which occur within a veritesting region, can be treated
+as exit points but including them in our predicate construction requires
 careful consideration of the objects being allocated and correct
 interaction with the heap maintained by the symbolic execution engine.
 %
 Method calls and field accesses on symbolic objects also require special
-consideration because the symbolic execution engine may need to set the
-symbolic object up correctly.
+consideration because the symbolic execution engine will also have to
+construct the symbolic object to perform veritesting.
 %
 Solving such challenges will allow us to have veritesting regions with fewer
 exit points, thereby amplifying the benefits we get from veritesting.

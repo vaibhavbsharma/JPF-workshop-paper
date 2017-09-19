@@ -33,7 +33,7 @@ array~\textit{x}.
 But, Listing~\ref{lst:v_ex} contains a hypothetical bug if \textit{x} contains an
 equal number of positive and negative integers.
 %
-The three-way branch on lines 5, 6 causes the total number of execution
+The three-way branch on lines 6, 7 causes the total number of execution
 paths required to cover the \textit{for} loop to be $3^{\textit{len}}$.
 %
 However, this three-way branch can be combined into a multi-path region
@@ -48,13 +48,13 @@ label={lst:v_ex}]{code_samples/VeritestingPerf.java}
 Listing ~\ref{lst:v_ex} using \textit{len} = 2}, label={lst:v_ex_smt2}, language=lisp]{code_samples/ex.smt2.snippet}
 %
 We present such predicates in SMT2 notation in
-Listing~\ref{lst:v_ex_smt2} assuming \textit{x} to contain two symbolic
+Listing~\ref{lst:v_ex_smt2} assuming the array \textit{x} to contain two symbolic
 integers named \textit{x0} and \textit{x1}~(\textit{len} equals 2).
 %
 The updates to \textit{sum} in the two loop iterations are captured by
 \textit{sum0} and \textit{sum1}.
 %
-Using such predicates to represent the three-way branch on lines 5, 6 of
+Using such predicates to represent the three-way branch on lines 6, 7 of
 Listing~\ref{lst:v_ex} allows us to have only one execution path through
 the loop body.
 %
@@ -65,7 +65,7 @@ The exponential speed-up from our predicates, representing a multi-path
 region, allows us to find
 the bug using just three test cases.
 %
-Veritesting provides a way to get such performance improvements by using
+Veritesting provides such performance improvements by using
 static analysis to identify multi-path
 regions and create predicates to represent them.
 %
