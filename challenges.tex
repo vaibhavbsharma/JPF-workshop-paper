@@ -84,7 +84,10 @@ strict postdominators of~\textit{n}.
 %
 If there were no exit points encountered on any side of the branch, we considered this region as a pure multi-path region and calculated its size in bytecode instructions.
 %
-Finally, we allowed up to five nested branches and calculated the number of bytecode instructions from the earliest, as well as, the latest starting point in our control-flow graph traversal to an exit point.
+On observing 10 randomly chosen files from each project of the Defects4J repository, we did not find any instance of more than five nested branches. 
+%
+Therefore, finally, we allowed up to five nested branches and calculated the number of bytecode instructions from the earliest, as well as, the latest starting point in our control-flow graph traversal to an exit point.
+%
 
 As an example, we modify the three-way branch in Listing~\ref{lst:v_ex} by adding a {\tt else return;} to get the snippet shown in Listing~\ref{lst:v_ex_modified}.
 %
