@@ -14,6 +14,21 @@ Veritesting was added to {\tt angr} with similar goals of statically and selecti
 However, path merging from veritesting integration with {\tt angr} caused complex expressions to be introduced which overloaded the constraint solver.
 %
 Using the Green~\cite{green} solver may alleviate such problems when implementing veritesting with SPF.
+%
+Another technique named \textit{MultiSE} for merging symbolic execution states incrementally
+was proposed by Sen et al.~\cite{multise}.
+%
+MultiSE computes a set of guarded symbolic expressions for every
+assignment and does not require identification of points where
+previously forked dynamic symbolic executors need to be merged.
+%
+MultiSE complements predicate construction for multi-path regions beyond
+standard exit points~(such as
+\textit{invokevirtual},~\textit{invokeinterface},~\textit{return}
+statements).
+%
+Combining both techniques, while tedious to implement, has the potential
+to amplify the benefits from both techniques.
 %This observation became even more apparent for longer paths.
 %
 %Integrating veritesting with SPF may expose a similar trade-off.

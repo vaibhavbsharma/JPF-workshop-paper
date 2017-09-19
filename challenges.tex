@@ -151,6 +151,9 @@ time    & 1202                                                 & 984            
 \label{t:r_c}
 \end{table}
 %
+We performed this analysis on the six projects in the Defects4J
+repository.
+%
 Table~\ref{t:r_s} shows the average size and Table~\ref{t:r_c} shows the number of times each such count was reported.
 %\mike{We need to explain these tables better: can we take a small code fragment (say, that of Listing 1) and explain it according to these numbers, or create a very tiny code fragment that demonstrates them?}
 %
@@ -158,7 +161,14 @@ The \textit{if-return}, \textit{if-invokevirtual}, \textit{if-throw} columns in 
 %
 These same columns in Table~\ref{t:r_c} report the number of times we observed an occurence of one of \textit{return}, \textit{invokevirtual}, \textit{invokeinterface}, \textit{throw} opcode-containing bytecode instructions before reaching the immediate post-dominator of the starting \textit{if} node on any side of the branch.
 %
-Tables~\ref{t:r_s} and~\ref{t:r_c} show that while we discover thousands of regions which do not contain any exit points, these regions are small.
+The \textit{region size} and \textit{region count} columns in
+Tables~\ref{t:r_s} and~\ref{t:r_c} report the average size~(in terms of
+Java bytecode instructions) and number of occurences of multi-path
+regions with a single exit point. 
+%
+These represent pure multi-path regions.
+%
+While we discover thousands of regions which have a single exit point, these regions are small.
 %
 They also show that early \textit{return} instructions are another often used construct in Java.
 %
