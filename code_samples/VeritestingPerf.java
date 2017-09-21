@@ -7,7 +7,7 @@ for (int i = 0; i < len; i++) {
   else if (x[i] > 0) sum += 1;
   // End region for static unrolling
 }
-if (sum < 0) { // handles negative sum
-} else if (sum > 0) { // handles positive sum
-} else { // contains a bug
+if (sum < 0) { // ... handles negative sum
+} else if (sum > 0) { // ... handles positive sum
+} else { // ... contains a bug
 }
