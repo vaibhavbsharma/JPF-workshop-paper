@@ -176,11 +176,11 @@ We believe that creating multi-path regions for these no-exit-point cases alone 
 %
 Table~\ref{t:r_c} shows \textit{invokevirtual} or \textit{invokeinterface} instructions are encountered far more often than \textit{return} or \textit{throw} instructions.
 %
-This can be intuitively explained by the pervasive use of runtime polymorphism and exception handling by Java developers.
+This can be intuitively explained by the extensive use of runtime polymorphism and exception handling by Java developers.
 %
 Instead of using \textit{invokevirtual} and \textit{invokeinterface}
-instructions as exit points, if we can continue our predicate
-construction for multi-path regions beyond them, we would almost double
+instructions as exit points, continuing our predicate
+construction for multi-path regions beyond them would almost double
 the number of multi-path regions.
 
 While dynamic dispatch and return statements are challenges for veritesting, 
