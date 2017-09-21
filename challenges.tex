@@ -91,32 +91,24 @@ On observing 10 randomly chosen files from each project of the Defects4J reposit
 We allowed up to five nested branches and calculated the number of
 bytecode instructions from the earliest and the latest starting point in our control-flow graph traversal to an exit point.
 %
-
-As an example, we modify the three-way branch in Listing~\ref{lst:v_ex} by adding a {\tt else return;} to get the snippet shown in Listing~\ref{lst:v_ex_modified}.
-%
-\lstinputlisting[caption={Listing~\ref{lst:v_ex} modified to have a return statement in the three-way branch},
-label={lst:v_ex_modified}, language=Java]{code_samples/VeritestingPerf_modified.java}
-%
 \begin{figure}[]
 \caption{Control-flow graph with {\tt else return;} added as line 7 of Listing~\ref{lst:v_ex}}
 \label{fig:v_ex_cfg}
 \includegraphics[width=\columnwidth]{figures/v_ex_cfg}
 %\vspace{-0.4in}
 \end{figure}
+
+As an example, Figure~\ref{fig:v_ex_cfg} shows the control-flow graph for the three-way branch in Listing~\ref{lst:v_ex}.
 %
-This results in bytecode that produces the control-flow graph shown in Figure~\ref{fig:v_ex_cfg}.
-%
-Nodes are numbered 1 through 6 with node (1) being the starting point and node (6) being the immediate post-dominator of node (1).
+Nodes are numbered 1 through 5 with node (1) being the starting point and node (5) being the immediate post-dominator of node (1).
 %
 Nodes contain bytecode instructions along with instruction offsets.
 %
-The added \textit{return} statement creates an exit point, which causes the three-way branch in Listing~\ref{lst:v_ex_modified} to contain two exit points.
+Counting the number of instructions after the {\tt ifge} instruction in node (1) through node (2) to node (5) gives us two instructions.
 %
-Counting the number of instructions after the {\tt ifge} instruction in node (1) through node (2) to node (6) gives us two instructions.
+The same count going through nodes (3) and (4) to (5) gives us 5 instructions, and through nodes (3) to (5) gives us 4 instructions.
 %
-The same count going through nodes (3) and (4) to (6) gives us 6 instructions, and through nodes (3) to (5) gives us 4 instructions.
-%
-The presence of the \textit{return} statement in node (5) prevents this region from being a pure multi-path region.
+With this three-way branch having only one exit point, this region can be considered a pure multi-path region.
 %
 \begin{table}[]
 \centering
@@ -153,7 +145,7 @@ time    & 1202                                                 & 984            
 %\vspace{-0.4in}
 \label{t:r_c}
 \end{table}
-%
+
 We performed this analysis on the six projects in the Defects4J
 repository.
 %
